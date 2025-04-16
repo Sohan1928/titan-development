@@ -2,7 +2,7 @@ import Navbar from "./components/home/navbar/Navbar";
 
 function App() {
   return (
-    <section className="bg-[#040206]">
+    <section className="bg-[#040206] spaceGroteskFont">
       <div className="">
         <Navbar></Navbar>
       </div>
