@@ -5,13 +5,13 @@ import LeftSideTextBgSvg from "./svg/LeftSideTextBgSvg";
 
 const Banner = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] mt-[100px] pb-48">
+    <section className="md:px-[40px] lg:px-[80px] mt-[100px] pb-36">
       <div className="md:flex items-center justify-between relative z-99">
         <div>
           <h5 className="text-[#D0DCE8] text-xl opacity-70">
             Highest Fixed APY 102,483%
           </h5>
-          <h1 className="text-white text-[60px] font-semibold mt-4 text-base/16">
+          <h1 className="text-white text-6xl font-semibold mt-4 leading-18">
             The Best{" "}
             <span className="text-[#63C9C7]">
               Auto-Staking <br /> & Auto Compounding
