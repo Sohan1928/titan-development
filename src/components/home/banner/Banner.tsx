@@ -5,7 +5,7 @@ import LeftSideTextBgSvg from "./svg/LeftSideTextBgSvg";
 
 const Banner = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] mt-[100px] pb-36">
+    <section className="md:px-[40px] lg:px-[80px] mt-[100px]">
       <div className="md:flex items-center justify-between relative z-99">
         <div>
           <h5 className="text-[#D0DCE8] text-xl opacity-70">
@@ -33,10 +33,10 @@ const Banner = () => {
           <BannerSvg></BannerSvg>
         </div>
       </div>
-      <div className="absolute -top-24 right-0 z-0 pointer-events-none">
+      <div className="absolute top-0 right-0 z-0 pointer-events-none">
         <BannerBgCircleSvg></BannerBgCircleSvg>
       </div>
-      <div className="absolute -left-16 -top-24 z-0 pointer-events-none">
+      <div className="absolute left-0 top-0 z-0 pointer-events-none">
         <LeftSideTextBgSvg></LeftSideTextBgSvg>
       </div>
       <div>
