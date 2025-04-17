@@ -1,27 +1,27 @@
-const BannerBgCircleSvg = () => {
+const RightSideCircleSvg = () => {
   return (
     <svg
-      width={1600}
-      height={1431}
-      viewBox="0 0 1600 1731"
+      width={972}
+      height={2019}
+      viewBox="0 0 972 2219"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity={0.4} filter="url(#filter0_f_0_89)">
+      <g opacity={0.4} filter="url(#filter0_f_0_250)">
         <circle
-          cx={1183.5}
-          cy={532.5}
-          r={434.5}
-          fill="url(#paint0_linear_0_89)"
+          cx={1109.5}
+          cy={1109.5}
+          r={345.5}
+          fill="url(#paint0_linear_0_250)"
         />
       </g>
       <defs>
         <filter
-          id="filter0_f_0_89"
-          x={-15}
-          y={-666}
-          width={2397}
-          height={2397}
+          id="filter0_f_0_250"
+          x={0}
+          y={0}
+          width={2219}
+          height={2219}
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -34,15 +34,15 @@ const BannerBgCircleSvg = () => {
           />
           <feGaussianBlur
             stdDeviation={382}
-            result="effect1_foregroundBlur_0_89"
+            result="effect1_foregroundBlur_0_250"
           />
         </filter>
         <linearGradient
-          id="paint0_linear_0_89"
-          x1={749}
-          y1={967}
-          x2={1618}
-          y2={98}
+          id="paint0_linear_0_250"
+          x1={764}
+          y1={1455}
+          x2={1455}
+          y2={764}
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#28E0B2" />
@@ -53,4 +53,4 @@ const BannerBgCircleSvg = () => {
   );
 };
 
-export default BannerBgCircleSvg;
+export default RightSideCircleSvg;
