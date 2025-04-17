@@ -2,7 +2,7 @@ import IconSvg from "./svg/IconSvg2";
 
 const Navbar = () => {
   return (
-    <section className="">
+    <section className="z-50">
       <div className="md:px-[40px] lg:px-[80px] pt-[30px] flex items-center justify-between">
         <h3 className="uppercase flex items-center gap-2">
           <IconSvg></IconSvg>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <span>o</span>
           </span>
         </h3>
-        <ul className="text-[#D0DCE8] flex items-center gap-10">
+        <ul className="text-[#D0DCE8] text-lg flex items-center gap-10">
           <li className="hover:cursor-pointer hover:text-[#6BDAB7]">
             How it works
           </li>

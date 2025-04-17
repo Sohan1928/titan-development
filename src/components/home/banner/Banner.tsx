@@ -1,12 +1,14 @@
+import BannerTransparentText from "./BannerTransparentText";
 import BannerBgCircleSvg from "./svg/BannerBgCircleSvg";
 import BannerSvg from "./svg/BannerSvg";
+import LeftSideTextBgSvg from "./svg/LeftSideTextBgSvg";
 
 const Banner = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] mt-[100px] pb-96">
+    <section className="md:px-[40px] lg:px-[80px] mt-[100px] pb-48">
       <div className="md:flex items-center justify-between relative z-99">
         <div>
-          <h5 className="text-[#D0DCE8] opacity-70">
+          <h5 className="text-[#D0DCE8] text-xl opacity-70">
             Highest Fixed APY 102,483%
           </h5>
           <h1 className="text-white text-[60px] font-semibold mt-4 text-base/16">
@@ -16,7 +18,7 @@ const Banner = () => {
             </span>
             <br /> Protocol in Crypto
           </h1>
-          <p className="text-[#D0DCE8] mt-7 opacity-70">
+          <p className="text-[#D0DCE8] text-lg mt-7 opacity-70">
             Your Tokens Stay in Your Wallet <br /> Get Rewards Every 30 Minutes
             / 48 Times Daily
           </p>
@@ -27,12 +29,18 @@ const Banner = () => {
             </span>
           </button>
         </div>
-        <div>
+        <div className="z-0 pointer-events-none">
           <BannerSvg></BannerSvg>
         </div>
       </div>
-      <div className="absolute -top-8 right-0 z-0">
+      <div className="absolute -top-24 right-0 z-0 pointer-events-none">
         <BannerBgCircleSvg></BannerBgCircleSvg>
+      </div>
+      <div className="absolute -left-16 -top-24 z-0 pointer-events-none">
+        <LeftSideTextBgSvg></LeftSideTextBgSvg>
+      </div>
+      <div>
+        <BannerTransparentText></BannerTransparentText>
       </div>
     </section>
   );
