@@ -6,17 +6,18 @@ const About = () => {
     <section className="md:px-[40px] lg:px-[80px] pt-20 pb-16">
       <div className="relative">
         <div className="flex gap-10 items-start justify-between">
-          <div className="">
+          <div className="pointer-events-none">
             <AboutLeftSideSvg></AboutLeftSideSvg>
           </div>
           <div>
-            <h5 className="uppercase flex items-center text-xl gap-1.5 text-[#4D9F86]">
+            <h5 className="uppercase flex items-center text-xl gap-1.5 text-[#51af93]">
               <span>A</span>
               <span>b</span>
               <span>o</span>
               <span>u</span>
               <span>t</span>
             </h5>
+
             <p className="text-[#7A8699] text-2xl mt-7 leading-12">
               Titano Finance is transforming DeFi with the Titano <br />{" "}
               Autostaking Protocol (TAP) that delivers the industry’s <br />{" "}
@@ -39,7 +40,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="absolute -top-26 -left-4 drop-shadow-[0_-6px_16px_#28E0B2]">
+        <div className="absolute -top-26 -left-4 drop-shadow-[0_-6px_16px_#28E0B2] pointer-events-none">
           <AboutLeftSideBgSvg></AboutLeftSideBgSvg>
         </div>
       </div>
