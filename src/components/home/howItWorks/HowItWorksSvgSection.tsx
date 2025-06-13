@@ -1,8 +1,10 @@
 import PancakeSwapIconSvg from "./svg/topBox/PancakeSwapIconSvg";
 import TitanIconSvg from "./svg/TitanIconSvg";
 import TopBoxSvg from "./svg/topBox/TopBoxSvg";
-import RightSideEllipseSvg from "./svg/topBox/rightSideEllipseSvg";
 import BottomArrowSvg from "./svg/topBox/BottomArrowSvg";
+import RightSideEllipseSvg from "./svg/topBox/RightSideEllipseSvg";
+import LineArrow1 from "./svg/topBox/rightArrow/LineArrow1";
+import LineArrow2 from "./svg/topBox/rightArrow/LineArrow2";
 
 const HowItWorksSvgSection = () => {
   return (
@@ -27,17 +29,36 @@ const HowItWorksSvgSection = () => {
                   PancakeSwap
                 </p>
               </div>
+              {/* circle ellips */}
               <div className="absolute -right-8 top-6">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
+              {/* circle ellips */}
               <div className="absolute -left-9 top-6">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
+              {/* circle ellips */}
               <div className="absolute -bottom-10 left-40">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
+              {/* bottom line arrow */}
               <div className="absolute left-[193.5px] -bottom-24">
                 <BottomArrowSvg></BottomArrowSvg>
+              </div>
+              {/* right side */}
+              {/* right line arrow 1 */}
+              <div className="absolute -right-44 top-14">
+                <LineArrow1></LineArrow1>
+              </div>
+              {/* right line arrow 2 */}
+              <div className="absolute -right-[179.5px] top-[57px]">
+                <LineArrow2></LineArrow2>
+              </div>
+              {/* right side text */}
+              <div className="absolute -right-[150px] top-6">
+                <h4 className="uppercase text-[11px] tracking-widest">
+                  Buy & Sell Fees
+                </h4>
               </div>
             </div>
           </div>
