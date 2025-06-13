@@ -5,6 +5,8 @@ import BottomArrowSvg from "./svg/topBox/BottomArrowSvg";
 import RightSideEllipseSvg from "./svg/topBox/RightSideEllipseSvg";
 import LineArrow1 from "./svg/topBox/rightArrow/LineArrow1";
 import LineArrow2 from "./svg/topBox/rightArrow/LineArrow2";
+import RightBoxTick from "./svg/topBox/rightArrow/RightBoxTick";
+import RightBoxBg from "./svg/topBox/rightArrow/RightBoxBg";
 
 const HowItWorksSvgSection = () => {
   return (
@@ -59,6 +61,25 @@ const HowItWorksSvgSection = () => {
                 <h4 className="uppercase text-[11px] tracking-widest">
                   Buy & Sell Fees
                 </h4>
+              </div>
+              {/* right side box */}
+              <div className="absolute z-50 -right-[390px] top-64">
+                <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
+                  <h3 className="text-xl mb-4 opacity-80">Titano Treasury</h3>
+                  <p className="opacity-50">
+                    A portion of the buy and sells fees goes to <br /> the
+                    treasury for marketing, new development <br /> and to
+                    support RFV
+                  </p>
+                </div>
+              </div>
+              {/* right box bg */}
+              <div className="absolute z-0 -right-[430px] top-44">
+                <RightBoxBg></RightBoxBg>
+              </div>
+              {/* right box middle tick */}
+              <div className="absolute z-0 -right-[310px] top-36">
+                <RightBoxTick></RightBoxTick>
               </div>
             </div>
           </div>
