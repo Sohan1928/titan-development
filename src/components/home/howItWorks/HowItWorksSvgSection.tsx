@@ -7,6 +7,7 @@ import LineArrow1 from "./svg/topBox/rightArrow/LineArrow1";
 import LineArrow2 from "./svg/topBox/rightArrow/LineArrow2";
 import RightBoxTick from "./svg/topBox/rightArrow/RightBoxTick";
 import RightBoxBg from "./svg/topBox/rightArrow/RightBoxBg";
+import LeftSideBoxCircle from "./svg/topBox/leftArrow/LeftSideBoxCircle";
 
 const HowItWorksSvgSection = () => {
   return (
@@ -78,8 +79,45 @@ const HowItWorksSvgSection = () => {
                 <RightBoxBg></RightBoxBg>
               </div>
               {/* right box middle tick */}
-              <div className="absolute z-0 -right-[310px] top-36">
+              <div className="absolute z-0 -right-[310px] top-35">
                 <RightBoxTick></RightBoxTick>
+              </div>
+
+              {/* left side  */}
+              {/* left line arrow 1 */}
+              <div className="absolute -left-48 top-14">
+                <LineArrow1></LineArrow1>
+              </div>
+              {/* left line arrow 2 */}
+              <div className="absolute -left-[195.5px] top-[57px]">
+                <LineArrow2></LineArrow2>
+              </div>
+              {/* left side text */}
+              <div className="absolute -left-[150px] top-6">
+                <h4 className="uppercase text-[11px] tracking-widest">
+                  Buy & Sell Fees
+                </h4>
+              </div>
+              {/* left side box */}
+              <div className="absolute z-50 -left-[390px] top-64">
+                <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
+                  <h3 className="text-xl mb-4 opacity-80">
+                    Risk Free Value (RFV)
+                  </h3>
+                  <p className="opacity-50">
+                    A portion of the buy and sells fees goes to <br /> the
+                    treasury for marketing, new development <br /> and to
+                    support RFV
+                  </p>
+                </div>
+              </div>
+              {/* left box bg */}
+              <div className="absolute z-0 -left-[430px] top-44">
+                <RightBoxBg></RightBoxBg>
+              </div>
+              {/* left box middle tick */}
+              <div className="absolute z-0 -left-[310px] top-35">
+                <LeftSideBoxCircle></LeftSideBoxCircle>
               </div>
             </div>
           </div>
