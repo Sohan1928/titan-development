@@ -8,13 +8,17 @@ import LineArrow2 from "./svg/topBox/rightArrow/LineArrow2";
 import RightBoxTick from "./svg/topBox/rightArrow/RightBoxTick";
 import RightBoxBg from "./svg/topBox/rightArrow/RightBoxBg";
 import LeftSideBoxCircle from "./svg/topBox/leftArrow/LeftSideBoxCircle";
+import BottomArrow from "./svg/topBox/bottomSvg/BottomArrow";
+import FlatArrow from "./svg/topBox/bottomSvg/FlatArrow";
+import SmallArrow from "./svg/topBox/bottomSvg/SmallArrow";
+import BottomBox from "./svg/topBox/bottomSvg/BottomBox";
 
 const HowItWorksSvgSection = () => {
   return (
     <section>
       <div className="md:mt-60">
         <div className="relative">
-          <h2 className="text-base text-center">
+          <h2 className="text-base text-center z-50">
             <span className="text-xl">The Automatic Stacking,</span> and <br />
             Compounding Titaton Token
           </h2>
@@ -59,15 +63,17 @@ const HowItWorksSvgSection = () => {
               </div>
               {/* right side text */}
               <div className="absolute -right-[150px] top-6">
-                <h4 className="uppercase text-[11px] tracking-widest">
+                <h4 className="uppercase text-[11px] text-[#D2DCE7] tracking-widest">
                   Buy & Sell Fees
                 </h4>
               </div>
               {/* right side box */}
               <div className="absolute z-50 -right-[390px] top-64">
                 <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
-                  <h3 className="text-xl mb-4 opacity-80">Titano Treasury</h3>
-                  <p className="opacity-50">
+                  <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
+                    Titano Treasury
+                  </h3>
+                  <p className="text-[#97A2AB]">
                     A portion of the buy and sells fees goes to <br /> the
                     treasury for marketing, new development <br /> and to
                     support RFV
@@ -94,17 +100,17 @@ const HowItWorksSvgSection = () => {
               </div>
               {/* left side text */}
               <div className="absolute -left-[150px] top-6">
-                <h4 className="uppercase text-[11px] tracking-widest">
+                <h4 className="uppercase text-[11px] text-[#D2DCE7] tracking-widest">
                   Buy & Sell Fees
                 </h4>
               </div>
               {/* left side box */}
               <div className="absolute z-50 -left-[390px] top-64">
                 <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
-                  <h3 className="text-xl mb-4 opacity-80">
+                  <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
                     Risk Free Value (RFV)
                   </h3>
-                  <p className="opacity-50">
+                  <p className="text-[#97A2AB]">
                     A portion of the buy and sells fees goes to <br /> the
                     treasury for marketing, new development <br /> and to
                     support RFV
@@ -118,6 +124,40 @@ const HowItWorksSvgSection = () => {
               {/* left box middle tick */}
               <div className="absolute z-0 -left-[310px] top-35">
                 <LeftSideBoxCircle></LeftSideBoxCircle>
+              </div>
+
+              {/* bottom arrow and all svg setup */}
+              <div className="absolute -bottom-[545px] left-[183px]">
+                <BottomArrow></BottomArrow>
+              </div>
+              <div className="absolute -bottom-[556px] left-[0px]">
+                <FlatArrow></FlatArrow>
+              </div>
+              <div className="absolute -bottom-[573px] left-[364.5px]">
+                <SmallArrow></SmallArrow>
+              </div>
+              <div className="absolute -bottom-[573px] -left-[4px]">
+                <SmallArrow></SmallArrow>
+              </div>
+              {/* left box */}
+              <div className="absolute -bottom-[753px] -left-[130px]">
+                <BottomBox></BottomBox>
+              </div>
+              <div className="absolute -left-[105px] -bottom-[708px]">
+                <h4 className="text-center text-sm text-[#D2DCE7]">
+                  You receive <span className="text-[#6CDDB5]">,03959%</span>{" "}
+                  APY in your <br /> wallet every 30 minutes
+                </h4>
+              </div>
+              {/* right box */}
+              <div className="absolute -bottom-[753px] -right-[130px]">
+                <BottomBox></BottomBox>
+              </div>
+              <div className="absolute -right-[105px] -bottom-[708px]">
+                <h4 className="text-center text-sm text-[#D2DCE7]">
+                  You receive <span className="text-[#6CDDB5]">,03959%</span>{" "}
+                  APY in your <br /> wallet every 30 minutes
+                </h4>
               </div>
             </div>
           </div>
