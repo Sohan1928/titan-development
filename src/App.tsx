@@ -2,6 +2,7 @@ import About from "./components/home/about/About";
 import Banner from "./components/home/banner/Banner";
 import HowItWorks from "./components/home/howItWorks/HowItWorks";
 import Navbar from "./components/home/navbar/Navbar";
+import TitanoApp from "./components/home/titanoApp/TitanoApp";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Banner></Banner>
         <About></About>
         <HowItWorks></HowItWorks>
+        <TitanoApp></TitanoApp>
       </div>
     </section>
   );

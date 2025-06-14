@@ -14,6 +14,7 @@ import SmallArrow from "./svg/topBox/bottomSvg/SmallArrow";
 import BottomBox from "./svg/topBox/bottomSvg/BottomBox";
 import LeftBoxSvg from "./svg/topBox/leftArrow/LeftBoxSvg";
 import RightBoxSvg from "./svg/topBox/rightArrow/RightBoxSvg";
+import "./verticallyText.css";
 
 const HowItWorksSvgSection = () => {
   return (
@@ -70,19 +71,7 @@ const HowItWorksSvgSection = () => {
                 </h4>
               </div>
               {/* right side box */}
-              {/* <div className="absolute z-50 -right-[390px] top-64">
-                <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
-                  <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
-                    Titano Treasury
-                  </h3>
-                  <p className="text-[#97A2AB]">
-                    A portion of the buy and sells fees goes to <br /> the
-                    treasury for marketing, new development <br /> and to
-                    support RFV
-                  </p>
-                </div>
-              </div> */}
-              <div className="absolute z-50 -right-[390px] top-64">
+              <div className="absolute z-50 -right-[350px] top-64">
                 <RightBoxSvg></RightBoxSvg>
                 <div className="">
                   <div className="absolute top-16 right-6 z-50 text-center">
@@ -122,7 +111,7 @@ const HowItWorksSvgSection = () => {
                 </h4>
               </div>
               {/* left side box */}
-              <div className="absolute z-50 -left-[390px] top-64">
+              <div className="absolute z-50 -left-[350px] top-64">
                 <LeftBoxSvg></LeftBoxSvg>
                 <div className="">
                   <div className="absolute top-16 left-6 z-50 text-center">
@@ -180,6 +169,11 @@ const HowItWorksSvgSection = () => {
                 </h4>
               </div>
             </div>
+          </div>
+          <div className="absolute z-90 -left-[580px] top-[300px] -translate-y-1/2 rotate-[90deg]">
+            <h2 className="text-7xl uppercase font-bold tracking-widest text-transparent stroke-text">
+              TITANO AUTOTASK PROTOCOL
+            </h2>
           </div>
         </div>
       </div>
