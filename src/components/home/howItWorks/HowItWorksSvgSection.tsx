@@ -12,6 +12,8 @@ import BottomArrow from "./svg/topBox/bottomSvg/BottomArrow";
 import FlatArrow from "./svg/topBox/bottomSvg/FlatArrow";
 import SmallArrow from "./svg/topBox/bottomSvg/SmallArrow";
 import BottomBox from "./svg/topBox/bottomSvg/BottomBox";
+import LeftBoxSvg from "./svg/topBox/leftArrow/LeftBoxSvg";
+import RightBoxSvg from "./svg/topBox/rightArrow/RightBoxSvg";
 
 const HowItWorksSvgSection = () => {
   return (
@@ -68,7 +70,7 @@ const HowItWorksSvgSection = () => {
                 </h4>
               </div>
               {/* right side box */}
-              <div className="absolute z-50 -right-[390px] top-64">
+              {/* <div className="absolute z-50 -right-[390px] top-64">
                 <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
                   <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
                     Titano Treasury
@@ -79,13 +81,28 @@ const HowItWorksSvgSection = () => {
                     support RFV
                   </p>
                 </div>
+              </div> */}
+              <div className="absolute z-50 -right-[390px] top-64">
+                <RightBoxSvg></RightBoxSvg>
+                <div className="">
+                  <div className="absolute top-16 right-6 z-50 text-center">
+                    <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold select-text">
+                      Titano Treasury
+                    </h3>
+                    <p className="text-[#97A2AB] text-sm ">
+                      A portion of the buy and sells fees goes to <br /> the
+                      treasury for marketing, new development <br /> and to
+                      support RFV
+                    </p>
+                  </div>
+                </div>
               </div>
               {/* right box bg */}
-              <div className="absolute z-0 -right-[430px] top-44">
+              <div className="absolute z-0 -right-[430px] top-44 pointer-events-none">
                 <RightBoxBg></RightBoxBg>
               </div>
               {/* right box middle tick */}
-              <div className="absolute z-0 -right-[310px] top-35">
+              <div className="absolute z-50 -right-[310px] top-35 pointer-events-none">
                 <RightBoxTick></RightBoxTick>
               </div>
 
@@ -106,23 +123,26 @@ const HowItWorksSvgSection = () => {
               </div>
               {/* left side box */}
               <div className="absolute z-50 -left-[390px] top-64">
-                <div className="text-center border-1 px-8 pt-20 pb-10 border-[#468473] rounded-md">
-                  <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
-                    Risk Free Value (RFV)
-                  </h3>
-                  <p className="text-[#97A2AB]">
-                    A portion of the buy and sells fees goes to <br /> the
-                    treasury for marketing, new development <br /> and to
-                    support RFV
-                  </p>
+                <LeftBoxSvg></LeftBoxSvg>
+                <div className="">
+                  <div className="absolute top-16 left-6 z-50 text-center">
+                    <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
+                      Risk Free Value (RFV)
+                    </h3>
+                    <p className="text-[#97A2AB] text-sm ">
+                      A portion of the buy and sells fees goes to <br /> the
+                      treasury for marketing, new development <br /> and to
+                      support RFV
+                    </p>
+                  </div>
                 </div>
               </div>
               {/* left box bg */}
-              <div className="absolute z-0 -left-[430px] top-44">
+              <div className="absolute z-0 -left-[430px] top-44 pointer-events-none">
                 <RightBoxBg></RightBoxBg>
               </div>
               {/* left box middle tick */}
-              <div className="absolute z-0 -left-[310px] top-35">
+              <div className="absolute z-50 -left-[310px] top-35 pointer-events-none">
                 <LeftSideBoxCircle></LeftSideBoxCircle>
               </div>
 

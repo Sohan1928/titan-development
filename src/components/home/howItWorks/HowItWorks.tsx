@@ -5,8 +5,8 @@ const HowItWorks = () => {
   return (
     <section className="md:px-[40px] lg:px-[80px] pt-[90px] pb-56">
       <div className="relative flex flex-col items-center justify-center text-center">
-        <h1 className="text-[#D2DCE7] text-6xl">How it works</h1>
-        <h4 className="text-[#D2DCE7] text-3xl mt-7">
+        <h1 className="text-[#D2DCE7] text-6xl font-semibold">How it works</h1>
+        <h4 className="text-[#D2DCE7] text-3xl mt-7 font-medium">
           How the Titano Autostaking Protocol (TAP) Works
         </h4>
         <p className="text-[#949AA3] text-xl mt-3 mb-24">
