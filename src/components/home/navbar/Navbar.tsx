@@ -13,8 +13,8 @@ const Navbar = () => {
           <a>Tokenmics</a>
           <a>Milestones</a>
         </ul>
-        <button className="relative inline-flex h-12 overflow-hidden rounded-lg p-[3px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-          <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#336160_50%,#336160_50%,#28E0B2_60%)]" />
+        <button className="navbarBtn relative inline-flex h-12 overflow-hidden rounded-lg p-[3px]">
+          <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#336160_50%,#336160_50%,#28E0B2_60%)]"></span>
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#6BDAB7] px-4 py-1 text-sm font-medium text-black backdrop-blur-3xl">
             Start Earning Now!
           </span>

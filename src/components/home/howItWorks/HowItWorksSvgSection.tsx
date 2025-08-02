@@ -21,10 +21,10 @@ const HowItWorksSvgSection = () => {
     <section>
       <div className="md:mt-60">
         <div className="relative">
-          <h2 className="text-base text-center z-50">
-            <span className="text-xl">The Automatic Stacking,</span> and <br />
-            Compounding Titaton Token
-          </h2>
+          <h4 className="theAutomaticText text-center mx-auto z-50">
+            <span className="theAutomaticText">The Automatic Stacking,</span>{" "}
+            and Compounding Titaton Token
+          </h4>
           <h4 className="flex flex-col items-center justify-center">
             <TitanIconSvg></TitanIconSvg>
           </h4>
@@ -66,22 +66,17 @@ const HowItWorksSvgSection = () => {
               </div>
               {/* right side text */}
               <div className="absolute -right-[150px] top-6">
-                <h4 className="uppercase text-[11px] text-[#D2DCE7] tracking-widest">
-                  Buy & Sell Fees
-                </h4>
+                <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
               </div>
               {/* right side box */}
               <div className="absolute z-50 -right-[350px] top-64">
                 <RightBoxSvg></RightBoxSvg>
                 <div className="">
-                  <div className="absolute top-16 right-6 z-50 text-center">
-                    <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold select-text">
-                      Titano Treasury
-                    </h3>
-                    <p className="text-[#97A2AB] text-sm ">
-                      A portion of the buy and sells fees goes to <br /> the
-                      treasury for marketing, new development <br /> and to
-                      support RFV
+                  <div className="howItWorksMiddleBoxContent absolute top-[74px] right-6 z-50 text-center">
+                    <h3 className="mb-[10px]">Titano Treasury</h3>
+                    <p>
+                      A portion of the buy and sells fees goes to the treasury
+                      for marketing, new development and to support RFV
                     </p>
                   </div>
                 </div>
@@ -106,22 +101,17 @@ const HowItWorksSvgSection = () => {
               </div>
               {/* left side text */}
               <div className="absolute -left-[150px] top-6">
-                <h4 className="uppercase text-[11px] text-[#D2DCE7] tracking-widest">
-                  Buy & Sell Fees
-                </h4>
+                <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
               </div>
               {/* left side box */}
               <div className="absolute z-50 -left-[350px] top-64">
                 <LeftBoxSvg></LeftBoxSvg>
                 <div className="">
-                  <div className="absolute top-16 left-6 z-50 text-center">
-                    <h3 className="text-xl mb-4 text-[#C8DBE3] font-semibold">
-                      Risk Free Value (RFV)
-                    </h3>
-                    <p className="text-[#97A2AB] text-sm ">
-                      A portion of the buy and sells fees goes to <br /> the
-                      treasury for marketing, new development <br /> and to
-                      support RFV
+                  <div className="howItWorksMiddleBoxContent absolute top-[74px] left-6 z-50 text-center">
+                    <h3 className="mb-[10px]">Risk Free Value (RFV)</h3>
+                    <p>
+                      A portion of the buy and sells fees goes to the treasury
+                      for marketing, new development and to support RFV
                     </p>
                   </div>
                 </div>
@@ -152,26 +142,26 @@ const HowItWorksSvgSection = () => {
               <div className="absolute -bottom-[753px] -left-[130px]">
                 <BottomBox></BottomBox>
               </div>
-              <div className="absolute -left-[105px] -bottom-[708px]">
-                <h4 className="text-center text-sm text-[#D2DCE7]">
-                  You receive <span className="text-[#6CDDB5]">,03959%</span>{" "}
-                  APY in your <br /> wallet every 30 minutes
+              <div className="howItWorksBottomBoxContent absolute -left-[120px] -bottom-[708px]">
+                <h4 className="text-center">
+                  You receive <span>,03959%</span> APY in your wallet every 30
+                  minutes
                 </h4>
               </div>
               {/* right box */}
               <div className="absolute -bottom-[753px] -right-[130px]">
                 <BottomBox></BottomBox>
               </div>
-              <div className="absolute -right-[105px] -bottom-[708px]">
-                <h4 className="text-center text-sm text-[#D2DCE7]">
-                  You receive <span className="text-[#6CDDB5]">,03959%</span>{" "}
-                  APY in your <br /> wallet every 30 minutes
+              <div className="howItWorksBottomBoxContent absolute -right-[120px] -bottom-[708px]">
+                <h4 className="text-center">
+                  You receive <span>,03959%</span> APY in your wallet every 30
+                  minutes
                 </h4>
               </div>
             </div>
           </div>
-          <div className="absolute z-90 -left-[580px] top-[300px] -translate-y-1/2 rotate-[90deg]">
-            <h2 className="text-7xl uppercase font-bold tracking-widest text-transparent stroke-text">
+          <div className="absolute z-90 -left-[590px] top-[300px] -translate-y-1/2">
+            <h2 className="rotateText  tracking-widest  stroke-text">
               TITANO AUTOTASK PROTOCOL
             </h2>
           </div>

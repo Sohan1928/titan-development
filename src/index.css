@@ -135,7 +135,11 @@ h1 {
   width: 654px;
 }
 
-/* Navbar css start */
+h2 {
+  font-size: 55px;
+}
+
+/*----------------- Navbar css start ---------------*/
 .navLinks a {
   color: #d0dce8;
   font-size: 18px;
@@ -147,8 +151,15 @@ h1 {
   cursor: pointer;
   color: #6bdab7;
 }
+.navbarBtn {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.navbarBtn:hover {
+  transform: scale(1.1);
+}
 
-/* Banner css start */
+/*--------------- Banner css start ---------------*/
 .bannerTop {
   color: #d0dce8;
   font-size: 23px;
@@ -196,4 +207,142 @@ h1 {
   top: 0;
   width: 869px;
 }
+/* -------------About section css start */
+.aboutTop {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 5.4px;
+}
+.aboutTop {
+  opacity: 0.7;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutP {
+  width: 751px;
+  color: #7a8699;
+  font-size: 28px;
+  line-height: 150%;
+}
+.aboutStak {
+  color: #8993a4;
+  font-size: 23px;
+  line-height: 120%;
+}
+.aboutNumber {
+  text-shadow: 0 4px 64px rgba(40, 222, 180, 0.7);
+  font-weight: 700;
+  line-height: 120%;
+}
+.aboutNumber {
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutLeftSvgBg {
+  fill: #5cfff3;
+  opacity: 1;
+  filter: blur(122px);
+  flex-shrink: 0;
+}
+.aboutLeftSvg {
+  stroke-width: 1px;
+  stroke: #28e0b2;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+/* ------------- How to works css--------------- */
+.howItWorksTitle {
+  color: #d0dce8;
+  font-size: 55px;
+  line-height: 120%;
+}
+.howItWorksSubTitle {
+  color: #d0dce8;
+  font-size: 28px;
+  line-height: 120%;
+}
+.howItWorksP {
+  color: #d0dce8;
+  font-size: 18px;
+  line-height: 120%;
+  opacity: 0.7;
+}
+.buyAndSell {
+  color: #d0dce8;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 2.4px;
+}
+.theAutomaticText {
+  color: #d0dce8;
+  font-size: 15px;
+  width: 256px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 170%;
+}
+.theAutomaticText span {
+  color: #d0dce8;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 170%;
+}
+.howItWorksMiddleBoxContent h3 {
+  color: #d0dce8;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.howItWorksMiddleBoxContent p {
+  width: 309px;
+  opacity: 0.7;
+  color: var(--UI-WHITE, #d0dce8);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
 
+.howItWorksBottomBoxContent h4 {
+  width: 252px;
+  color: #d0dce8;
+  text-align: center;
+  font-size: 14px;
+  line-height: 160%;
+}
+.howItWorksBottomBoxContent span {
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  line-height: 160%;
+}
+.rotateText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1.3px transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+      180deg,
+      rgba(208, 220, 232, 0.35) 0%,
+      rgba(208, 220, 232, 0.16) 100%
+    )
+    1;
+  transform: rotate(90deg);
+
+  font-size: 89.59px;
+  line-height: 130%;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: transparent;
+}
