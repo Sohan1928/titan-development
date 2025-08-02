@@ -1,6 +1,11 @@
 import SmallArrow from "./svg/SmallArrow";
 import SmallCircle from "./svg/SmallCircle";
 import { GoInfo } from "react-icons/go";
+import { GoHome } from "react-icons/go";
+import { IoIosApps } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 // import IconSvg from "../navbar/svg/IconSvg2";
 // import { GiProgression } from "react-icons/gi";
@@ -51,6 +56,7 @@ const TitanoApp = () => {
         <div className="w-7/12">
           <div className="flex pt-[56px] bg-[#102125] rounded-[20px] overflow-hidden">
             <div className="right-content">
+              {/* title content */}
               <div className="titano-right-box-title">
                 <div className="title">
                   <img src="titan icon.png" alt="titano image coming soon" />
@@ -65,6 +71,29 @@ const TitanoApp = () => {
                   </div>
                   <button>Connect Wallet</button>
                 </div>
+              </div>
+              <div className="main-content flex items-center justify-between pt-7">
+                <div className="menu w-1/7">
+                  <ul>
+                    <li>
+                      <GoHome></GoHome>Home
+                    </li>
+                    <li>
+                      <IoIosApps></IoIosApps>Steke
+                    </li>
+                    <li>
+                      <IoDocumentText></IoDocumentText>Docs
+                    </li>
+                    <li>
+                      <BsFillPeopleFill></BsFillPeopleFill>Social
+                      <span>
+                        <MdKeyboardArrowDown></MdKeyboardArrowDown>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="account-details w-4/7">s</div>
+                <div className="calculator w-2/7">s</div>
               </div>
             </div>
           </div>

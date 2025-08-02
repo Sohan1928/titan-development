@@ -386,18 +386,18 @@ h3 {
   transition: all linear 0.3s;
 }
 .titanoLeftContent .btn button:hover {
-  scale: 1.2;
+  scale: 1.1;
   cursor: pointer;
 }
 .right-content {
   background: #0c121e;
   width: 100%;
+  padding: 20px 14px;
 }
 .titano-right-box-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 14px;
 }
 .titano-right-box-title .title {
   display: flex;
@@ -438,4 +438,18 @@ h3 {
   transform: scale(1.1);
   color: white;
   background: linear-gradient(#85b7a0, #589074);
+}
+.right-content .main-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  color: #d0dce8;
+  font-size: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.right-content .main-content ul li:hover {
+  transform: scale(1.1);
 }
