@@ -160,10 +160,8 @@ const HowItWorksSvgSection = () => {
               </div>
             </div>
           </div>
-          <div className="absolute z-90 -left-[590px] top-[300px] -translate-y-1/2">
-            <h2 className="rotateText  tracking-widest  stroke-text">
-              TITANO AUTOTASK PROTOCOL
-            </h2>
+          <div className="absolute z-90 -left-[650px] top-[300px] -translate-y-1/2">
+            <h2 className="rotateText stroke-text">TITANO AUTOTASK PROTOCOL</h2>
           </div>
         </div>
       </div>

@@ -7,25 +7,23 @@ import { IoHourglassOutline } from "react-icons/io5";
 
 const TitanoApp = () => {
   return (
-    <section className="md:px-[88px] lg:px-[180px] pt-[90px] pb-56">
-      <div className="flex items-start justify-center gap-16">
+    <section className="lg:pl-[100px] pt-[90px] pb-56">
+      <div className="flex w-full justify-center gap-16">
         {/* left side content */}
-        <div className="w-full lg:w-1/2">
-          <h4 className="tracking-widest text-[#6CDDB5]">TITANO APP</h4>
-          <h2 className="text-[#D2DCE7] text-5xl font-medium mt-4">
-            The TITANO APP
-          </h2>
-          <p className="text-[#7C8697] mt-6">
-            The Titano App provides Titano holders with up to the second <br />
+        <div className="titanoLeftContent w-5/12">
+          <h5>TITANO APP</h5>
+          <h3 className="mt-5">The TITANO APP</h3>
+          <p className="mt-5">
+            The Titano App provides Titano holders with up to the second
             information about their Titano holdings. Information includes:
           </p>
           {/* li section */}
-          <div className="relative text-[#D2DCE7] items-center justify-center text-start text-lg space-y-4 pl-6 mt-8">
+          <div className="contentlist relative space-y-4 pl-6 mt-8">
             <h4>The Current Titano Marketcap</h4>
             <h4>Your Current Titano Token Balance in Your Wallet</h4>
             <h4>The Time and Amount of Your Next Rebase Reward</h4>
             <h4>
-              A calculator to project your future Titano token and dollar <br />
+              A calculator to project your future Titano token and dollar
               amounts in 7 Days, 1 Month, 6 Months and 1 Year.
             </h4>
             <div className="absolute left-0 top-2">
@@ -41,18 +39,16 @@ const TitanoApp = () => {
               <SmallCircle></SmallCircle>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <button className="text-[#6CDDB5] text-xl cursor-pointer hover:text-[#9daaa5] mt-2">
-              Open Apps
-            </button>
-            <div className="mt-2">
+          <div className="btn mt-[50px] flex items-center gap-5">
+            <button>Open Apps</button>
+            <div className="tick">
               <SmallArrow></SmallArrow>
             </div>
           </div>
         </div>
 
         {/* right side content */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-7/12">
           <div className="flex pt-16 bg-[#102125] rounded-3xl text-white font-sans overflow-hidden">
             <div className="bg-linear-to-b from-[#080A12] to-[#0C1423] px-6 pt-8">
               {/* top text section */}
