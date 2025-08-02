@@ -389,3 +389,53 @@ h3 {
   scale: 1.2;
   cursor: pointer;
 }
+.right-content {
+  background: #0c121e;
+  width: 100%;
+}
+.titano-right-box-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 14px;
+}
+.titano-right-box-title .title {
+  display: flex;
+  gap: 12px;
+  color: #d0dce8;
+  align-items: center;
+  justify-content: center;
+}
+.titano-right-box-title h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.titano-right-box-title .summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d0dce8;
+  font-size: 18px;
+  list-style: none;
+}
+
+.titano-right-box-title .title-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.titano-right-box-title .title-right button {
+  background: linear-gradient(#8ddab6, #659f82);
+  padding: 14px 18px;
+  font-size: 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.titano-right-box-title .title-right button:hover {
+  transform: scale(1.1);
+  color: white;
+  background: linear-gradient(#85b7a0, #589074);
+}
