@@ -8,16 +8,16 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 // import IconSvg from "../navbar/svg/IconSvg2";
-// import { GiProgression } from "react-icons/gi";
-// import { IoStatsChart } from "react-icons/io5";
-// import { IoHourglassOutline } from "react-icons/io5";
+import { GiProgression } from "react-icons/gi";
+import { IoStatsChart } from "react-icons/io5";
+import { IoHourglassOutline } from "react-icons/io5";
 
 const TitanoApp = () => {
   return (
     <section className="lg:pl-[100px] pt-[90px] pb-56">
       <div className="flex w-full justify-between gap-16">
         {/* left side content */}
-        <div className="titanoLeftContent w-5/12">
+        <div className="titanoLeftContent w-4/12">
           <h5>TITANO APP</h5>
           <h3 className="mt-5">The TITANO APP</h3>
           <p className="mt-5">
@@ -53,7 +53,7 @@ const TitanoApp = () => {
         </div>
 
         {/* right side content */}
-        <div className="w-7/12">
+        <div className="w-8/12">
           <div className="flex pt-[56px] bg-[#102125] rounded-[20px] overflow-hidden">
             <div className="right-content">
               {/* title content */}
@@ -72,8 +72,8 @@ const TitanoApp = () => {
                   <button>Connect Wallet</button>
                 </div>
               </div>
-              <div className="main-content flex items-center justify-between pt-7">
-                <div className="menu w-1/7">
+              <div className="main-content flex items-start justify-between pt-7">
+                <div className="menu w-1/8">
                   <ul>
                     <li>
                       <GoHome></GoHome>Home
@@ -92,8 +92,42 @@ const TitanoApp = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="account-details w-4/7">s</div>
-                <div className="calculator w-2/7">s</div>
+                <div className="account-details w-5/8">
+                  <div className="top-content">
+                    <div className="progress-content">
+                      <ul>
+                        <li className="progress-icon">
+                          <GiProgression></GiProgression>
+                        </li>
+                        <li>Market Cap</li>
+                      </ul>
+                      <button>$ 22,849,114</button>
+                    </div>
+                    <div className="chart-content">
+                      <ul>
+                        <li className="chart-icon">
+                          <IoStatsChart></IoStatsChart>
+                        </li>
+                        <li>APY Statistics</li>
+                      </ul>
+                      <div className="chart-button">
+                        <button>102 483,58%</button>
+                        <span>APY</span>
+                      </div>
+                    </div>
+                    <div className="rebase-content">
+                      <ul>
+                        <li className="rebase-icon">
+                          <IoHourglassOutline></IoHourglassOutline>
+                        </li>
+                        <li>Next Rebase</li>
+                      </ul>
+                      <button>00:10:09</button>
+                    </div>
+                  </div>
+                  <div>box content</div>
+                </div>
+                <div className="calculator w-2/8">s</div>
               </div>
             </div>
           </div>

@@ -436,10 +436,15 @@ h3 {
 }
 .titano-right-box-title .title-right button:hover {
   transform: scale(1.1);
-  color: white;
+  color: #d0dce8;
   background: linear-gradient(#85b7a0, #589074);
 }
-.right-content .main-content ul li {
+.account-details .top-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.right-content .main-content .menu ul li {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -450,6 +455,101 @@ h3 {
   cursor: pointer;
   transition: all linear 0.3s;
 }
-.right-content .main-content ul li:hover {
+.right-content .main-content .menu ul li:hover {
   transform: scale(1.1);
+}
+.right-content .account-details .top-content ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.right-content .account-details .top-content ul li {
+  color: #d0dce8;
+  font-size: 18px;
+  font-weight: 600;
+}
+.right-content .account-details .top-content .progress-icon {
+  color: #e7b562;
+}
+.right-content .account-details .top-content .chart-icon {
+  color: #8ddbb8;
+}
+.right-content .account-details .top-content .rebase-icon {
+  color: #8065d8;
+}
+.right-content .account-details .top-content button {
+  margin-top: 16px;
+  cursor: pointer;
+  color: #d0dce8;
+  transition: all linear 0.3s;
+  font-weight: 600;
+}
+.right-content .account-details .top-content button:hover {
+  transform: scale(1.1);
+}
+.right-content .account-details .top-content .progress-content button {
+  background: linear-gradient(#080d18, #090f1d);
+  padding: 12px 26px;
+  border-radius: 10px;
+  border-top: 1px solid #5d4d35;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #d0dce8;
+  font-weight: 600;
+}
+.right-content
+  .account-details
+  .top-content
+  .chart-content
+  .chart-button
+  button {
+  padding: 0px 0 12px 26px !important;
+}
+.right-content .account-details .top-content .chart-content .chart-button {
+  /* background: linear-gradient(#080d18, #090f1d); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: linear-gradient(#080d18, #090f1d);
+  /* padding: 12px 26px; */
+  border-radius: 10px;
+  border-top: 1px solid #507f6a;
+  transition: all linear 0.3s;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #d0dce8;
+  font-weight: 600;
+}
+.right-content .account-details .top-content .chart-content .chart-button span {
+  background: #73bb9e;
+  color: #d0dce8;
+  height: 100%;
+  padding: 14px;
+  font-weight: 600;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  /* border-top: 1px solid #507f6a; */
+}
+.right-content
+  .account-details
+  .top-content
+  .chart-content
+  .chart-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.right-content .account-details .top-content .rebase-content button {
+  background: linear-gradient(#080d18, #090f1d);
+  padding: 12px 26px;
+  border-radius: 10px;
+  border-top: 1px solid #634eed;
+  color: #634eed;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #d0dce8;
+  font-weight: 600;
 }
