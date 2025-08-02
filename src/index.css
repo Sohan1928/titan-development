@@ -123,3 +123,77 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Project custom css */
+
+h1 {
+  color: #d0dce8;
+  font-family: "Space Grotesk";
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 130%;
+  width: 654px;
+}
+
+/* Navbar css start */
+.navLinks a {
+  color: #d0dce8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  transition: all linear 0.3s;
+}
+.navLinks a:hover {
+  cursor: pointer;
+  color: #6bdab7;
+}
+
+/* Banner css start */
+.bannerTop {
+  color: #d0dce8;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bannerText {
+  display: inline;
+  background: linear-gradient(45deg, #28e0b2 0%, #28b4e0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  line-height: 130%;
+}
+.bannerBottom {
+  color: #d0dce8;
+  font-size: 22px;
+  line-height: 170%;
+  margin-top: 40px;
+  opacity: 0.7;
+}
+.stackingText {
+  width: 1140px;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #000;
+  font-size: 89.59px;
+  font-weight: 400;
+  line-height: 130%;
+  opacity: 0.9;
+  letter-spacing: -2px;
+}
+.circleRight {
+  background: linear-gradient(
+    45deg,
+    rgba(40, 224, 178, 1) 0%,
+    rgba(40, 180, 224, 1) 100%
+  );
+  border-radius: 434.5px;
+  filter: blur(382px);
+  height: 869px;
+  right: 0;
+  opacity: 0.4;
+  overflow-x: hidden;
+  top: 0;
+  width: 869px;
+}
+
