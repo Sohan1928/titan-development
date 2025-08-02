@@ -6,7 +6,7 @@ import { IoIosApps } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import { PiSliders } from "react-icons/pi";
 // import IconSvg from "../navbar/svg/IconSvg2";
 import { GiProgression } from "react-icons/gi";
 import { IoStatsChart } from "react-icons/io5";
@@ -93,6 +93,7 @@ const TitanoApp = () => {
                   </ul>
                 </div>
                 <div className="account-details w-5/8">
+                  {/* top content */}
                   <div className="top-content">
                     <div className="progress-content">
                       <ul>
@@ -125,9 +126,46 @@ const TitanoApp = () => {
                       <button>00:10:09</button>
                     </div>
                   </div>
-                  <div>box content</div>
+                  {/* finance content */}
+                  <div className="finance-box-section">
+                    <div className="title">
+                      <h5>Staking Statistics</h5>
+                    </div>
+                    {/* finance box */}
+                    <div className="finance-box">
+                      <div className="finance-title">
+                        <h4>Current APY:</h4>
+                        <p>102 483.58%</p>
+                      </div>
+                      <div className="box-main-content">
+                        <ul className="wallet-balance">
+                          <li>Your Wallet Balance:</li>
+                          <li>0</li>
+                        </ul>
+                        <ul className="next-amount">
+                          <li>Next Reward Amout:</li>
+                          <li>0</li>
+                        </ul>
+                        <ul className="next-yield">
+                          <li>Next Reward yield:</li>
+                          <li>0,03958%</li>
+                        </ul>
+                        <ul className="roi">
+                          <li>ROI (5-Day Rate):</li>
+                          <li>9,94%</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="calculator w-2/8">s</div>
+                {/* calculator */}
+                <div className="calculator w-2/8">
+                  <div className="title">
+                    <h4>
+                      <PiSliders></PiSliders>Calculator
+                    </h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
