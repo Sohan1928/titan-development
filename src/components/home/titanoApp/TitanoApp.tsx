@@ -92,7 +92,7 @@ const TitanoApp = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="account-details w-5/8">
+                <div className="account-details w-4/8">
                   {/* top content */}
                   <div className="top-content">
                     <div className="progress-content">
@@ -102,7 +102,7 @@ const TitanoApp = () => {
                         </li>
                         <li>Market Cap</li>
                       </ul>
-                      <button>$ 22,849,114</button>
+                      <button>$ 229,114</button>
                     </div>
                     <div className="chart-content">
                       <ul>
@@ -112,7 +112,7 @@ const TitanoApp = () => {
                         <li>APY Statistics</li>
                       </ul>
                       <div className="chart-button">
-                        <button>102 483,58%</button>
+                        <button>10 43,58%</button>
                         <span>APY</span>
                       </div>
                     </div>
@@ -159,11 +159,36 @@ const TitanoApp = () => {
                   </div>
                 </div>
                 {/* calculator */}
-                <div className="calculator w-2/8">
+                <div className="calculator w-3/8">
                   <div className="title">
                     <h4>
                       <PiSliders></PiSliders>Calculator
                     </h4>
+                  </div>
+                  {/* cart content */}
+                  <div className="cart-container">
+                    <div className="cart-title">
+                      <h4>Estimate Returns</h4>
+                      <input
+                        className="title-input"
+                        type="text"
+                        placeholder="Add Amount Here..."
+                      />
+                    </div>
+                    <div className="cart-trial-btns">
+                      <ul>
+                        <li>7 Days</li>
+                        <li>1 Month</li>
+                        <li>6 Months</li>
+                        <li>1 Year</li>
+                      </ul>
+                    </div>
+                    <div className="cart-last-contents">
+                      <input type="text" />
+                      <input type="text" />
+                      <p>.......</p>
+                      <button>Swap $TITANO</button>
+                    </div>
                   </div>
                 </div>
               </div>
