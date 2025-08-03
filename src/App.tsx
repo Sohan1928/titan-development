@@ -6,7 +6,7 @@ import TitanoApp from "./components/home/titanoApp/TitanoApp";
 
 function App() {
   return (
-    <section className="bg-[#040206] spaceGroteskFont overflow-x-hidden">
+    <section className="bg-[#040206] spaceGroteskFont overflow-hidden">
       <div className="bg-gradient-to-b from-[#1C1B2E] to-[#000000]">
         <div className="max-w-[1600px] mx-auto">
           <Navbar></Navbar>
