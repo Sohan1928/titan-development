@@ -813,3 +813,59 @@ h3 {
   button:hover {
   transform: scale(1.1);
 }
+/* ----------Earn section css start---------- */
+.earn-container {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.earn-container .title h2 {
+  color: #d0dce8;
+  text-align: center;
+  font-size: 55px;
+  line-height: 120%;
+}
+.earn-container .title p {
+  color: #7a8699;
+  text-align: center;
+  font-size: 28px;
+  line-height: 120%;
+  margin-top: 20px;
+}
+.earn-container .svg-section {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+  justify-content: baseline;
+}
+.earn-container .svg-section .svg1 p {
+  width: 708px;
+  color: #d0dce8;
+  font-size: 39px;
+  line-height: 130%;
+}
+.earn-container .svg-section .svg1 .green-circle {
+}
+.earn-container .svg-section .svg2 h4 {
+  width: 708px;
+  color: #d0dce8;
+  font-size: 39px;
+  line-height: 130%;
+}
+.earn-container .svg-section .svg2 p {
+  color: #7a8699;
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 120%;
+}
+.earn-container .svg-section .title-color {
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 130%;
+}

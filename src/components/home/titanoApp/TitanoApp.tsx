@@ -210,7 +210,7 @@ const TitanoApp = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-96 z-0 -right-36 pointer-events-none overflow-hidden">
+        <div className="absolute top-[490px] z-0 -right-32 pointer-events-none overflow-hidden">
           <TitanoRightCircleSvg></TitanoRightCircleSvg>
         </div>
       </div>

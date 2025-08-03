@@ -1,5 +1,6 @@
 import About from "./components/home/about/About";
 import Banner from "./components/home/banner/Banner";
+import Earn from "./components/home/earn/Earn";
 import HowItWorks from "./components/home/howItWorks/HowItWorks";
 import Navbar from "./components/home/navbar/Navbar";
 import TitanoApp from "./components/home/titanoApp/TitanoApp";
@@ -14,6 +15,7 @@ function App() {
           <About></About>
           <HowItWorks></HowItWorks>
           <TitanoApp></TitanoApp>
+          <Earn></Earn>
         </div>
       </div>
     </section>
