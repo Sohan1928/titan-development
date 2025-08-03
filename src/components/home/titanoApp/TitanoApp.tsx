@@ -184,10 +184,19 @@ const TitanoApp = () => {
                       </ul>
                     </div>
                     <div className="cart-last-contents">
-                      <input type="text" />
-                      <input type="text" />
-                      <p>.......</p>
-                      <button>Swap $TITANO</button>
+                      <div className="input-group">
+                        <label htmlFor="titano">$TITANO Balance</label>
+                        <input type="text" id="titano" value="0" readOnly />
+                      </div>
+                      <div className="input-group">
+                        <label htmlFor="usd">Total USD Balance:</label>
+                        <input type="text" id="usd" value="$ 0" readOnly />
+                      </div>
+                      <p>
+                        Earnings Calculated, Indicate When The Rebase Reward For
+                        365 Days
+                      </p>
+                      <button className="mx-auto">Swap $TITANO</button>
                     </div>
                   </div>
                 </div>
