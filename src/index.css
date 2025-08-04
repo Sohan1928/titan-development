@@ -975,7 +975,7 @@ p.center2 {
   transform: rotate(250deg);
 }
 #part3 .circle {
-  background-color: #193632;
+  background-color: #183632;
   animation: third 0.5s 1 forwards 2s;
 }
 
@@ -1006,4 +1006,26 @@ p.center2 {
     transform: rotate(111deg);
   }
 }
-
+.box1SvgP h5 {
+  color: #d0dce8;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.box1SvgP p {
+  padding-top: 10px;
+  width: 309px;
+  color: #7a8699;
+  font-size: 14px;
+  line-height: 160%;
+}
+.rotate-tokenomics-right {
+  transform: rotate(-90deg);
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #000;
+  font-size: 89.59px;
+  line-height: 130%;
+  position: absolute;
+  right: -36px;
+  top: 115px;
+}

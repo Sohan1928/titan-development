@@ -1,3 +1,4 @@
+import BoxSvg from "./svg/BoxSvg";
 import ChartIconSvg from "./svg/ChartIconSvg";
 import DownLineSvg from "./svg/DownLineSvg";
 import FirstCircleBgSvg from "./svg/FirstCircleBgSvg";
@@ -20,7 +21,7 @@ const Tokenomics = () => {
       </div>
       {/* donut chart */}
       <div className="donut-chart-container pt-[110px]">
-        <div className="donut-chart-block block">
+        <div className="donut-chart-block block relative">
           <div className="donut-chart">
             <div id="part1" className="portion-block">
               <div className="circle"></div>
@@ -72,6 +73,48 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
+            {/* box svg */}
+            <div className="absolute -top-[52px] -right-[685px] box1SvgP">
+              <div className="relative">
+                <BoxSvg></BoxSvg>
+                <div className="absolute top-[23px] left-6">
+                  <h5>Automatic LP</h5>
+                  <p>
+                    A porton of the buy and sell fees goes to the RFB to back
+                    liquidity and create Stability for the Titano token.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute top-[116px] -right-[685px] box1SvgP">
+              <div className="relative">
+                <BoxSvg></BoxSvg>
+                <div className="absolute top-[23px] left-6">
+                  <h5>Treasury</h5>
+                  <p>
+                    A porton of the buy and sell fees goes to the RFB to back
+                    liquidity and create Stability for the Titano token.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute top-[288px] -right-[685px] box1SvgP">
+              <div className="relative">
+                <BoxSvg></BoxSvg>
+                <div className="absolute top-[23px] left-6">
+                  <h5>Risk Free Value</h5>
+                  <p>
+                    A porton of the buy and sell fees goes to the RFB to back
+                    liquidity and create Stability for the Titano token.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <div className="rotate-tokenomics-right">TOKENOMICS</div> */}
+          </div>
+          {/* rotate tokenomics text */}
+          <div className="rotate-tokenomics-right">
+            <h4 className="stroke-text">TOKENOMICS</h4>
           </div>
         </div>
       </div>

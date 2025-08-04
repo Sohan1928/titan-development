@@ -17,7 +17,7 @@ const HowItWorks = () => {
       <div className="absolute top-[650px] right-0 pointer-events-none">
         <RightSideCircleSvg></RightSideCircleSvg>
       </div>
-      <div className="">
+      <div>
         <HowItWorksSvgSection></HowItWorksSvgSection>
       </div>
     </section>
