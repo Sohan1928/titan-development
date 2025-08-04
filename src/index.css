@@ -1120,3 +1120,51 @@ p.center2 {
   font-size: 18px;
   line-height: 120%;
 }
+.roadmap-container .portfolio-section .q1 h6 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 120%;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.roadmap-container .portfolio-section .q1 h5 {
+  text-align: center;
+  color: #d0dce8;
+  font-size: 23px;
+  line-height: 120%;
+}
+.roadmap-container .portfolio-section .q1 p {
+  width: 355px;
+  color: #7a8699;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+}
+.roadmap-container .portfolio-section .q2 h6 {
+  font-size: 14px;
+  line-height: 120%;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.roadmap-container .portfolio-section .q2 h5 {
+  color: #d0dce8;
+  font-size: 23px;
+  line-height: 120%;
+}
+.roadmap-container .portfolio-section .q2 p {
+  width: 245px;
+  color: #7a8699;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+}
+.roadmap-container .portfolio-section .q2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
