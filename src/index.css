@@ -1054,6 +1054,9 @@ p.center2 {
 }
 
 /* --------------Milestones section css start------------- */
+.milestones-container {
+  background: linear-gradient(220deg, #1a1929 0%, #000 100%);
+}
 .milestones-container .container-content .title-section .subtitle {
   font-size: 18px;
   line-height: 120%;
@@ -1092,4 +1095,28 @@ p.center2 {
   color: #7a8699;
   font-size: 18px;
   line-height: 150%;
+}
+/* ----------Roadmap section css start-------- */
+.roadmap-container .title h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 5.4px;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.roadmap-container .title h2 {
+  color: #d0dce8;
+  line-height: 120%;
+  padding-top: 19px;
+}
+.roadmap-container .title p {
+  width: 907px;
+  color: #7a8699;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 120%;
 }
