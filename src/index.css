@@ -892,13 +892,8 @@ h3 {
   font-size: 18px;
   line-height: 150%;
 }
-/* donut chart css */
-/* * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} */
 
+/* donut chart css */
 .donut-chart {
   position: relative;
   width: 402px;
@@ -973,7 +968,7 @@ p.center2 {
   transform: rotate(100deg);
 }
 #part2 .circle {
-  background-color: #3a7867;
+  background-color: #336a5c;
   animation: second 1s 1 forwards 1s;
 }
 #part3 {
@@ -1011,3 +1006,4 @@ p.center2 {
     transform: rotate(111deg);
   }
 }
+

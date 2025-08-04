@@ -1,4 +1,11 @@
 import ChartIconSvg from "./svg/ChartIconSvg";
+import DownLineSvg from "./svg/DownLineSvg";
+import FirstCircleBgSvg from "./svg/FirstCircleBgSvg";
+import RightArrowLineSvg from "./svg/RightArrowLineSvg";
+import RoundCircleSvg from "./svg/RoundCircleSvg";
+import SecondCircleBgSvg from "./svg/SecondCircleBgSvg";
+import ThirdCircleBgSvg from "./svg/ThirdCircleBgSvg";
+import UpperLineSvg from "./svg/UpperLineSvg";
 
 const Tokenomics = () => {
   return (
@@ -28,6 +35,42 @@ const Tokenomics = () => {
             <p className="center2"></p>
             <div className="chart-icon">
               <ChartIconSvg></ChartIconSvg>
+            </div>
+            <div className="absolute -right-[125px] top-48">
+              <RightArrowLineSvg></RightArrowLineSvg>
+            </div>
+            <div className="absolute -right-[125px] top-[26px]">
+              <UpperLineSvg></UpperLineSvg>
+            </div>
+            <div className="absolute -right-[125px] bottom-[31px]">
+              <DownLineSvg></DownLineSvg>
+            </div>
+            {/* first circle */}
+            <div className="absolute -right-[255px] -top-[24px]">
+              <div className="relative z-50">
+                <RoundCircleSvg></RoundCircleSvg>
+                <div className="absolute z-0 -top-[50px] -left-[71px]">
+                  <FirstCircleBgSvg></FirstCircleBgSvg>
+                </div>
+              </div>
+            </div>
+            {/* secod circle */}
+            <div className="absolute -right-[255px] top-[144px]">
+              <div className="relative z-50">
+                <RoundCircleSvg></RoundCircleSvg>
+                <div className="absolute z-0 -top-[47px] -left-[68px]">
+                  <SecondCircleBgSvg></SecondCircleBgSvg>
+                </div>
+              </div>
+            </div>
+            {/* third circle */}
+            <div className="absolute -right-[255px] top-[314px]">
+              <div className="relative z-50">
+                <RoundCircleSvg></RoundCircleSvg>
+                <div className="absolute z-0 -top-[47px] -left-[68px]">
+                  <ThirdCircleBgSvg></ThirdCircleBgSvg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
