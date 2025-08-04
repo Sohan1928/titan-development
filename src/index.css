@@ -341,7 +341,6 @@ h3 {
     )
     1;
   transform: rotate(90deg);
-
   font-size: 89.59px;
   line-height: 130%;
   letter-spacing: 0;
@@ -1019,12 +1018,36 @@ p.center2 {
   font-size: 14px;
   line-height: 160%;
 }
-.rotate-tokenomics-right {
+/* .rotate-tokenomics-right {
   transform: rotate(-90deg);
   -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: #000;
   font-size: 89.59px;
   line-height: 130%;
+  letter-spacing: 0;
+  position: absolute;
+  right: -36px;
+  top: 115px;
+} */
+
+.rotate-tokenomics-right {
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-stroke: 1.3px transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+      180deg,
+      rgba(208, 220, 232, 0.35) 0%,
+      rgba(208, 220, 232, 0.16) 100%
+    )
+    1;
+  transform: rotate(-90deg);
+  font-size: 89.59px;
+  line-height: 130%;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: transparent;
   position: absolute;
   right: -36px;
   top: 115px;
