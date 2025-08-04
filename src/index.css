@@ -932,7 +932,7 @@ p.center2 {
   line-height: 35px;
   padding: 15% 0 0;
 }
-.chart-icon {
+.chart-icon-logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1051,4 +1051,34 @@ p.center2 {
   position: absolute;
   right: -36px;
   top: 115px;
+}
+
+/* --------------Milestones section css start------------- */
+.milestones-container .container-content .title-section .subtitle {
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 5.4px;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.milestones-container .container-content .title-section .title {
+  width: 506px;
+  color: #d0dce8;
+  font-size: 55px;
+  line-height: 120%;
+  padding-top: 20px;
+}
+.milestones-container .container-content .title-section h4 {
+  color: #d0dce8;
+  font-size: 28px;
+  line-height: 120%;
+}
+.milestones-container .container-content .title-section p {
+  width: 506px;
+  color: #7a8699;
+  font-size: 18px;
+  line-height: 150%;
 }

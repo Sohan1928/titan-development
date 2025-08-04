@@ -2,6 +2,7 @@ import About from "./components/home/about/About";
 import Banner from "./components/home/banner/Banner";
 import Earn from "./components/home/earn/Earn";
 import HowItWorks from "./components/home/howItWorks/HowItWorks";
+import Milestones from "./components/home/milestones/Milestones";
 import Navbar from "./components/home/navbar/Navbar";
 import TitanoApp from "./components/home/titanoApp/TitanoApp";
 import Tokenomics from "./components/home/tokenomics/Tokenomics";
@@ -18,6 +19,9 @@ function App() {
           <TitanoApp></TitanoApp>
           <Earn></Earn>
           <Tokenomics></Tokenomics>
+          <div>
+            <Milestones></Milestones>
+          </div>
         </div>
       </div>
     </section>

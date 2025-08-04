@@ -34,7 +34,7 @@ const Tokenomics = () => {
             </div>
             <p className="center"></p>
             <p className="center2"></p>
-            <div className="chart-icon">
+            <div className="chart-icon-logo">
               <ChartIconSvg></ChartIconSvg>
             </div>
             <div className="absolute -right-[125px] top-48">
