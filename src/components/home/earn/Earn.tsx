@@ -6,7 +6,7 @@ import LineArrowSvg from "./svg/LineArrowSvg";
 
 const Earn = () => {
   return (
-    <section className="earn-container px-[100px] mb-96 relative">
+    <section className="earn-container px-[100px] relative">
       <div className="title">
         <h2>How much can i earn?</h2>
         <p>

@@ -846,8 +846,7 @@ h3 {
   font-size: 39px;
   line-height: 130%;
 }
-.earn-container .svg-section .svg1 .green-circle {
-}
+
 .earn-container .svg-section .svg2 h4 {
   width: 708px;
   color: #d0dce8;
@@ -868,4 +867,147 @@ h3 {
   font-size: 39px;
   font-weight: 700;
   line-height: 130%;
+}
+
+/* ------------Tokenomics section css start------------ */
+.tokenomics-container .top-content h5 {
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 5.4px;
+  background: linear-gradient(45deg, #28e0b2 0%, #28e0b2 100%);
+  background-clip: text;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tokenomics-container .top-content h3 {
+  color: #d0dce8;
+  padding-bottom: 20px;
+  line-height: 120%;
+}
+.tokenomics-container .top-content p {
+  width: 558px;
+  color: #d0dce8;
+  font-size: 18px;
+  line-height: 150%;
+}
+/* donut chart css */
+/* * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+.donut-chart {
+  position: relative;
+  width: 402px;
+  height: 402px;
+  margin-left: 28px;
+  border-radius: 100%;
+}
+p.center {
+  background: #070b0f;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+p.center2 {
+  background: linear-gradient(180deg, #1c1b2e 0%, #000 100%);
+  filter: drop-shadow(0 0 14px rgba(40, 224, 178, 0.1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #28b4e0;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+.chart-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.portion-block {
+  border-radius: 50%;
+  clip: rect(0px, 402px, 402px, 201px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.circle {
+  border-radius: 50%;
+  clip: rect(0px, 201px, 402px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#part1 {
+  transform: rotate(0deg);
+}
+
+#part1 .circle {
+  background-color: #66d1ad;
+  animation: first 1s 1 forwards;
+}
+
+#part2 {
+  transform: rotate(100deg);
+}
+#part2 .circle {
+  background-color: #3a7867;
+  animation: second 1s 1 forwards 1s;
+}
+#part3 {
+  transform: rotate(250deg);
+}
+#part3 .circle {
+  background-color: #193632;
+  animation: third 0.5s 1 forwards 2s;
+}
+
+/* Animation */
+@keyframes first {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(100deg);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(150deg);
+  }
+}
+
+@keyframes third {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(111deg);
+  }
 }

@@ -4,6 +4,7 @@ import Earn from "./components/home/earn/Earn";
 import HowItWorks from "./components/home/howItWorks/HowItWorks";
 import Navbar from "./components/home/navbar/Navbar";
 import TitanoApp from "./components/home/titanoApp/TitanoApp";
+import Tokenomics from "./components/home/tokenomics/Tokenomics";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <HowItWorks></HowItWorks>
           <TitanoApp></TitanoApp>
           <Earn></Earn>
+          <Tokenomics></Tokenomics>
         </div>
       </div>
     </section>
