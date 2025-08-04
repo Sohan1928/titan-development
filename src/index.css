@@ -1082,3 +1082,14 @@ p.center2 {
   font-size: 18px;
   line-height: 150%;
 }
+.milestones-container .container-content .audited-section h4 {
+  color: #d0dce8;
+  font-size: 28px;
+  line-height: 120%;
+}
+.milestones-container .container-content .audited-section p {
+  width: 506px;
+  color: #7a8699;
+  font-size: 18px;
+  line-height: 150%;
+}
