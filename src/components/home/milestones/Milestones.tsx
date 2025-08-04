@@ -41,6 +41,10 @@ const Milestones = () => {
       <div className="absolute -top-[1080px] left-0 pointer-events-none z-0">
         <MilestonesTopLeftSvg></MilestonesTopLeftSvg>
       </div>
+      {/* rotate tokenomics text */}
+      <div className="rotate-titano-roadmap z-50">
+        <h4 className="stroke-text">TITANO ROADMAP</h4>
+      </div>
       <Roadmap></Roadmap>
     </section>
   );

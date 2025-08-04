@@ -1,7 +1,7 @@
 const MilestonesTopLeftSvg = () => {
   return (
     <svg
-      width={1297}
+      width={1897}
       height={2219}
       viewBox="0 0 1297 2219"
       fill="none"

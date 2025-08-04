@@ -3,7 +3,7 @@ import PortfolioGreenCircleSvg from "./svg/PortfolioGreenCircleSvg";
 
 const Roadmap = () => {
   return (
-    <section className="roadmap-container pt-[127px] pb-[400px] overflow-hidden">
+    <section className="roadmap-container pt-[127px] pb-[400px] overflow-hidden relative">
       <div className="title items-center text-center mx-auto justify-center flex flex-col">
         <h5>Roadmap</h5>
         <h2>The Titano Roadmap</h2>
@@ -13,7 +13,7 @@ const Roadmap = () => {
           Titano token holders.
         </p>
       </div>
-      <div className="portfolio-section pt-[127px] relative pb-[200px]">
+      <div className="portfolio-section pt-[127px] relative pb-[400px]">
         <div className="absolute top-[305px] right-0">
           <ConnectorLineSvg></ConnectorLineSvg>
         </div>
