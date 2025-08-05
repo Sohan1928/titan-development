@@ -52,7 +52,6 @@ const TitanoApp = () => {
             <SmallArrow></SmallArrow>
           </div>
         </div>
-
         {/* right side content */}
         <div className="w-8/12">
           <div className="flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
@@ -210,9 +209,9 @@ const TitanoApp = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[490px] z-0 -right-32 pointer-events-none overflow-hidden">
-          <TitanoRightCircleSvg></TitanoRightCircleSvg>
-        </div>
+      </div>
+      <div className="absolute top-[490px] -right-32 z-0 pointer-events-none overflow-hidden">
+        <TitanoRightCircleSvg></TitanoRightCircleSvg>
       </div>
     </section>
   );

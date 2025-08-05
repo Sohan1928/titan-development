@@ -1,12 +1,10 @@
 import BannerTransparentText from "./BannerTransparentText";
-import BannerBgCircleSvg from "./svg/BannerBgCircleSvg";
 import BannerSvg from "./svg/BannerSvg";
-import LeftSideTextBgSvg from "./svg/LeftSideTextBgSvg";
 
 const Banner = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] mt-[100px]">
-      <div className="md:flex items-center justify-between relative z-999">
+    <section className="md:px-[40px] lg:px-[80px] pt-[100px] overflow-hidden relative">
+      <div className="md:flex items-center justify-between  z-999">
         <div>
           <h5 className="bannerTop">Highest Fixed APY 102,483%</h5>
           <h1 className="mt-4">
@@ -25,16 +23,22 @@ const Banner = () => {
             </span>
           </button>
         </div>
-        <div className="z-0 pointer-events-none">
+        <div className="z-0 pointer-events-none overflow-x-hidden">
           <BannerSvg></BannerSvg>
         </div>
+        {/* <div className="circleRight absolute -top-0 right-0 z-0 pointer-events-none">
+          <BannerBgCircleSvg></BannerBgCircleSvg>
+        </div>
+        <div className="absolute left-0 -top-24 z-0 pointer-events-none">
+          <LeftSideTextBgSvg></LeftSideTextBgSvg>
+        </div> */}
       </div>
-      <div className="circleRight absolute top-0 right-0 z-0 pointer-events-none">
+      {/* <div className="circleRight absolute top-0 right-0 z-0 pointer-events-none">
         <BannerBgCircleSvg></BannerBgCircleSvg>
       </div>
       <div className="absolute left-0 -top-24 z-0 pointer-events-none">
         <LeftSideTextBgSvg></LeftSideTextBgSvg>
-      </div>
+      </div> */}
       <div>
         <BannerTransparentText></BannerTransparentText>
       </div>

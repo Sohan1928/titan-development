@@ -184,32 +184,18 @@ h3 {
   margin-top: 40px;
   opacity: 0.7;
 }
+
 .stackingText {
-  width: 1140px;
+  width: 1240px;
+  height: 116.857px;
   -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: #000;
-  font-size: 89.59px;
-  font-weight: 400;
+  font-size: 99.59px;
   line-height: 130%;
   opacity: 0.9;
   letter-spacing: -2px;
 }
-.circleRight {
-  background: linear-gradient(
-    45deg,
-    rgba(40, 224, 178, 1) 0%,
-    rgba(40, 180, 224, 1) 100%
-  );
-  border-radius: 434.5px;
-  filter: blur(382px);
-  height: 869px;
-  right: 0;
-  opacity: 0.4;
-  overflow-x: hidden;
-  top: 0;
-  width: 869px;
-}
-/* -------------About section css start */
+/*-------------- about section css start----------------- */
 .aboutTop {
   font-size: 18px;
   font-weight: 400;

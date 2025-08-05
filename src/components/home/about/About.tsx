@@ -3,7 +3,7 @@ import AboutLeftSideSvg from "./svg/AboutLeftSideSvg";
 
 const About = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] pt-20 pb-16">
+    <section className="md:px-[40px] lg:px-[80px] pt-[108px]">
       <div className="">
         <div className="flex gap-10 items-start justify-between">
           <div className="pointer-events-none relative">

@@ -1,8 +1,10 @@
+import BannerBgCircleSvg from "../banner/svg/BannerBgCircleSvg";
+import LeftSideTextBgSvg from "../banner/svg/LeftSideTextBgSvg";
 import Logo from "./svg/LogoSvg";
 
 const Navbar = () => {
   return (
-    <section className="z-50">
+    <section className="z-50 relative">
       <div className="md:px-[40px] lg:px-[80px] pt-[30px] flex items-center justify-between">
         <h3 className="uppercase flex items-center gap-2">
           <Logo></Logo>
@@ -19,6 +21,13 @@ const Navbar = () => {
             Start Earning Now!
           </span>
         </button>
+      </div>
+      {/* svg section */}
+      <div className="absolute right-0 top-0 pointer-events-none">
+        <BannerBgCircleSvg />
+      </div>
+      <div className="absolute left-0 top-0 z-0 pointer-events-none overflow-hidden">
+        <LeftSideTextBgSvg></LeftSideTextBgSvg>
       </div>
     </section>
   );
