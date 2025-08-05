@@ -1184,3 +1184,26 @@ p.center2 {
   left: -210px;
   top: 645px;
 }
+/* -------------Footer section css start---------- */
+.footer-container {
+  padding-top: 350px;
+  padding-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  padding-top: 42px;
+}
+.footer-container .copyright-text {
+  padding-top: 56px;
+  width: 300px;
+  color: #8993a4;
+  font-size: 14px;
+  line-height: 120%;
+}

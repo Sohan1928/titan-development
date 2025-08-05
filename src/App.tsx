@@ -19,9 +19,7 @@ function App() {
           <TitanoApp></TitanoApp>
           <Earn></Earn>
           <Tokenomics></Tokenomics>
-          <div>
-            <Milestones></Milestones>
-          </div>
+          <Milestones></Milestones>
         </div>
       </div>
     </section>

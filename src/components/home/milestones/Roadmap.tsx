@@ -1,9 +1,10 @@
+import Footer from "./Footer";
 import ConnectorLineSvg from "./svg/ConnectorLineSvg";
 import PortfolioGreenCircleSvg from "./svg/PortfolioGreenCircleSvg";
 
 const Roadmap = () => {
   return (
-    <section className="roadmap-container pt-[127px] pb-[400px] overflow-hidden relative">
+    <section className="roadmap-container pt-[127px] overflow-hidden relative">
       <div className="title items-center text-center mx-auto justify-center flex flex-col">
         <h5>Roadmap</h5>
         <h2>The Titano Roadmap</h2>
@@ -65,6 +66,7 @@ const Roadmap = () => {
           </p>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

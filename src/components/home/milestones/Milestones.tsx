@@ -1,9 +1,10 @@
 import Roadmap from "./Roadmap";
+import MilestonesBottomRightSvg from "./svg/MilestonesBottomRightSvg";
 import MilestonesTopLeftSvg from "./svg/MilestonesTopLeftSvg";
 
 const Milestones = () => {
   return (
-    <section className="milestones-container pt-[70px] pb-[90px] relative">
+    <section className="milestones-container pt-[70px]  relative">
       <div className="container-content flex items-center justify-center gap-[90px] z-50">
         <div className="title-section">
           <h5 className="subtitle">Milestones</h5>
@@ -40,6 +41,9 @@ const Milestones = () => {
       </div>
       <div className="absolute -top-[1080px] left-0 pointer-events-none z-0">
         <MilestonesTopLeftSvg></MilestonesTopLeftSvg>
+      </div>
+      <div className="absolute -bottom-[0px] right-0 pointer-events-none z-0">
+        <MilestonesBottomRightSvg></MilestonesBottomRightSvg>
       </div>
       {/* rotate tokenomics text */}
       <div className="rotate-titano-roadmap z-50">

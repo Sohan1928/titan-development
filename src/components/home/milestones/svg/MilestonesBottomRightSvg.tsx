@@ -1,27 +1,28 @@
-const MilestonesTopLeftSvg = () => {
+const MilestonesBottomRightSvg = () => {
   return (
     <svg
-      width={1897}
-      height={2219}
-      viewBox="0 0 1297 2219"
+      width={1026}
+      height={2113}
+      viewBox="0 0 1026 2113"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity={0.3} filter="url(#filter0_f_0_251)">
-        <circle
-          cx={187.5}
-          cy={1109.5}
-          r={345.5}
-          fill="url(#paint0_linear_0_251)"
+      <g opacity={0.5} filter="url(#filter0_f_0_207)">
+        <ellipse
+          cx={1061.5}
+          cy={1056.5}
+          rx={297.5}
+          ry={292.5}
+          fill="url(#paint0_linear_0_207)"
         />
       </g>
       <defs>
         <filter
-          id="filter0_f_0_251"
-          x={-922}
+          id="filter0_f_0_207"
+          x={0}
           y={0}
-          width={2219}
-          height={2219}
+          width={2123}
+          height={2113}
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -34,15 +35,15 @@ const MilestonesTopLeftSvg = () => {
           />
           <feGaussianBlur
             stdDeviation={382}
-            result="effect1_foregroundBlur_0_251"
+            result="effect1_foregroundBlur_0_207"
           />
         </filter>
         <linearGradient
-          id="paint0_linear_0_251"
-          x1={-158}
-          y1={1455}
-          x2={533}
-          y2={764}
+          id="paint0_linear_0_207"
+          x1={764}
+          y1={1349}
+          x2={1348.92}
+          y2={754.085}
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#28E0B2" />
@@ -52,4 +53,5 @@ const MilestonesTopLeftSvg = () => {
     </svg>
   );
 };
-export default MilestonesTopLeftSvg;
+
+export default MilestonesBottomRightSvg;
