@@ -16,7 +16,7 @@ const Banner = () => {
             Your Tokens Stay in Your Wallet <br /> Get Rewards Every 30 Minutes
             / 48 Times Daily
           </p>
-          <button className="mt-8 relative inline-flex h-14 overflow-hidden rounded-lg p-[3px] navbarBtn">
+          <button className="banner-btn mt-8 relative inline-flex h-14 overflow-hidden rounded-lg p-[3px] navbarBtn">
             <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#336160_50%,#336160_50%,#28E0B2_60%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#6BDAB7] px-6 py-1 font-medium text-black backdrop-blur-3xl">
               Start Earning Now!

@@ -233,12 +233,35 @@ h3 {
   width: 650px;
   height: 553px;
 }
+@media (min-width: 320px) {
+  .banner-container {
+    padding: 50px 14px;
+  }
+  .banner-container h1 {
+    font-size: 26px;
+    width: 300px;
+  }
+  .banner-container .banner-svg {
+    width: 310px;
+    height: 553px;
+    padding-top: 60px;
+  }
+  .banner-container .bannerTop {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .banner-container .bannerBottom {
+    font-size: 18px;
+    line-height: 170%;
+  }
+}
 @media (min-width: 640px) {
   .banner-container {
-    padding-top: 60px;
+    padding: 60px 40px;
   }
   .banner-container h1 {
     font-size: 36px;
+    width: 654px;
   }
   .banner-container .banner-svg {
     width: 550px;
@@ -260,6 +283,7 @@ h3 {
   }
   .banner-container h1 {
     font-size: 47px;
+    width: 654px;
   }
   .banner-container .banner-svg {
     width: 550px;
@@ -277,9 +301,9 @@ h3 {
 
 @media (min-width: 1024px) {
   .banner-container {
-    padding-top: 60px;
+    padding: 60px 80px;
   }
-  h1 {
+  .banner-container h1 {
     font-size: 45px;
     width: 400px;
   }
