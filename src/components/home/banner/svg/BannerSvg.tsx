@@ -1,8 +1,8 @@
 const BannerSvg = () => {
   return (
     <svg
-      width={650}
-      height={553}
+      // width={650}
+      // height={553}
       viewBox="0 0 650 553"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

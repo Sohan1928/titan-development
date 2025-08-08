@@ -47,7 +47,7 @@ const TitanoApp = () => {
               <SmallCircle></SmallCircle>
             </div>
           </div>
-          <div className="btn mt-[50px] flex items-center gap-5">
+          <div className="btnApps mt-[50px] flex items-center gap-5">
             <button>Open Apps</button>
             <SmallArrow></SmallArrow>
           </div>

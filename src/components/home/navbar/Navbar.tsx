@@ -64,8 +64,8 @@ const Navbar = () => {
           </div>
         </div>
         {/* normal device */}
-        <div className="navbar-center hidden lg:flex">
-          <ul className="text-[#D0DCE8] navLinks flex items-center gap-10">
+        <div className="navbar-center navLinks hidden lg:flex">
+          <ul className="text-[#D0DCE8] flex items-center">
             <li>
               <a>How it works</a>
             </li>
