@@ -3,8 +3,8 @@ import BannerSvg from "./svg/BannerSvg";
 
 const Banner = () => {
   return (
-    <section className="banner-container md:px-[40px] lg:px-[80px] pt-[100px] overflow-hidden relative">
-      <div className="md:flex items-center justify-between  z-999">
+    <section className="banner-container sm:px-[40px] lg:px-[80px] overflow-hidden relative">
+      <div className="lg:flex items-center justify-between z-999">
         <div className="banner-left-content">
           <h5 className="bannerTop">Highest Fixed APY 102,483%</h5>
           <h1 className="mt-4">
@@ -23,7 +23,7 @@ const Banner = () => {
             </span>
           </button>
         </div>
-        <div className="banner-svg z-0 pointer-events-none overflow-x-hidden">
+        <div className="banner-svg z-0 sm:m-auto lg:m-0 sm:pt-12 lg:pt-0 pointer-events-none overflow-x-hidden">
           <BannerSvg></BannerSvg>
         </div>
         {/* <div className="circleRight absolute -top-0 right-0 z-0 pointer-events-none">
