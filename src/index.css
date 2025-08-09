@@ -456,6 +456,87 @@ h3 {
   opacity: 0.6;
   flex-shrink: 0;
 }
+@media (min-width: 320px) {
+  .about-container {
+    padding: 15px 0px 0 0px;
+  }
+  .about-container .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-container .aboutP {
+    width: 320px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 640px) {
+  .about-container {
+    padding: 20px 0px 0 0px;
+  }
+  .about-container .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-container .aboutP {
+    width: 550px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .about-container {
+    padding: 20px 0px 0 0px;
+  }
+  .about-container .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-container .aboutP {
+    width: 650px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-container {
+    padding: 30px 40px 0 40px;
+  }
+  .about-container .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .about-container .aboutP {
+    width: 420px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  .about-container {
+    padding: 70px 40px 0 40px;
+  }
+  .about-container .aboutP {
+    width: 651px;
+    font-size: 25px;
+  }
+}
+/* flex md:flex-col lg:flex lg:flex-row items-center gap-10 lg:items-start justify-between */
+@media (min-width: 1536px) {
+  .about-container {
+    padding: 108px 80px 0 80px;
+  }
+  .about-container .aboutP {
+    width: 751px;
+    font-size: 28px;
+  }
+}
+
 /* ------------- How to works css--------------- */
 .howItWorksTitle {
   color: #d0dce8;

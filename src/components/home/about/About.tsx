@@ -3,9 +3,9 @@ import AboutLeftSideSvg from "./svg/AboutLeftSideSvg";
 
 const About = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] pt-[108px]">
+    <section className="about-container">
       <div className="">
-        <div className="flex gap-10 items-start justify-between">
+        <div className="main-content">
           <div className="pointer-events-none relative">
             <AboutLeftSideSvg></AboutLeftSideSvg>
             <div className="aboutLeftSvg absolute -top-12 -left-4 pointer-events-none">
@@ -47,15 +47,14 @@ const About = () => {
               </defs>
             </svg>
           </div>
-          <div>
+          <div className="pt-20 lg:pt-0">
             <h5 className="aboutTop uppercase ">About</h5>
 
             <p className="aboutP mt-[30px]">
-              Titano Finance is transforming DeFi with the Titano <br />{" "}
-              Autostaking Protocol (TAP) that delivers the industry’s <br />{" "}
-              highest fixed APY, rebasing rewards every 30 minutes, <br /> and a
-              simple buy-hold-earn system that grows your <br /> portfolio in
-              your wallet, fast.
+              Titano Finance is transforming DeFi with the Titano Autostaking
+              Protocol (TAP) that delivers the industry’s highest fixed APY,
+              rebasing rewards every 30 minutes, and a simple buy-hold-earn
+              system that grows your portfolio in your wallet, fast.
             </p>
             <h4 className="aboutStak mt-[60px]">100% Fixed Staking APY</h4>
             <div className="">
