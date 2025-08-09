@@ -26,12 +26,6 @@ const Banner = () => {
         <div className="banner-svg z-0 sm:m-auto lg:m-0 sm:pt-12 lg:pt-0 pointer-events-none overflow-x-hidden">
           <BannerSvg></BannerSvg>
         </div>
-        {/* <div className="circleRight absolute -top-0 right-0 z-0 pointer-events-none">
-          <BannerBgCircleSvg></BannerBgCircleSvg>
-        </div>
-        <div className="absolute left-0 -top-24 z-0 pointer-events-none">
-          <LeftSideTextBgSvg></LeftSideTextBgSvg>
-        </div> */}
       </div>
       {/* <div className="circleRight absolute top-0 right-0 z-0 pointer-events-none">
         <BannerBgCircleSvg></BannerBgCircleSvg>
