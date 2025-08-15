@@ -8,7 +8,6 @@ import { IoDocumentText } from "react-icons/io5";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { PiSliders } from "react-icons/pi";
-// import IconSvg from "../navbar/svg/IconSvg2";
 import { GiProgression } from "react-icons/gi";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHourglassOutline } from "react-icons/io5";
@@ -78,7 +77,7 @@ const TitanoApp = () => {
                 </div>
               </div>
               <div className="main-content flex items-start justify-between pt-7">
-                <div className="menu w-1/8">
+                <div className="menus w-1/8">
                   <ul>
                     <li>
                       <GoHome></GoHome>Home

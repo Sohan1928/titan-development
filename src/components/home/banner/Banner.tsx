@@ -1,7 +1,24 @@
+import gsap from "gsap";
 import BannerTransparentText from "./BannerTransparentText";
 import BannerSvg from "./svg/BannerSvg";
+import { useGSAP } from "@gsap/react";
 
 const Banner = () => {
+  const tl = gsap.timeline();
+  useGSAP(() => {
+    tl.from(".banner-left-content", {
+      opacity: 0,
+      y: -100,
+      ease: "sine.inOut",
+      duration: 1.4,
+    });
+    tl.from(".banner-svg", {
+      opacity: 0,
+      x: 600,
+      duration: 1.2,
+    });
+  });
+
   return (
     <section className="banner-container sm:px-[40px] lg:px-[80px] overflow-hidden relative">
       <div className="lg:flex items-center justify-between z-999">
@@ -27,12 +44,6 @@ const Banner = () => {
           <BannerSvg></BannerSvg>
         </div>
       </div>
-      {/* <div className="circleRight absolute top-0 right-0 z-0 pointer-events-none">
-        <BannerBgCircleSvg></BannerBgCircleSvg>
-      </div>
-      <div className="absolute left-0 -top-24 z-0 pointer-events-none">
-        <LeftSideTextBgSvg></LeftSideTextBgSvg>
-      </div> */}
       <div>
         <BannerTransparentText></BannerTransparentText>
       </div>

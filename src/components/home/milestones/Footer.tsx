@@ -7,8 +7,8 @@ import TwitterSvg from "./svg/TwitterSvg";
 
 const Footer = () => {
   return (
-    <section className="footer-container relative">
-      <div>
+    <section className="footer-container relative pointer-events-none">
+      <div className="pointer-events-none">
         <LogoSvg></LogoSvg>
       </div>
       <div className="social-icon">

@@ -256,7 +256,9 @@ h3 {
   }
   .stackingText {
     width: 100%;
-    font-size: 40px;
+    font-size: 20vw !important;
+    margin: 0vw 0 18vw 0;
+    white-space: nowrap;
   }
   .banner-transparent-text-container {
     margin-top: 30px;
@@ -407,7 +409,9 @@ h3 {
     font-size: 99.59px;
   }
 }
-
+body {
+  overflow-x: hidden;
+}
 /*-------------- about section css start----------------- */
 .aboutTop {
   font-size: 18px;
@@ -526,7 +530,6 @@ h3 {
     font-size: 25px;
   }
 }
-/* flex md:flex-col lg:flex lg:flex-row items-center gap-10 lg:items-start justify-between */
 @media (min-width: 1536px) {
   .about-container {
     padding: 108px 80px 0 80px;
@@ -723,7 +726,7 @@ h3 {
   align-items: start;
   justify-content: space-around;
 }
-.right-content .main-content .menu ul li {
+.right-content .main-content .menus ul li {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -734,7 +737,7 @@ h3 {
   cursor: pointer;
   transition: all linear 0.3s;
 }
-.right-content .main-content .menu ul li:hover {
+.right-content .main-content .menus ul li:hover {
   transform: scale(1.1);
 }
 .right-content .account-details .top-content ul {

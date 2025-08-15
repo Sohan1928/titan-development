@@ -15,22 +15,22 @@ const Roadmap = () => {
         </p>
       </div>
       <div className="portfolio-section pt-[127px] relative pb-[400px]">
-        <div className="absolute top-[305px] right-0">
+        <div className="absolute top-[305px] right-0 pointer-events-none">
           <ConnectorLineSvg></ConnectorLineSvg>
         </div>
-        <div className="absolute top-[390px] -right-[34px] overflow-hidden">
+        <div className="absolute top-[390px] -right-[34px] overflow-hidden pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="absolute top-[496px] right-[278px]">
+        <div className="absolute top-[496px] right-[278px] pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="absolute top-[276px] right-[699px]">
+        <div className="absolute top-[276px] right-[699px] pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="absolute top-[512px] left-[616px]">
+        <div className="absolute top-[512px] left-[616px] pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="absolute top-[320px] left-[445px]">
+        <div className="absolute top-[320px] left-[445px] pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
         <div className="q1 absolute top-[142px] right-[554px]">
