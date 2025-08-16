@@ -11,6 +11,7 @@ const Banner = () => {
       y: -100,
       ease: "sine.inOut",
       duration: 1.4,
+      delay: 1.8,
     });
     tl.from(".banner-svg", {
       opacity: 0,

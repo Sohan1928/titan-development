@@ -15,6 +15,7 @@ const Navbar = () => {
       opacity: 0,
       y: -120,
       duration: 1.4,
+      delay: 1.8,
     });
     tl.from(".navLinks .nav-links-ul li", {
       opacity: 0,
@@ -82,7 +83,7 @@ const Navbar = () => {
         {/* normal device */}
         <div className="navbar-center navLinks hidden lg:flex">
           <ul className="text-[#D0DCE8] flex items-center nav-links-ul">
-            <li>
+            <li id="how-it-works">
               <a>How it works</a>
             </li>
             <li>

@@ -11,8 +11,8 @@ const BannerTransparentText = () => {
       x: "-190%",
       scrollTrigger: {
         trigger: ".banner-transparent-text-container",
-        scroller: "body",
-        start: "top 10%",
+        // scroller: "#smooth-content",
+        start: "top 0%",
         end: "top -150%",
         scrub: 2,
         pin: true,

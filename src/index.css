@@ -125,6 +125,14 @@
 }
 
 /* Project custom css */
+body {
+  overflow-x: hidden;
+  cursor: none;
+}
+.gsap-animated {
+  will-change: transform;
+  transform: translateZ(0);
+}
 
 h1 {
   color: #d0dce8;
@@ -141,6 +149,44 @@ h2 {
 h3 {
   font-size: 45px;
 }
+
+/* Custom cursor effect */
+.custom-cursor {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: normal;
+  z-index: 100;
+  /* transition: background 0.3s ease; */
+}
+
+/* Loader animation */
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 8px;
+}
+#loader h3 {
+  font-weight: 100;
+  font-size: 2vw;
+  font-family: nb;
+}
+
 /*----------------- Navbar css start ---------------*/
 .navLinks ul {
   gap: 40px;
@@ -196,6 +242,7 @@ h3 {
 }
 
 /*--------------- Banner css start ---------------*/
+
 .bannerTop {
   color: #d0dce8;
   font-size: 23px;
@@ -409,9 +456,7 @@ h3 {
     font-size: 99.59px;
   }
 }
-body {
-  overflow-x: hidden;
-}
+
 /*-------------- about section css start----------------- */
 .aboutTop {
   font-size: 18px;

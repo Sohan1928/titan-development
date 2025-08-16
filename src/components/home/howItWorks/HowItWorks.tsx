@@ -3,7 +3,10 @@ import RightSideCircleSvg from "./svg/RightSideCircleSvg";
 
 const HowItWorks = () => {
   return (
-    <section className="md:px-[40px] lg:px-[80px] pt-[270px] pb-56 relative">
+    <section
+      id="how-it-works-container"
+      className="md:px-[40px] lg:px-[80px] pt-[270px] pb-56 relative"
+    >
       <div className="flex flex-col items-center justify-center text-center">
         <h2 className="howItWorksTitle">How it works</h2>
         <h4 className="text-[#D2DCE7] text-3xl mt-[30px] font-medium">
