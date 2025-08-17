@@ -5,7 +5,7 @@ const HowItWorks = () => {
   return (
     <section
       id="how-it-works-container"
-      className="md:px-[40px] lg:px-[80px] pt-[270px] pb-56 relative"
+      className="md:px-[40px] lg:px-[80px] pt-[190px] pb-56 relative"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <h2 className="howItWorksTitle">How it works</h2>

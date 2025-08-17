@@ -17,7 +17,7 @@ const TitanoApp = () => {
     <section className="lg:pl-[100px] pt-[90px] pb-56 relative">
       <div className="flex w-full justify-between gap-16">
         {/* left side content */}
-        <div className="titanoLeftContent w-4/12">
+        <div className="titanoLeftContent w-4/12" data-speed="1">
           <h5>TITANO APP</h5>
           <h3 className="mt-5">The TITANO APP</h3>
           <p className="mt-5">
@@ -52,7 +52,7 @@ const TitanoApp = () => {
           </div>
         </div>
         {/* right side content */}
-        <div className="w-8/12">
+        <div className="w-8/12" data-speed="2">
           <div className="flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
             <div className="3-circle">
               <span className="w-[9px] h-[9px] bg-[#FF5F56] rounded-full absolute top-6 left-6"></span>
