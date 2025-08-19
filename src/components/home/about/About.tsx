@@ -16,7 +16,6 @@ const About = () => {
         trigger: ".about-container",
         start: "top 60%",
         end: "top 0%",
-        markers: true,
         scrub: true,
       },
     });

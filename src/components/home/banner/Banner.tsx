@@ -2,6 +2,9 @@ import gsap from "gsap";
 import BannerTransparentText from "./BannerTransparentText";
 import BannerSvg from "./svg/BannerSvg";
 import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/all";
+
+gsap.registerPlugin(SplitText);
 
 const Banner = () => {
   const tl = gsap.timeline();
