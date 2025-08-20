@@ -1,3 +1,4 @@
+import gsap from "gsap";
 import BoxSvg from "./svg/BoxSvg";
 import ChartIconSvg from "./svg/ChartIconSvg";
 import DownLineSvg from "./svg/DownLineSvg";
@@ -7,14 +8,80 @@ import RoundCircleSvg from "./svg/RoundCircleSvg";
 import SecondCircleBgSvg from "./svg/SecondCircleBgSvg";
 import ThirdCircleBgSvg from "./svg/ThirdCircleBgSvg";
 import UpperLineSvg from "./svg/UpperLineSvg";
+import { SplitText } from "gsap/SplitText";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Tokenomics = () => {
+  useGSAP(() => {
+    gsap.from(".top-content .tokenomicsSubtitle", {
+      opacity: 0,
+      y: 50,
+      duration: 0.4,
+      scrollTrigger: {
+        trigger: ".top-content .tokenomicsSubtitle",
+        start: "top 80%",
+        end: "top 70%",
+        scrub: true,
+      },
+    });
+
+    document.fonts.ready.then(() => {
+      gsap.set(".tokenomics-container .tokenomicsTitle", { opacity: 1 });
+      // SplitText
+      const split = new SplitText(".tokenomics-container .tokenomicsTitle", {
+        type: "words,lines,chars",
+        linesClass: "chars",
+        autoSplit: true,
+      });
+      // Animation
+      gsap.from(split.chars, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".tokenomics-container",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
+    document.fonts.ready.then(() => {
+      gsap.set(".tokenomics-container .tokenomicsP", { opacity: 1 });
+      // SplitText
+      const split = new SplitText(".tokenomics-container .tokenomicsP", {
+        type: "words,lines",
+        linesClass: "lines",
+        autoSplit: true,
+      });
+      // Animation
+      gsap.from(split.words, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.6,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".tokenomics-container",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
+  }, []);
+
   return (
     <section className="tokenomics-container mt-[140px] pt-[110px] pl-[90px] pb-56">
       <div className="top-content">
-        <h5>Tokenomics</h5>
-        <h3>Tokenomics</h3>
-        <p>
+        <h5 className="tokenomicsSubtitle">Tokenomics</h5>
+        <h3 className="tokenomicsTitle">Tokenomics</h3>
+        <p className="tokenomicsP">
           $TITANO is a BEP-20 token with an elastic supply that rewards holders
           using a positive rebase formula.
         </p>

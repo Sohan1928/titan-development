@@ -28,7 +28,7 @@ const Earn = () => {
       stagger: 0.8,
       ease: "power2.out",
       scrollTrigger: {
-        trigger: ".earn-container ",
+        trigger: ".earn-container",
         start: "top 90%",
         end: "top 30%",
         scrub: true,
@@ -49,7 +49,7 @@ const Earn = () => {
         },
       });
     });
-  });
+  }, []);
 
   return (
     <section className="earn-container px-[100px] relative">

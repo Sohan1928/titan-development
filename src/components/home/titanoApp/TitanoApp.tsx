@@ -14,6 +14,8 @@ import { IoHourglassOutline } from "react-icons/io5";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { SplitText } from "gsap/SplitText";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const TitanoApp = () => {
@@ -28,16 +30,72 @@ const TitanoApp = () => {
         scrub: true,
       });
     });
+    document.fonts.ready.then(() => {
+      gsap.set(".titano-container .titanoLeftContent .titanoTitle", {
+        opacity: 1,
+      });
+      // SplitText
+      const split = new SplitText(
+        ".titano-container .titanoLeftContent .titanoTitle",
+        {
+          type: "words,lines,chars",
+          linesClass: "chars",
+          autoSplit: true,
+        }
+      );
+      // Animation
+      gsap.from(split.chars, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.6,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".titano-container",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
+    document.fonts.ready.then(() => {
+      gsap.set(".titano-container .titanoLeftContent .titanoP", {
+        opacity: 1,
+      });
+      // SplitText
+      const split = new SplitText(
+        ".titano-container .titanoLeftContent .titanoP",
+        {
+          type: "words,lines,chars",
+          linesClass: "words",
+          autoSplit: true,
+        }
+      );
+      // Animation
+      gsap.from(split.words, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.6,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".titano-container",
+          start: "top 70%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
   });
 
   return (
-    <section className="lg:pl-[100px] pt-[90px] pb-56 relative">
+    <section className="lg:pl-[100px] pt-[90px] pb-56 relative titano-container">
       <div className="flex w-full justify-between gap-16">
         {/* left side content */}
         <div className="titanoLeftContent w-4/12">
           <h5>TITANO APP</h5>
-          <h3 className="mt-5">The TITANO APP</h3>
-          <p className="mt-5">
+          <h3 className="titanoTitle mt-5">The TITANO APP</h3>
+          <p className="mt-5 titanoP">
             The Titano App provides Titano holders with up to the second
             information about their Titano holdings. Information includes:
           </p>
