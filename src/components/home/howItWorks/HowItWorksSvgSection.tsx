@@ -15,10 +15,30 @@ import BottomBox from "./svg/topBox/bottomSvg/BottomBox";
 import LeftBoxSvg from "./svg/topBox/leftArrow/LeftBoxSvg";
 import RightBoxSvg from "./svg/topBox/rightArrow/RightBoxSvg";
 import "./verticallyText.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HowItWorksSvgSection = () => {
+  useGSAP(() => {
+    gsap.from(".howItWorksSvgSectionContainer", {
+      opacity: 0,
+      duration: 1.4,
+      ease: "circ.in",
+      y: 50,
+      scrollTrigger: {
+        trigger: ".howItWorksSvgSectionContainer",
+        start: "top bottom",
+        end: "top center",
+        scrub: true,
+      },
+    });
+  });
+
   return (
-    <section>
+    <section className="howItWorksSvgSectionContainer">
       <div className="md:mt-60">
         <div className="relative">
           <h4 className="theAutomaticText text-center mx-auto z-50">

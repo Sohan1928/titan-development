@@ -477,6 +477,24 @@ h3 {
   font-size: 28px;
   line-height: 150%;
 }
+.aboutPAnimation {
+  will-change: transform;
+}
+.aboutPAnimation * {
+  will-change: transform;
+}
+.aboutStakAnimation {
+  will-change: transform;
+}
+.aboutStakAnimation * {
+  will-change: transform;
+}
+.aboutNumberAnimation {
+  will-change: transform;
+}
+.aboutNumberAnimation * {
+  will-change: transform;
+}
 .aboutStak {
   color: #8993a4;
   font-size: 23px;
@@ -590,6 +608,13 @@ h3 {
   color: #d0dce8;
   font-size: 55px;
   line-height: 120%;
+  opacity: 0;
+}
+.howItWorksTitleAnimation {
+  will-change: transform;
+}
+.howItWorksTitleAnimation * {
+  will-change: transform;
 }
 .howItWorksSubTitle {
   color: #d0dce8;
@@ -639,7 +664,7 @@ h3 {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
 }
 
 .howItWorksBottomBoxContent h4 {
@@ -1205,6 +1230,10 @@ h3 {
 }
 
 /* ------------Tokenomics section css start------------ */
+/* .tokenomics-container {
+  margin-top: 100vh;
+} */
+
 .tokenomics-container .top-content h5 {
   font-size: 18px;
   line-height: 120%;

@@ -1,18 +1,49 @@
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
 import HowItWorksSvgSection from "./HowItWorksSvgSection";
 import RightSideCircleSvg from "./svg/RightSideCircleSvg";
 
+gsap.registerPlugin(SplitText);
+
 const HowItWorks = () => {
+  const tl = gsap.timeline();
+  document.fonts.ready.then(() => {
+    gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
+    // SplitText
+    const split = new SplitText(".howItWorksTitleAnimation", {
+      type: "words,lines",
+      linesClass: "line",
+      autoSplit: true,
+    });
+    // Animation
+    tl.from(split.lines, {
+      duration: 1.8,
+      yPercent: 50,
+      opacity: 0,
+      stagger: 0.4,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".howItWorksTitleAnimation",
+        start: "top 60%",
+        end: "top 20%",
+        scrub: true,
+      },
+    });
+  });
+
   return (
     <section
       id="how-it-works-container"
       className="md:px-[40px] lg:px-[80px] pt-[190px] pb-56 relative"
     >
       <div className="flex flex-col items-center justify-center text-center">
-        <h2 className="howItWorksTitle">How it works</h2>
-        <h4 className="text-[#D2DCE7] text-3xl mt-[30px] font-medium">
+        <h2 className="howItWorksTitle howItWorksTitleAnimation">
+          How it works
+        </h2>
+        <h4 className="howItWorksTitleAnimation text-[#D2DCE7] text-3xl mt-[30px] font-medium">
           How the Titano Autostaking Protocol (TAP) Works
         </h4>
-        <p className="howItWorksP mt-[15px] mb-24">
+        <p className="howItWorksP howItWorksTitleAnimation mt-[15px] mb-24">
           When you purchase the Titano token you simply hold it in your wallet
           and TAP doe all the work
         </p>
@@ -26,5 +57,4 @@ const HowItWorks = () => {
     </section>
   );
 };
-
 export default HowItWorks;

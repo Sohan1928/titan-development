@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import SmallArrow from "./svg/SmallArrow";
 import SmallCircle from "./svg/SmallCircle";
 import TitanoRightCircleSvg from "./svg/TitanoRightCircleSvg";
@@ -19,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TitanoApp = () => {
   useGSAP(() => {
-    gsap.utils.toArray(".titano-finance-cards").forEach((card, i) => {
+    gsap.utils.toArray(".titano-finance-cards").forEach((card) => {
       ScrollTrigger.create({
         trigger: card as Element,
         start: "top top",
