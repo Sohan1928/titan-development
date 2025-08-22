@@ -1257,6 +1257,19 @@ h3 {
   line-height: 150%;
 }
 
+.upperLineSvg,
+.firstCircle,
+.rotate-tokenomics-right,
+.downLineSvg,
+.thirdCircle,
+.rightArrowLineSvg,
+.secondCircle,
+.box1Svg,
+.box2Svg,
+.box3Svg {
+  will-change: transform, opacity;
+}
+
 /* donut chart css */
 .donut-chart {
   position: relative;

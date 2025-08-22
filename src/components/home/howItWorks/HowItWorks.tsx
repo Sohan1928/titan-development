@@ -11,12 +11,12 @@ const HowItWorks = () => {
     gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
     // SplitText
     const split = new SplitText(".howItWorksTitleAnimation", {
-      type: "words,lines",
+      type: "words,lines,chars",
       linesClass: "line",
       autoSplit: true,
     });
     // Animation
-    tl.from(split.lines, {
+    tl.from(split.chars, {
       duration: 1.8,
       yPercent: 50,
       opacity: 0,

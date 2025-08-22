@@ -4,7 +4,7 @@ import MilestonesTopLeftSvg from "./svg/MilestonesTopLeftSvg";
 
 const Milestones = () => {
   return (
-    <section className="milestones-container pt-[70px] relative">
+    <section className="milestones-container mt-[100vh] relative">
       <div className="container-content flex items-center justify-center gap-[90px] z-50">
         <div className="title-section">
           <h5 className="subtitle">Milestones</h5>

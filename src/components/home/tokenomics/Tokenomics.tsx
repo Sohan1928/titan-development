@@ -74,6 +74,59 @@ const Tokenomics = () => {
         },
       });
     });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".donut-chart-container",
+          start: "top 0%",
+          end: "+=100%",
+          pin: true,
+          pinSpacing: true,
+          scrub: 1.4,
+          markers: true,
+        },
+      })
+      .from(".upperLineSvg", {
+        y: 200,
+        opacity: 0,
+        ease: "none",
+      })
+      .from(".firstCircle", {
+        y: 200,
+        opacity: 0,
+        ease: "none",
+      })
+      .from(
+        ".rotate-tokenomics-right",
+        { x: 200, opacity: 0, ease: "none" },
+        "+=0.4"
+      )
+      .from(".downLineSvg", { y: -200, opacity: 0, ease: "none" }, "+=0.4")
+      .from(".thirdCircle", { y: -200, opacity: 0, ease: "none" }, "+=0.4")
+      .from(
+        ".rightArrowLineSvg",
+        { x: -200, opacity: 0, ease: "none" },
+        "+=0.4"
+      )
+      .from(".secondCircle", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
+      .from(".box1Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
+      .from(".box2Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
+      .from(".box3Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4");
+
+    gsap.from(".donut-chart-container .chart-icon-logo", {
+      x: 400,
+      duration: 1.3,
+      scale: 0.7,
+      opacity: 0,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".donut-chart-container",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
   }, []);
 
   return (
@@ -104,17 +157,17 @@ const Tokenomics = () => {
             <div className="chart-icon-logo">
               <ChartIconSvg></ChartIconSvg>
             </div>
-            <div className="absolute -right-[125px] top-48">
+            <div className="absolute -right-[125px] top-48 rightArrowLineSvg">
               <RightArrowLineSvg></RightArrowLineSvg>
             </div>
-            <div className="absolute -right-[125px] top-[26px]">
+            <div className="absolute -right-[125px] top-[26px] upperLineSvg">
               <UpperLineSvg></UpperLineSvg>
             </div>
-            <div className="absolute -right-[125px] bottom-[31px]">
+            <div className="absolute -right-[125px] bottom-[31px] downLineSvg">
               <DownLineSvg></DownLineSvg>
             </div>
             {/* first circle */}
-            <div className="absolute -right-[255px] -top-[24px]">
+            <div className="absolute -right-[255px] -top-[24px] firstCircle">
               <div className="relative z-50">
                 <RoundCircleSvg></RoundCircleSvg>
                 <div className="absolute z-0 -top-[50px] -left-[71px]">
@@ -122,8 +175,8 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
-            {/* secod circle */}
-            <div className="absolute -right-[255px] top-[144px]">
+            {/* second circle */}
+            <div className="absolute -right-[255px] top-[144px] secondCircle">
               <div className="relative z-50">
                 <RoundCircleSvg></RoundCircleSvg>
                 <div className="absolute z-0 -top-[47px] -left-[68px]">
@@ -132,7 +185,7 @@ const Tokenomics = () => {
               </div>
             </div>
             {/* third circle */}
-            <div className="absolute -right-[255px] top-[314px]">
+            <div className="absolute -right-[255px] top-[314px] thirdCircle">
               <div className="relative z-50">
                 <RoundCircleSvg></RoundCircleSvg>
                 <div className="absolute z-0 -top-[47px] -left-[68px]">
@@ -141,7 +194,7 @@ const Tokenomics = () => {
               </div>
             </div>
             {/* box svg */}
-            <div className="absolute -top-[52px] -right-[685px] box1SvgP">
+            <div className="absolute -top-[52px] -right-[685px] box1SvgP box1Svg">
               <div className="relative">
                 <BoxSvg></BoxSvg>
                 <div className="absolute top-[23px] left-6">
@@ -153,7 +206,7 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[116px] -right-[685px] box1SvgP">
+            <div className="absolute top-[116px] -right-[685px] box1SvgP box2Svg">
               <div className="relative">
                 <BoxSvg></BoxSvg>
                 <div className="absolute top-[23px] left-6">
@@ -165,7 +218,7 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[288px] -right-[685px] box1SvgP">
+            <div className="absolute top-[288px] -right-[685px] box1SvgP box3Svg">
               <div className="relative">
                 <BoxSvg></BoxSvg>
                 <div className="absolute top-[23px] left-6">
