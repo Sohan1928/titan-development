@@ -24,11 +24,6 @@ function App() {
       effects: true,
     });
 
-    // const howItWorks = document.querySelector("#how-it-works");
-    // howItWorks?.addEventListener("click", () => {
-    //   smoother.scrollTo("#how-it-works-container", true, "center center");
-    // });
-
     return () => {
       smoother.kill(); // cleanup
     };

@@ -1432,6 +1432,19 @@ p.center2 {
 }
 
 /* --------------Milestones section css start------------- */
+
+/* .cursor-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  opacity: 0;
+} */
+
 .milestones-container {
   background: linear-gradient(180deg, #000 0%, #1c1b2e 100%);
 }

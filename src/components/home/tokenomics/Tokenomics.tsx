@@ -84,7 +84,6 @@ const Tokenomics = () => {
           pin: true,
           pinSpacing: true,
           scrub: 1.4,
-          markers: true,
         },
       })
       .from(".upperLineSvg", {
@@ -99,7 +98,7 @@ const Tokenomics = () => {
       })
       .from(
         ".rotate-tokenomics-right",
-        { x: 200, opacity: 0, ease: "none" },
+        { x: 200, opacity: 0, ease: "bounce.out" },
         "+=0.4"
       )
       .from(".downLineSvg", { y: -200, opacity: 0, ease: "none" }, "+=0.4")
@@ -110,9 +109,9 @@ const Tokenomics = () => {
         "+=0.4"
       )
       .from(".secondCircle", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
-      .from(".box1Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
-      .from(".box2Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4")
-      .from(".box3Svg", { x: -200, opacity: 0, ease: "none" }, "+=0.4");
+      .from(".box1Svg", { x: -200, opacity: 0, ease: "bounce.out" }, "+=0.4")
+      .from(".box2Svg", { x: -200, opacity: 0, ease: "bounce.out" }, "+=0.4")
+      .from(".box3Svg", { x: -200, opacity: 0, ease: "bounce.out" }, "+=0.4");
 
     gsap.from(".donut-chart-container .chart-icon-logo", {
       x: 400,
