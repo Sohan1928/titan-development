@@ -11,10 +11,10 @@ const Banner = () => {
   useGSAP(() => {
     tl.from(".banner-left-content", {
       opacity: 0,
-      y: -100,
+      x: -300,
       ease: "sine.inOut",
       duration: 1.4,
-      delay: 1.8,
+      delay: 2,
     });
     tl.from(".banner-svg", {
       opacity: 0,
