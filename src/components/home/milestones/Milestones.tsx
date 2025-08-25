@@ -15,7 +15,6 @@ const Milestones = () => {
         start: "top 70%",
         end: "top 10%",
         scrub: true,
-        markers: true,
       },
     });
     tl.from(".container-content .title-section > *", {
@@ -35,7 +34,6 @@ const Milestones = () => {
         start: "top 60%",
         end: "top 10%",
         scrub: true,
-        markers: true,
       },
     });
     tl.from(".container-content .audited-section > *", {
@@ -49,7 +47,7 @@ const Milestones = () => {
     });
   });
   useGSAP(() => {
-    gsap.from(".stroke-text", {
+    gsap.from(".milestones-container .stroke-text", {
       opacity: 0,
       scale: 0.7,
       x: 100,
@@ -61,7 +59,6 @@ const Milestones = () => {
         start: "top 70%",
         end: "top 10%",
         scrub: true,
-        markers: true,
       },
     });
   });
