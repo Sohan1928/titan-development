@@ -26,9 +26,11 @@ const Loader = () => {
 
   return (
     <div id="loader">
-      <h3>Tomorrow's</h3>
-      <h3>Brand,</h3>
-      <h3>Today "</h3>
+      <h3>"Allow</h3>
+      <h3>the</h3>
+      <h3>page</h3>
+      <h3>to</h3>
+      <h3>load"</h3>
     </div>
   );
 };

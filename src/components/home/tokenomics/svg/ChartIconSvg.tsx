@@ -25,9 +25,9 @@ const ChartIconSvg = () => {
           width="57.0352"
           height="50.2159"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -61,7 +61,7 @@ const ChartIconSvg = () => {
           y2="49.5149"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1C1B2E" />
+          <stop stopColor="#1C1B2E" />
           <stop offset="0.9999" />
         </linearGradient>
         <linearGradient
@@ -72,9 +72,9 @@ const ChartIconSvg = () => {
           y2="49.5149"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="0.9999" stop-color="#67FFD9" />
-          <stop offset="1" stop-color="#16866A" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="0.9999" stopColor="#67FFD9" />
+          <stop offset="1" stopColor="#16866A" />
         </linearGradient>
       </defs>
     </svg>

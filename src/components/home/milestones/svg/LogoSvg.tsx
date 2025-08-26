@@ -51,9 +51,9 @@ const LogoSvg = () => {
           width="36.2461"
           height="31.9197"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -90,9 +90,9 @@ const LogoSvg = () => {
           width="32.8114"
           height="29.1856"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -126,7 +126,7 @@ const LogoSvg = () => {
           y2="30.6256"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#020113" />
+          <stop stopColor="#020113" />
           <stop offset="0.9999" />
         </linearGradient>
         <linearGradient
@@ -137,7 +137,7 @@ const LogoSvg = () => {
           y2="29.4851"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1C1B2E" />
+          <stop stopColor="#1C1B2E" />
           <stop offset="0.9999" />
         </linearGradient>
         <linearGradient
@@ -148,9 +148,9 @@ const LogoSvg = () => {
           y2="29.4851"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="0.9999" stop-color="#67FFD9" />
-          <stop offset="1" stop-color="#16866A" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="0.9999" stopColor="#67FFD9" />
+          <stop offset="1" stopColor="#16866A" />
         </linearGradient>
       </defs>
     </svg>

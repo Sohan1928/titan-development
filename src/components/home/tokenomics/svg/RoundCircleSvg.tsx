@@ -37,8 +37,8 @@ const RoundCircleSvg = () => {
           y2="59.0226"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" stop-opacity="0.09" />
-          <stop offset="1" stop-color="#28E0B2" stop-opacity="0" />
+          <stop stopColor="#28E0B2" stopOpacity="0.09" />
+          <stop offset="1" stopColor="#28E0B2" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_127"
@@ -48,8 +48,8 @@ const RoundCircleSvg = () => {
           y2="97.6791"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" stop-opacity="0" />
-          <stop offset="1" stop-color="#28E0B2" />
+          <stop stopColor="#28E0B2" stopOpacity="0" />
+          <stop offset="1" stopColor="#28E0B2" />
         </linearGradient>
       </defs>
     </svg>

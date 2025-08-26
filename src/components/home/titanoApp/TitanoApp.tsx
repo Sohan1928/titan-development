@@ -20,14 +20,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TitanoApp = () => {
   useGSAP(() => {
-    gsap.utils.toArray(".titano-finance-cards").forEach((card) => {
-      ScrollTrigger.create({
-        trigger: card as Element,
-        start: "top top",
-        end: "+=100%",
-        pin: true,
-        pinSpacing: false,
-        scrub: true,
+    // gsap.utils.toArray(".titano-finance-cards").forEach((card) => {
+    //   ScrollTrigger.create({
+    //     trigger: card as Element,
+    //     start: "top top",
+    //     end: "+=100%",
+    //     pin: true,
+    //     pinSpacing: false,
+    //     scrub: true,
+    //   });
+    // });
+    document.querySelectorAll(".titano-finance-cards").forEach((card) => {
+      gsap.to(card, {
+        scale: 0.7,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: card,
+          start: "top top",
+          end: "bottom top",
+          pin: true,
+          pinSpacing: false,
+          scrub: true,
+        },
       });
     });
     document.fonts.ready.then(() => {
@@ -86,7 +100,7 @@ const TitanoApp = () => {
         },
       });
     });
-  });
+  }, []);
 
   return (
     <section className="lg:pl-[100px] pt-[90px] pb-56 relative titano-container">

@@ -29,9 +29,9 @@ const ThirdCircleBgSvg = () => {
           width="238.083"
           height="238"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -65,8 +65,8 @@ const ThirdCircleBgSvg = () => {
           y2="72.8624"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="1" stop-color="#28E0B2" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="1" stopColor="#28E0B2" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_2682"
@@ -76,8 +76,8 @@ const ThirdCircleBgSvg = () => {
           y2="77.4601"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="1" stop-color="#28E0B2" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="1" stopColor="#28E0B2" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_0_2682"
@@ -87,8 +87,8 @@ const ThirdCircleBgSvg = () => {
           y2="71"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="1" stop-color="#28E0B2" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="1" stopColor="#28E0B2" />
         </linearGradient>
       </defs>
     </svg>

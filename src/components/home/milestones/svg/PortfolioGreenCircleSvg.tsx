@@ -18,9 +18,9 @@ const PortfolioGreenCircleSvg = () => {
           width="70"
           height="70"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -54,8 +54,8 @@ const PortfolioGreenCircleSvg = () => {
           y2="21"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#28E0B2" />
-          <stop offset="1" stop-color="#28E0B2" />
+          <stop stopColor="#28E0B2" />
+          <stop offset="1" stopColor="#28E0B2" />
         </linearGradient>
       </defs>
     </svg>
