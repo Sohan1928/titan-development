@@ -87,7 +87,9 @@ const About = () => {
           data-speed="2"
           data-lag="0.5"
         >
-          <AboutLeftSideSvg></AboutLeftSideSvg>
+          <div className="about-left-side-svg">
+            <AboutLeftSideSvg></AboutLeftSideSvg>
+          </div>
           <div className="aboutLeftSvg absolute -top-12 -left-4 pointer-events-none">
             <AboutLeftSideBgSvg></AboutLeftSideBgSvg>
           </div>
@@ -139,9 +141,9 @@ const About = () => {
             100% Fixed Staking APY
           </h4>
           <div className="">
-            <h2 className="aboutNumber aboutNumberAnimation mt-[9px]">
+            <h4 className="aboutNumber aboutNumberAnimation mt-[9px]">
               102 483.58%
-            </h2>
+            </h4>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 const AboutLeftSideBgSvg = () => {
   return (
     <svg
-      width={517}
-      height={539}
+      // width={517}
+      // height={539}
       viewBox="0 0 417 439"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

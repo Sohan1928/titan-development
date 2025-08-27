@@ -525,7 +525,7 @@ h3 {
 }
 .aboutStak {
   color: #8993a4;
-  font-size: 23px;
+  /* font-size: 23px; */
   line-height: 120%;
 }
 .aboutNumber {
@@ -558,12 +558,28 @@ h3 {
   .about-container .main-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
   }
+  .about-container .about-left-side-svg {
+    width: 310px;
+    height: 300px;
+  }
+  .about-container .aboutLeftSvg {
+    width: 357px;
+    height: 379px;
+  }
   .about-container .aboutP {
     width: 320px;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .about-container .aboutStak {
+    font-size: 20px;
+  }
+  .about-container .aboutNumber {
+    font-size: 39px;
   }
 }
 @media (min-width: 640px) {
@@ -576,9 +592,24 @@ h3 {
     align-items: center;
     justify-content: center;
   }
+  .about-container .about-left-side-svg {
+    width: 455px;
+    height: 400px;
+  }
+  .about-container .aboutLeftSvg {
+    width: 457px;
+    height: 479px;
+  }
   .about-container .aboutP {
     width: 550px;
     font-size: 25px;
+    padding: 0 0;
+  }
+  .about-container .aboutStak {
+    font-size: 23px;
+  }
+  .about-container .aboutNumber {
+    font-size: 55px;
   }
 }
 @media (min-width: 768px) {
@@ -591,9 +622,20 @@ h3 {
     align-items: center;
     justify-content: center;
   }
+  .about-container .about-left-side-svg {
+    width: 505px;
+    height: 430px;
+  }
+  .about-container .aboutLeftSvg {
+    width: 517px;
+    height: 539px;
+  }
   .about-container .aboutP {
     width: 650px;
     font-size: 25px;
+  }
+  .about-container .aboutNumber {
+    font-size: 55px;
   }
 }
 @media (min-width: 1024px) {
@@ -604,6 +646,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: start;
+    text-align: start;
     gap: 40px;
     justify-content: space-between;
   }
