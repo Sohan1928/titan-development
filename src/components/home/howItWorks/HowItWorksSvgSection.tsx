@@ -35,7 +35,7 @@ const HowItWorksSvgSection = () => {
         scrub: true,
       },
     });
-  });
+  }, []);
 
   return (
     <section className="howItWorksSvgSectionContainer">

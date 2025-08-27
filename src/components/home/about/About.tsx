@@ -9,75 +9,79 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useGSAP(() => {
-    gsap.from(".about-container", {
-      opacity: 0,
-      duration: 1.4,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".about-container",
-        start: "top 60%",
-        end: "top 0%",
-        scrub: true,
-      },
-    });
-    gsap.from(".aboutNumberAnimation", {
-      opacity: 0,
-      duration: 1.4,
-      ease: "power3.inOut",
-      scrollTrigger: {
-        trigger: ".aboutNumberAnimation",
-        start: "top 70%",
-        end: "top 30%",
-        scrub: true,
-      },
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width:1024px", () => {
+      gsap.from(".about-container", {
+        opacity: 0,
+        duration: 1.4,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".about-container",
+          start: "top 60%",
+          end: "top 0%",
+          scrub: true,
+        },
+      });
+      gsap.from(".aboutNumberAnimation", {
+        opacity: 0,
+        duration: 1.4,
+        ease: "power3.inOut",
+        scrollTrigger: {
+          trigger: ".aboutNumberAnimation",
+          start: "top 70%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+      document.fonts.ready.then(() => {
+        gsap.set(".aboutPAnimation", { opacity: 1 });
+        // SplitText
+        const split = new SplitText(".aboutPAnimation", {
+          type: "words,lines",
+          linesClass: "lines",
+          autoSplit: true,
+        });
+        // Animation
+        gsap.from(split.words, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".aboutPAnimation",
+            start: "top 90%",
+            end: "top 30%",
+            scrub: true,
+          },
+        });
+      });
+      document.fonts.ready.then(() => {
+        gsap.set(".aboutStakAnimation", { opacity: 1 });
+        // SplitText
+        const split = new SplitText(".aboutStakAnimation", {
+          type: "words,lines",
+          linesClass: "lines",
+          autoSplit: true,
+        });
+        // Animation
+        gsap.from(split.words, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".aboutStakAnimation",
+            start: "top 90%",
+            end: "top 30%",
+            scrub: true,
+          },
+        });
+      });
     });
   }, []);
-  document.fonts.ready.then(() => {
-    gsap.set(".aboutPAnimation", { opacity: 1 });
-    // SplitText
-    const split = new SplitText(".aboutPAnimation", {
-      type: "words,lines",
-      linesClass: "lines",
-      autoSplit: true,
-    });
-    // Animation
-    gsap.from(split.words, {
-      duration: 1.8,
-      yPercent: 50,
-      opacity: 0,
-      stagger: 0.8,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".aboutPAnimation",
-        start: "top 90%",
-        end: "top 30%",
-        scrub: true,
-      },
-    });
-  });
-  document.fonts.ready.then(() => {
-    gsap.set(".aboutStakAnimation", { opacity: 1 });
-    // SplitText
-    const split = new SplitText(".aboutStakAnimation", {
-      type: "words,lines",
-      linesClass: "lines",
-      autoSplit: true,
-    });
-    // Animation
-    gsap.from(split.words, {
-      duration: 1.8,
-      yPercent: 50,
-      opacity: 0,
-      stagger: 0.8,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".aboutStakAnimation",
-        start: "top 90%",
-        end: "top 30%",
-        scrub: true,
-      },
-    });
-  });
 
   return (
     <section className="about-container relative">

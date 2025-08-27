@@ -772,6 +772,45 @@ h3 {
   color: transparent;
 }
 
+/* responsive for all device */
+
+@media (min-width: 320px) {
+  #how-it-works-container .how-it-works-top-content h2 {
+    font-size: 35px;
+  }
+  #how-it-works-container .how-it-works-top-content p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 640px) {
+  #how-it-works-container .how-it-works-top-content p {
+    font-size: 15px;
+  }
+  #how-it-works-container .how-it-works-top-content h2 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 768px) {
+  #how-it-works-container .how-it-works-top-content h4 {
+    font-size: 20px;
+  }
+  #how-it-works-container .how-it-works-top-content p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #how-it-works-container .how-it-works-top-content h4 {
+    font-size: 24px;
+  }
+  #how-it-works-container .how-it-works-top-content p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
+
 /* ----------Titano App section css----------------- */
 .titanoLeftContent h5 {
   font-size: 18px;

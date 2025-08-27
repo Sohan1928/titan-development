@@ -2,45 +2,52 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import HowItWorksSvgSection from "./HowItWorksSvgSection";
 import RightSideCircleSvg from "./svg/RightSideCircleSvg";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(SplitText);
 
 const HowItWorks = () => {
-  const tl = gsap.timeline();
-  document.fonts.ready.then(() => {
-    gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
-    // SplitText
-    const split = new SplitText(".howItWorksTitleAnimation", {
-      type: "words,lines,chars",
-      linesClass: "line",
-      autoSplit: true,
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width:320px", () => {
+      const tl = gsap.timeline();
+      document.fonts.ready.then(() => {
+        gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
+        // SplitText
+        const split = new SplitText(".howItWorksTitleAnimation", {
+          type: "words,lines,chars",
+          linesClass: "line",
+          autoSplit: true,
+        });
+        // Animation
+        tl.from(split.chars, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.4,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".howItWorksTitleAnimation",
+            start: "top 60%",
+            end: "top 20%",
+            scrub: true,
+          },
+        });
+      });
     });
-    // Animation
-    tl.from(split.chars, {
-      duration: 1.8,
-      yPercent: 50,
-      opacity: 0,
-      stagger: 0.4,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".howItWorksTitleAnimation",
-        start: "top 60%",
-        end: "top 20%",
-        scrub: true,
-      },
-    });
-  });
+  }, []);
 
   return (
     <section
       id="how-it-works-container"
       className="md:px-[40px] lg:px-[80px] pt-[190px] pb-56 relative"
     >
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="how-it-works-top-content flex flex-col items-center justify-center text-center">
         <h2 className="howItWorksTitle howItWorksTitleAnimation">
-          How it works
+          How it work
         </h2>
-        <h4 className="howItWorksTitleAnimation text-[#D2DCE7] text-3xl mt-[30px] font-medium">
+        <h4 className="howItWorksTitleAnimation text-[#D2DCE7] mt-[30px] font-medium">
           How the Titano Autostaking Protocol (TAP) Works
         </h4>
         <p className="howItWorksP howItWorksTitleAnimation mt-[15px] mb-24">
