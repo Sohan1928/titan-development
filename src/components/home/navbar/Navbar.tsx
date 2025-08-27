@@ -11,32 +11,36 @@ const Navbar = () => {
 
   const tl = gsap.timeline();
   useGSAP(() => {
-    tl.from("#nav-logo", {
-      opacity: 0,
-      y: -120,
-      duration: 1.4,
-      delay: 1.8,
-    });
-    tl.from(".navLinks .nav-links-ul li", {
-      opacity: 0,
-      ease: "sine.inOut",
-      duration: 0.6,
-      stagger: 0.2,
-    });
-    tl.from("#navbar-btn", {
-      opacity: 0,
-      ease: "sine.inOut",
-      duration: 0.6,
-    });
-    tl.from(".banner-bg-circle-svg", {
-      y: 500,
-      duration: 1.1,
-      opacity: 0,
-    });
-    tl.from(".banner-left-side-bg-svg", {
-      y: -400,
-      duration: 1.1,
-      opacity: 0,
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width:1024px", () => {
+      tl.from("#nav-logo", {
+        opacity: 0,
+        y: -120,
+        duration: 1.4,
+        delay: 1.8,
+      });
+      tl.from(".navLinks .nav-links-ul li", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 0.6,
+        stagger: 0.2,
+      });
+      tl.from("#navbar-btn", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 0.6,
+      });
+      tl.from(".banner-bg-circle-svg", {
+        y: 500,
+        duration: 1.1,
+        opacity: 0,
+      });
+      tl.from(".banner-left-side-bg-svg", {
+        y: -400,
+        duration: 1.1,
+        opacity: 0,
+      });
     });
   }, []);
 

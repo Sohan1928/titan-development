@@ -9,6 +9,8 @@ gsap.registerPlugin(SplitText);
 const Banner = () => {
   const tl = gsap.timeline();
   useGSAP(() => {
+    const mm = gsap.matchMedia();
+
     tl.from(".banner-left-content", {
       opacity: 0,
       x: -300,
@@ -16,16 +18,18 @@ const Banner = () => {
       duration: 1.4,
       delay: 2,
     });
-    tl.from(".banner-svg", {
-      opacity: 0,
-      x: 600,
-      duration: 1.2,
+    mm.add("(min-width:1024px", () => {
+      tl.from(".banner-svg", {
+        opacity: 0,
+        x: 600,
+        duration: 1.2,
+      });
     });
   });
 
   return (
     <section className="banner-container sm:px-[40px] lg:px-[80px] overflow-hidden relative">
-      <div className="lg:flex items-center justify-between z-999">
+      <div className="banner-main-content  lg:text-start md:text-center sm:text-center justify-between z-999">
         <div className="banner-left-content" data-speed="1">
           <h5 className="bannerTop">Highest Fixed APY 102,483%</h5>
           <h1 className="mt-4">
@@ -45,7 +49,7 @@ const Banner = () => {
           </button>
         </div>
         <div
-          className="banner-svg z-0 sm:m-auto lg:m-0 sm:pt-12 lg:pt-0 pointer-events-none overflow-x-hidden"
+          className="banner-svg z-0 sm:m-auto lg:m-0 lg:mt-0 xl:mt-0 md:pt-0 sm:pt-0 lg:pt-0 pointer-events-none overflow-x-hidden"
           data-speed="2"
         >
           <BannerSvg></BannerSvg>

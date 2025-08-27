@@ -284,6 +284,20 @@ h3 {
   .banner-container {
     padding: 50px 14px;
   }
+  .banner-container .banner-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .banner-container .banner-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .banner-container h1 {
     font-size: 26px;
     width: 300px;
@@ -313,11 +327,11 @@ h3 {
 }
 @media (min-width: 640px) {
   .banner-container {
-    padding: 60px 40px;
+    padding: 60px 0px;
   }
   .banner-container h1 {
-    font-size: 36px;
-    width: 654px;
+    font-size: 32px;
+    width: 644px;
   }
   .banner-container .banner-svg {
     width: 550px;
@@ -373,21 +387,35 @@ h3 {
   .banner-container {
     padding: 60px 80px;
   }
+  .banner-container .banner-main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+  }
+  .banner-container .banner-left-content {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: space-between;
+    text-align: start;
+  }
   .banner-container h1 {
-    font-size: 45px;
+    font-size: 40px;
     width: 400px;
   }
   .banner-container .banner-svg {
     width: 550px;
     height: 453px;
-    padding-top: 0;
+    padding-top: 0px;
   }
   .banner-container .bannerTop {
     font-size: 20px;
     line-height: 120%;
   }
   .banner-container .bannerBottom {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 170%;
   }
   .stackingText {
@@ -404,7 +432,7 @@ h3 {
     padding-top: 60px;
   }
   .banner-container h1 {
-    font-size: 59px;
+    font-size: 52px;
     line-height: 130%;
     width: 654px;
   }
@@ -412,7 +440,7 @@ h3 {
     width: 550px;
     height: 553px;
     overflow: visible;
-    padding-top: 0;
+    padding-top: 0px;
   }
   .banner-container .bannerTop {
     font-size: 23px;
