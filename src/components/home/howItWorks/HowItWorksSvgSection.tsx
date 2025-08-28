@@ -87,8 +87,10 @@ const HowItWorksSvgSection = () => {
               <LineArrow2></LineArrow2>
             </div>
             {/* right side text */}
-            <div className="absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6">
-              <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
+            <div className="">
+              <h4 className="buyAndSell buy-and-sell-right uppercase">
+                Buy & Sell Fees
+              </h4>
             </div>
             {/* right side box */}
             <div className="how-it-right-box z-50">
@@ -120,8 +122,10 @@ const HowItWorksSvgSection = () => {
               <LineArrow2></LineArrow2>
             </div>
             {/* left side text */}
-            <div className="absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6">
-              <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
+            <div className="">
+              <h4 className="buyAndSell buy-and-sell-left uppercase">
+                Buy & Sell Fees
+              </h4>
             </div>
             {/* left side box */}
             <div className="how-it-left-box z-50">

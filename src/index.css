@@ -776,17 +776,281 @@ h3 {
 /* responsive for all device */
 
 @media (min-width: 320px) {
-  .howItWorksSvgSectionContainer {
-    margin-top: 260px;
-  }
-  #how-it-works-container .how-it-works-top-content h2 {
+  #how-it-works-container .how-it-works-top-content .howItWorksTitle {
     font-size: 35px;
   }
+
+  #how-it-works-container .how-it-works-top-content h4 {
+    font-size: 16px;
+  }
   #how-it-works-container .how-it-works-top-content p {
-    font-size: 14px;
+    font-size: 10px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
+    width: 124px;
+    height: 86px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .pancake-swap-icon-svg {
+    width: 16px;
+    height: 17px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .pancake-swap-text {
+    font-size: 12px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .pancake-swap-section {
+    position: absolute;
+    top: -48px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-ellipse-svg {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: -14px;
+    top: 7px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-ellipse-svg {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: -14px;
+    top: 7px;
+  }
+  .howItWorksSvgSectionContainer .theAutomaticText {
+    position: absolute;
+    top: -120px;
+    left: 90px;
+    font-size: 8px;
+    width: 150px;
+  }
+  .howItWorksSvgSectionContainer .theAutomaticText span {
+    font-size: 12px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-ellipse-svg {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 52px;
+    bottom: 33px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-arrow {
+    width: 8px;
+    height: 86px;
+    position: absolute;
+    left: 62px;
+    bottom: -38px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow1 {
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: -62px;
+    top: 20px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow1 {
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: -62px;
+    top: 20px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow2 {
+    width: 8px;
+    height: 80px;
+    position: absolute;
+    right: -65px;
+    top: 20px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow2 {
+    width: 8px;
+    height: 80px;
+    position: absolute;
+    left: -65px;
+    top: 20px;
+  }
+
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
+    width: 145px;
+    height: 184px;
+    position: absolute;
+    right: -94px;
+    top: 190px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
+    width: 145px;
+    height: 184px;
+    position: absolute;
+    left: -94px;
+    top: 190px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
+    width: 99px;
+    height: 110px;
+    position: absolute;
+    right: -105px;
+    top: 130px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
+    width: 99px;
+    height: 110px;
+    position: absolute;
+    left: -105px;
+    top: 132px;
+  }
+
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box {
+    width: 129px;
+    height: 75px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    h3 {
+    font-size: 10px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    p {
+    font-size: 9px;
+    width: 130px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box {
+    width: 129px;
+    height: 75px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    h3 {
+    font-size: 10px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    p {
+    font-size: 9px;
+    width: 130px;
+  }
+
+  .howItWorksSvgSectionContainer .works-titan-icon-svg {
+    width: 151px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .bottom-arrow-how-it {
+    width: 8px;
+    height: 68px;
+    position: absolute;
+    bottom: -350px;
+    left: 58px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .flat-arrow-how-it {
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    bottom: -360px;
+    left: -44px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it1 {
+    width: 8px;
+    height: 18px;
+    position: absolute;
+    bottom: -377px;
+    left: 151px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it2 {
+    width: 8px;
+    height: 18px;
+    position: absolute;
+    bottom: -377px;
+    left: -48px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-left-box {
+    width: 150px;
+    height: 113px;
+    position: absolute;
+    bottom: -510px;
+    right: 68px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-right-box {
+    width: 150px;
+    height: 113px;
+    position: absolute;
+    bottom: -510px;
+    right: -94px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-left-box-text {
+    position: absolute;
+    bottom: -463px;
+    left: -82px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-right-box-text {
+    position: absolute;
+    bottom: -463px;
+    right: -82px;
+  }
+  .howItWorksBottomBoxContent h4 {
+    width: 122px;
+    font-size: 11px;
+  }
+  .howItWorksSvgSectionContainer .how-it-rotate-text {
+    font-size: 20px;
+    position: absolute;
+    top: -560px;
+    left: -120px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
+    /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
+  font-size: 12px; */
+    font-size: 8px;
+    position: absolute;
+    right: -84px;
+    top: -0px;
+  }
+
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
+    /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
+  font-size: 12px;  */
+    font-size: 8px;
+    position: absolute;
+    left: -96px;
+    top: 0px;
   }
 }
 @media (min-width: 640px) {
+  #how-it-works-container .how-it-works-top-content .howItWorksTitle {
+    font-size: 55px;
+  }
   #how-it-works-container .how-it-works-top-content h4 {
     font-size: 18px;
   }
@@ -844,7 +1108,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-arrow {
     width: 8px;
     height: 86px;
-    /* absolute left-[193.5px] -bottom-24 */
     position: absolute;
     left: 87px;
     bottom: -58px;
@@ -852,7 +1115,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow1 {
     width: 111px;
     height: 2px;
-    /* absolute -right-44 top-14 */
     position: absolute;
     right: -116px;
     top: 27px;
@@ -860,7 +1122,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow1 {
     width: 111px;
     height: 2px;
-    /*  absolute -left-48 top-14 */
     position: absolute;
     left: -116px;
     top: 27px;
@@ -868,7 +1129,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*   absolute -right-[179.5px] top-[57px] */
     position: absolute;
     right: -119.5px;
     top: 27.5px;
@@ -876,93 +1136,98 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*    absolute -left-[195.5px] top-[57px] */
     position: absolute;
     left: -119.5px;
     top: 27.5px;
   }
+
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
-    width: 240px;
+    width: 190px;
     height: 184px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
-    right: -250px;
-    top: 196px;
+    right: -210px;
+    top: 176px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
-    width: 240px;
+    width: 190px;
     height: 184px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
-    left: -240px;
-    top: 196px;
+    left: -210px;
+    top: 176px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
-    width: 159px;
-    height: 152px;
-    /* absolute -right-[310px] top-35 */
+    width: 129px;
+    height: 122px;
     position: absolute;
-    right: -220px;
+    right: -183px;
     top: 115px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
-    width: 143px;
-    height: 143px;
-    /* absolute -left-[310px] top-35 */
+    width: 129px;
+    height: 122px;
     position: absolute;
-    left: -210px;
-    top: 132px;
+    left: -180px;
+    top: 115px;
   }
 
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-right-middle-box {
-    width: 283px;
-    height: 283px;
-    /* absolute top-[74px] left-6 */
+    width: 203px;
+    height: 203px;
     position: absolute;
-    left: -12px;
-    top: 40px;
+    left: -7px;
+    top: -34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-right-middle-box
     h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-right-middle-box
     p {
     font-size: 10px;
-    width: 265px;
+    width: 185px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-left-middle-box {
-    width: 283px;
-    height: 283px;
-    /* absolute top-[74px] left-6  */
+    width: 203px;
+    height: 203px;
     position: absolute;
-    left: -16px;
-    top: 40px;
+    left: -7px;
+    top: -34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-left-middle-box
     h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-works-left-middle-box
     p {
     font-size: 10px;
-    width: 265px;
+    width: 185px;
   }
+
   .howItWorksSvgSectionContainer .works-titan-icon-svg {
-    width: 211px;
-    height: 211px;
+    width: 151px;
+    height: 151px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -972,73 +1237,85 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .bottom-arrow-how-it {
     width: 8px;
     height: 68px;
-    /* -bottom-[545px] left-[183px] */
     position: absolute;
-    bottom: -395px;
-    left: 100px;
+    bottom: -350px;
+    left: 84px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .flat-arrow-how-it {
-    width: 339px;
+    width: 309px;
     height: 2px;
-    /* absolute -bottom-[556px] left-[0px] */
     position: absolute;
-    bottom: -402px;
-    left: -55px;
+    bottom: -360px;
+    left: -60px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it1 {
     width: 8px;
     height: 18px;
-    /* absolute -bottom-[573px] left-[364.5px] */
     position: absolute;
-    bottom: -419px;
-    left: 278px;
+    bottom: -377px;
+    left: 244px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it2 {
     width: 8px;
     height: 18px;
-    /* absolute -bottom-[573px] -left-[4px] */
     position: absolute;
-    bottom: -419px;
-    left: -58px;
+    bottom: -377px;
+    left: -64px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-left-box {
-    width: 244px;
-    height: 123px;
-    /* absolute -bottom-[753px] -left-[130px] */
+    width: 224px;
+    height: 113px;
     position: absolute;
-    bottom: -580px;
+    bottom: -510px;
     right: 130px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-right-box {
-    width: 244px;
-    height: 123px;
-    /* absolute -bottom-[753px] -right-[130px] */
+    width: 224px;
+    height: 113px;
     position: absolute;
-    bottom: -580px;
+    bottom: -510px;
     right: -190px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-bottom-left-box-text {
-    /* absolute -left-[120px] -bottom-[708px] */
     position: absolute;
-    bottom: -543px;
-    left: -176px;
+    bottom: -478px;
+    left: -179px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-bottom-right-box-text {
-    /* absolute -right-[120px] -bottom-[708px] */
     position: absolute;
-    bottom: -543px;
-    right: -192px;
+    bottom: -478px;
+    right: -190px;
+  }
+  .howItWorksBottomBoxContent h4 {
+    width: 222px;
+    font-size: 12px;
   }
   .howItWorksSvgSectionContainer .how-it-rotate-text {
-    font-size: 40px;
-    /* -left-[650px] top-[300px] */
+    font-size: 30px;
     position: absolute;
-    top: -320px;
-    left: -294px;
+    top: -380px;
+    left: -190px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
+    /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
+  font-size: 12px; */
+    font-size: 10px;
+    position: absolute;
+    right: -118px;
+    top: -0px;
+  }
+
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
+    /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
+  font-size: 12px;  */
+    font-size: 10px;
+    position: absolute;
+    left: -118px;
+    top: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -1046,6 +1323,10 @@ h3 {
     font-size: 20px;
   }
   #how-it-works-container .how-it-works-top-content p {
+    font-size: 14px;
+  }
+  .howItWorksBottomBoxContent h4 {
+    width: 252px;
     font-size: 14px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
@@ -1155,7 +1436,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
     width: 159px;
     height: 152px;
-    /* absolute -right-[310px] top-35 */
     position: absolute;
     right: -220px;
     top: 115px;
@@ -1163,7 +1443,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
     width: 143px;
     height: 143px;
-    /* absolute -left-[310px] top-35 */
     position: absolute;
     left: -210px;
     top: 132px;
@@ -1174,10 +1453,9 @@ h3 {
     .how-it-works-right-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] left-6 */
     position: absolute;
-    left: -12px;
-    top: 40px;
+    left: -19px;
+    top: -54px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1189,8 +1467,8 @@ h3 {
     .how-it-svg-section
     .how-it-works-right-middle-box
     p {
-    font-size: 10px;
-    width: 265px;
+    font-size: 12px;
+    width: 220px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1199,8 +1477,8 @@ h3 {
     height: 283px;
     /* absolute top-[74px] left-6  */
     position: absolute;
-    left: -16px;
-    top: 40px;
+    left: -19px;
+    top: -54px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1213,7 +1491,7 @@ h3 {
     .how-it-works-left-middle-box
     p {
     font-size: 10px;
-    width: 265px;
+    width: 220px;
   }
   .howItWorksSvgSectionContainer .works-titan-icon-svg {
     width: 211px;
@@ -1292,8 +1570,25 @@ h3 {
     font-size: 40px;
     /* -left-[650px] top-[300px] */
     position: absolute;
-    top: -320px;
+    top: -180px;
     left: -294px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
+    /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
+  font-size: 12px; */
+    font-size: 12px;
+    position: absolute;
+    right: -138px;
+    top: -0px;
+  }
+
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
+    /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
+  font-size: 12px;  */
+    font-size: 12px;
+    position: absolute;
+    left: -138px;
+    top: 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -1355,7 +1650,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-arrow {
     width: 8px;
     height: 86px;
-    /* absolute left-[193.5px] -bottom-24 */
     position: absolute;
     left: 123px;
     bottom: -80px;
@@ -1363,7 +1657,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow1 {
     width: 161px;
     height: 2px;
-    /* absolute -right-44 top-14 */
     position: absolute;
     right: -160px;
     top: 40px;
@@ -1371,7 +1664,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow1 {
     width: 161px;
     height: 2px;
-    /*  absolute -left-48 top-14 */
     position: absolute;
     left: -160px;
     top: 40px;
@@ -1379,7 +1671,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*   absolute -right-[179.5px] top-[57px] */
     position: absolute;
     right: -162.5px;
     top: 41px;
@@ -1387,15 +1678,14 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*    absolute -left-[195.5px] top-[57px] */
     position: absolute;
     left: -164px;
     top: 41px;
   }
+
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
     width: 280px;
     height: 214px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
     right: -300px;
     top: 216px;
@@ -1403,7 +1693,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
     width: 280px;
     height: 214px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
     left: -300px;
     top: 216px;
@@ -1411,7 +1700,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
     width: 219px;
     height: 222px;
-    /* absolute -right-[310px] top-35 */
     position: absolute;
     right: -270px;
     top: 115px;
@@ -1419,7 +1707,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
     width: 223px;
     height: 223px;
-    /* absolute -left-[310px] top-35 */
     position: absolute;
     left: -270px;
     top: 122px;
@@ -1430,10 +1717,9 @@ h3 {
     .how-it-works-right-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] left-6 */
     position: absolute;
-    left: 6px;
-    top: 60px;
+    left: 0px;
+    top: -35px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1453,10 +1739,9 @@ h3 {
     .how-it-works-left-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] left-6  */
     position: absolute;
-    left: 6px;
-    top: 60px;
+    left: 0px;
+    top: -35px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1546,9 +1831,8 @@ h3 {
   }
   .howItWorksSvgSectionContainer .how-it-rotate-text {
     font-size: 60px;
-    /* -left-[650px] top-[300px] */
     position: absolute;
-    top: -230px;
+    top: -20px;
     left: -450px;
   }
 }
@@ -1679,10 +1963,9 @@ h3 {
     .how-it-works-right-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] right-6  */
     position: absolute;
-    left: 24px;
-    top: 74px;
+    left: 36px;
+    top: -4px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1702,10 +1985,9 @@ h3 {
     .how-it-works-left-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] left-6  */
     position: absolute;
-    left: 24px;
-    top: 74px;
+    left: 36px;
+    top: -4px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -1799,6 +2081,23 @@ h3 {
     position: absolute;
     top: 300px;
     left: -650px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
+    /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
+  font-size: 12px; */
+    font-size: 12px;
+    position: absolute;
+    right: -154px;
+    top: 18px;
+  }
+
+  .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
+    /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
+  font-size: 12px;  */
+    font-size: 12px;
+    position: absolute;
+    left: -154px;
+    top: 18px;
   }
 }
 @media (min-width: 1536px) {
