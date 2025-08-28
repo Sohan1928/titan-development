@@ -1,8 +1,8 @@
 const RightBoxBg = () => {
   return (
     <svg
-      width={560}
-      height={414}
+      // width={560}
+      // height={414}
       viewBox="0 0 560 414"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

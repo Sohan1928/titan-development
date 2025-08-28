@@ -733,12 +733,9 @@ h3 {
 .howItWorksMiddleBoxContent p {
   width: 309px;
   opacity: 0.7;
-  color: var(--UI-WHITE, #d0dce8);
+  color: #d0dce8;
   text-align: center;
-  font-family: "Space Grotesk";
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 160%;
 }
 
@@ -842,6 +839,15 @@ h3 {
     left: -28px;
     top: 16px;
   }
+  .howItWorksSvgSectionContainer .theAutomaticText {
+    position: absolute;
+    top: -40px;
+    left: 298px;
+    font-size: 12px;
+  }
+  .howItWorksSvgSectionContainer .theAutomaticText span {
+    font-size: 15px;
+  }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-bottom-ellipse-svg {
@@ -891,7 +897,96 @@ h3 {
     left: -164px;
     top: 41px;
   }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
+    width: 280px;
+    height: 214px;
+    /*    absolute -right-[350px] top-64 */
+    position: absolute;
+    right: -300px;
+    top: 216px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
+    width: 280px;
+    height: 214px;
+    /*    absolute -right-[350px] top-64 */
+    position: absolute;
+    left: -300px;
+    top: 216px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
+    width: 219px;
+    height: 222px;
+    /* absolute -right-[310px] top-35 */
+    position: absolute;
+    right: -270px;
+    top: 115px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
+    width: 223px;
+    height: 223px;
+    /* absolute -left-[310px] top-35 */
+    position: absolute;
+    left: -270px;
+    top: 122px;
+  }
+
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box {
+    width: 283px;
+    height: 283px;
+    /* absolute top-[74px] left-6 */
+    position: absolute;
+    left: 6px;
+    top: 60px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    h3 {
+    font-size: 16px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    p {
+    font-size: 12px;
+    width: 265px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box {
+    width: 283px;
+    height: 283px;
+    /* absolute top-[74px] left-6  */
+    position: absolute;
+    left: 6px;
+    top: 60px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    h3 {
+    font-size: 16px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    p {
+    font-size: 12px;
+    width: 265px;
+  }
+  .howItWorksSvgSectionContainer .works-titan-icon-svg {
+    width: 261px;
+    height: 261px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 }
+
 @media (min-width: 1280px) {
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 374px;
@@ -923,6 +1018,15 @@ h3 {
     position: absolute;
     left: -36px;
     top: 24px;
+  }
+  .howItWorksSvgSectionContainer .theAutomaticText {
+    position: absolute;
+    top: 0px;
+    left: 590px;
+    font-size: 15px;
+  }
+  .howItWorksSvgSectionContainer .theAutomaticText span {
+    font-size: 18px;
   }
   .howItWorksSvgSectionContainer
     .how-it-svg-section
@@ -971,6 +1075,93 @@ h3 {
     position: absolute;
     left: -195.5px;
     top: 57px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
+    width: 360px;
+    height: 214px;
+    /*    absolute -right-[350px] top-64 */
+    position: absolute;
+    right: -350px;
+    top: 256px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
+    width: 360px;
+    height: 214px;
+    /*    absolute -left-[350px] top-64 */
+    position: absolute;
+    left: -350px;
+    top: 256px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box-tick {
+    width: 269px;
+    height: 282px;
+    /* absolute -right-[310px] top-35 */
+    position: absolute;
+    right: -310px;
+    top: 140px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box-tick {
+    width: 283px;
+    height: 283px;
+    /* absolute -left-[310px] top-35 */
+    position: absolute;
+    left: -330px;
+    top: 140px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box {
+    width: 283px;
+    height: 283px;
+    /* absolute top-[74px] right-6  */
+    position: absolute;
+    left: 24px;
+    top: 74px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    h3 {
+    font-size: 23px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-right-middle-box
+    p {
+    font-size: 14px;
+    width: 309px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box {
+    width: 283px;
+    height: 283px;
+    /* absolute top-[74px] left-6  */
+    position: absolute;
+    left: 24px;
+    top: 74px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    h3 {
+    font-size: 23px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-works-left-middle-box
+    p {
+    font-size: 14px;
+    width: 309px;
+  }
+  .howItWorksSvgSectionContainer .works-titan-icon-svg {
+    width: 381px;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 }
 @media (min-width: 1536px) {

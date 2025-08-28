@@ -1,8 +1,8 @@
 const RightBoxTick = () => {
   return (
     <svg
-      width={269}
-      height={282}
+      // width={269}
+      // height={282}
       viewBox="0 0 269 282"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

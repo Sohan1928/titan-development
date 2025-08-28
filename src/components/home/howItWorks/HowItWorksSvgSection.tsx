@@ -41,11 +41,10 @@ const HowItWorksSvgSection = () => {
     <section className="howItWorksSvgSectionContainer">
       <div className="">
         <div className="relative">
-          <h4 className="theAutomaticText text-center mx-auto z-50">
-            <span className="theAutomaticText">The Automatic Stacking,</span>{" "}
-            and Compounding Titaton Token
+          <h4 className="theAutomaticText z-50">
+            <span>The Automatic Stacking,</span> and Compounding Titaton Token
           </h4>
-          <h4 className="flex flex-col items-center justify-center">
+          <h4 className="works-titan-icon-svg flex flex-col items-center justify-center">
             <TitanIconSvg></TitanIconSvg>
           </h4>
           {/* top box svg */}
@@ -93,16 +92,14 @@ const HowItWorksSvgSection = () => {
                 <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
               </div>
               {/* right side box */}
-              <div className="absolute z-50 -right-[350px] top-64">
+              <div className="how-it-right-box z-50">
                 <RightBoxSvg></RightBoxSvg>
-                <div className="">
-                  <div className="howItWorksMiddleBoxContent absolute top-[74px] right-6 z-50 text-center">
-                    <h3 className="mb-[10px]">Titano Treasury</h3>
-                    <p>
-                      A portion of the buy and sells fees goes to the treasury
-                      for marketing, new development and to support RFV
-                    </p>
-                  </div>
+                <div className="howItWorksMiddleBoxContent how-it-works-right-middle-box z-50 text-center">
+                  <h3 className="mb-[10px]">Titano Treasury</h3>
+                  <p>
+                    A portion of the buy and sells fees goes to the treasury for
+                    marketing, new development and to support RFV
+                  </p>
                 </div>
               </div>
               {/* right box bg */}
@@ -110,7 +107,7 @@ const HowItWorksSvgSection = () => {
                 <RightBoxBg></RightBoxBg>
               </div>
               {/* right box middle tick */}
-              <div className="absolute z-50 -right-[310px] top-35 pointer-events-none">
+              <div className="how-it-right-box-tick z-50 pointer-events-none">
                 <RightBoxTick></RightBoxTick>
               </div>
 
@@ -128,10 +125,10 @@ const HowItWorksSvgSection = () => {
                 <h4 className="buyAndSell uppercase">Buy & Sell Fees</h4>
               </div>
               {/* left side box */}
-              <div className="absolute z-50 -left-[350px] top-64">
+              <div className="how-it-left-box z-50">
                 <LeftBoxSvg></LeftBoxSvg>
                 <div className="">
-                  <div className="howItWorksMiddleBoxContent absolute top-[74px] left-6 z-50 text-center">
+                  <div className="howItWorksMiddleBoxContent how-it-works-left-middle-box z-50 text-center">
                     <h3 className="mb-[10px]">Risk Free Value (RFV)</h3>
                     <p>
                       A portion of the buy and sells fees goes to the treasury
@@ -145,7 +142,7 @@ const HowItWorksSvgSection = () => {
                 <RightBoxBg></RightBoxBg>
               </div>
               {/* left box middle tick */}
-              <div className="absolute z-50 -left-[310px] top-35 pointer-events-none">
+              <div className="how-it-left-box-tick z-50 pointer-events-none">
                 <LeftSideBoxCircle></LeftSideBoxCircle>
               </div>
 

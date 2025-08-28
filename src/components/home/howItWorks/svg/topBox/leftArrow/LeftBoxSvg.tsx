@@ -1,8 +1,8 @@
 const LeftBoxSvg = () => {
   return (
     <svg
-      width={360}
-      height={214}
+      // width={360}
+      // height={214}
       viewBox="0 0 360 214"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

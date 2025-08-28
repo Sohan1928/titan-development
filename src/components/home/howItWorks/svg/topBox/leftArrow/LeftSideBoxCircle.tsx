@@ -1,8 +1,8 @@
 const LeftSideBoxCircle = () => {
   return (
     <svg
-      width={283}
-      height={283}
+      // width={283}
+      // height={283}
       viewBox="0 0 283 283"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

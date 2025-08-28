@@ -23,7 +23,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 50%",
-        end: "top 20%",
+        end: "top bottom",
         scrub: true,
       },
     });
@@ -37,7 +37,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 60%",
-        end: "top 20%",
+        end: "top bottom",
         scrub: true,
       },
     });
@@ -51,7 +51,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 40%",
-        end: "top 20%",
+        end: "top bottom",
         scrub: true,
       },
     });
