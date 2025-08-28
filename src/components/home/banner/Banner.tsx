@@ -25,12 +25,12 @@ const Banner = () => {
         duration: 1.2,
       });
     });
-  });
+  }, []);
 
   return (
     <section className="banner-container sm:px-[40px] lg:px-[80px] overflow-hidden relative">
-      <div className="banner-main-content  lg:text-start md:text-center sm:text-center justify-between z-999">
-        <div className="banner-left-content" data-speed="1">
+      <div className="banner-main-content lg:text-start md:text-center sm:text-center justify-between z-999">
+        <div className="banner-left-content md:mt-[40px]" data-speed="1">
           <h5 className="bannerTop">Highest Fixed APY 102,483%</h5>
           <h1 className="mt-4">
             The Best{" "}

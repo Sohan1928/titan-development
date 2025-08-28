@@ -15,31 +15,31 @@ import BottomBox from "./svg/topBox/bottomSvg/BottomBox";
 import LeftBoxSvg from "./svg/topBox/leftArrow/LeftBoxSvg";
 import RightBoxSvg from "./svg/topBox/rightArrow/RightBoxSvg";
 import "./verticallyText.css";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HowItWorksSvgSection = () => {
-  useGSAP(() => {
-    gsap.from(".howItWorksSvgSectionContainer", {
-      opacity: 0,
-      duration: 1.4,
-      ease: "circ.in",
-      y: 50,
-      scrollTrigger: {
-        trigger: ".howItWorksSvgSectionContainer",
-        start: "top bottom",
-        end: "top center",
-        scrub: true,
-      },
-    });
-  }, []);
+  // useGSAP(() => {
+  //   gsap.from(".howItWorksSvgSectionContainer", {
+  //     opacity: 0,
+  //     duration: 1.4,
+  //     ease: "circ.in",
+  //     y: 50,
+  //     scrollTrigger: {
+  //       trigger: ".howItWorksSvgSectionContainer",
+  //       start: "top bottom",
+  //       end: "top center",
+  //       scrub: true,
+  //     },
+  //   });
+  // }, []);
 
   return (
     <section className="howItWorksSvgSectionContainer">
-      <div className="md:mt-60">
+      <div className="">
         <div className="relative">
           <h4 className="theAutomaticText text-center mx-auto z-50">
             <span className="theAutomaticText">The Automatic Stacking,</span>{" "}
@@ -49,39 +49,43 @@ const HowItWorksSvgSection = () => {
             <TitanIconSvg></TitanIconSvg>
           </h4>
           {/* top box svg */}
-          <div className="absolute -top-64 left-1/2 transform -translate-x-1/2">
+          <div className="how-it-svg-section absolute -top-64 left-1/2 transform -translate-x-1/2">
             <div className="relative">
-              <TopBoxSvg></TopBoxSvg>
+              <div className="top-box-svg">
+                <TopBoxSvg></TopBoxSvg>
+              </div>
               {/* Text Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="flex items-center justify-center gap-1 font-bold text-white text-xl">
-                  <PancakeSwapIconSvg></PancakeSwapIconSvg>
-                  PancakeSwap
+              <div className="pancake-swap-section inset-0 flex items-center justify-center">
+                <p className="flex items-center justify-center gap-1 font-bold text-white">
+                  <div className="pancake-swap-icon-svg">
+                    <PancakeSwapIconSvg></PancakeSwapIconSvg>
+                  </div>
+                  <h6 className="pancake-swap-text">PancakeSwap</h6>
                 </p>
               </div>
               {/* circle ellips */}
-              <div className="absolute -right-8 top-6">
+              <div className="how-it-right-ellipse-svg">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
               {/* circle ellips */}
-              <div className="absolute -left-9 top-6">
+              <div className="how-it-left-ellipse-svg">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
               {/* circle ellips */}
-              <div className="absolute -bottom-10 left-40">
+              <div className="how-it-bottom-ellipse-svg">
                 <RightSideEllipseSvg></RightSideEllipseSvg>
               </div>
               {/* bottom line arrow */}
-              <div className="absolute left-[193.5px] -bottom-24">
+              <div className="how-it-bottom-arrow">
                 <BottomArrowSvg></BottomArrowSvg>
               </div>
               {/* right side */}
               {/* right line arrow 1 */}
-              <div className="absolute -right-44 top-14">
+              <div className="how-it-right-line-arrow1">
                 <LineArrow1></LineArrow1>
               </div>
               {/* right line arrow 2 */}
-              <div className="absolute -right-[179.5px] top-[57px]">
+              <div className="how-it-right-line-arrow2">
                 <LineArrow2></LineArrow2>
               </div>
               {/* right side text */}
@@ -112,11 +116,11 @@ const HowItWorksSvgSection = () => {
 
               {/* left side  */}
               {/* left line arrow 1 */}
-              <div className="absolute -left-48 top-14">
+              <div className="how-it-left-line-arrow1">
                 <LineArrow1></LineArrow1>
               </div>
               {/* left line arrow 2 */}
-              <div className="absolute -left-[195.5px] top-[57px]">
+              <div className="how-it-left-line-arrow2">
                 <LineArrow2></LineArrow2>
               </div>
               {/* left side text */}

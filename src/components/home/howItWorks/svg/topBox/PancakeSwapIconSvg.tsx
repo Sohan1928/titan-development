@@ -1,8 +1,8 @@
 const PancakeSwapIconSvg = () => {
   return (
     <svg
-      width={38}
-      height={39}
+      // width={38}
+      // height={39}
       viewBox="0 0 198 199"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

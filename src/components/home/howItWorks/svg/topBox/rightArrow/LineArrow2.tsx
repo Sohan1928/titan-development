@@ -1,8 +1,8 @@
 const LineArrow2 = () => {
   return (
     <svg
-      width={8}
-      height={80}
+      // width={8}
+      // height={80}
       viewBox="0 0 8 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
