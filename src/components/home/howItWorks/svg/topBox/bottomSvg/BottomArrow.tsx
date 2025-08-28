@@ -1,8 +1,8 @@
 const BottomArrow = () => {
   return (
     <svg
-      width={8}
-      height={68}
+      // width={8}
+      // height={68}
       viewBox="0 0 8 68"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

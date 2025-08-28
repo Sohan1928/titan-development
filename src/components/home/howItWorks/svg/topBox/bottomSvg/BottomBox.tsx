@@ -1,8 +1,8 @@
 const BottomBox = () => {
   return (
     <svg
-      width={264}
-      height={133}
+      // width={264}
+      // height={133}
       viewBox="0 0 264 133"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

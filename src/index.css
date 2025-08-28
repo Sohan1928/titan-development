@@ -985,6 +985,70 @@ h3 {
     justify-content: center;
     margin: auto;
   }
+  .howItWorksSvgSectionContainer .how-it-svg-section .bottom-arrow-how-it {
+    width: 8px;
+    height: 68px;
+    /* -bottom-[545px] left-[183px] */
+    position: absolute;
+    bottom: -445px;
+    left: 118px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .flat-arrow-how-it {
+    width: 339px;
+    height: 2px;
+    /* absolute -bottom-[556px] left-[0px] */
+    position: absolute;
+    bottom: -452px;
+    left: -50px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it1 {
+    width: 8px;
+    height: 18px;
+    /* absolute -bottom-[573px] left-[364.5px] */
+    position: absolute;
+    bottom: -469px;
+    left: 283px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it2 {
+    width: 8px;
+    height: 18px;
+    /* absolute -bottom-[573px] -left-[4px] */
+    position: absolute;
+    bottom: -469px;
+    left: -53px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-left-box {
+    width: 264px;
+    height: 133px;
+    /* absolute -bottom-[753px] -left-[130px] */
+    position: absolute;
+    bottom: -610px;
+    right: 160px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-right-box {
+    width: 264px;
+    height: 133px;
+    /* absolute -bottom-[753px] -right-[130px] */
+    position: absolute;
+    bottom: -610px;
+    right: -190px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-left-box-text {
+    /* absolute -left-[120px] -bottom-[708px] */
+    position: absolute;
+    bottom: -570px;
+    left: -180px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-right-box-text {
+    /* absolute -right-[120px] -bottom-[708px] */
+    position: absolute;
+    bottom: -570px;
+    right: -180px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1162,6 +1226,70 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: auto;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .bottom-arrow-how-it {
+    width: 8px;
+    height: 68px;
+    /* -bottom-[545px] left-[183px] */
+    position: absolute;
+    bottom: -545px;
+    left: 183px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .flat-arrow-how-it {
+    width: 369px;
+    height: 2px;
+    /* absolute -bottom-[556px] left-[0px] */
+    position: absolute;
+    bottom: -556px;
+    left: 0px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it1 {
+    width: 8px;
+    height: 18px;
+    /* absolute -bottom-[573px] left-[364.5px] */
+    position: absolute;
+    bottom: -573px;
+    left: 364.5px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it2 {
+    width: 8px;
+    height: 18px;
+    /* absolute -bottom-[573px] -left-[4px] */
+    position: absolute;
+    bottom: -573px;
+    left: -4px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-left-box {
+    width: 264px;
+    height: 133px;
+    /* absolute -bottom-[753px] -left-[130px] */
+    position: absolute;
+    bottom: -750px;
+    left: -130px;
+  }
+  .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-right-box {
+    width: 264px;
+    height: 133px;
+    /* absolute -bottom-[753px] -right-[130px] */
+    position: absolute;
+    bottom: -753px;
+    right: -130px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-left-box-text {
+    /* absolute -left-[120px] -bottom-[708px] */
+    position: absolute;
+    bottom: -708px;
+    left: -120px;
+  }
+  .howItWorksSvgSectionContainer
+    .how-it-svg-section
+    .how-it-bottom-right-box-text {
+    /* absolute -right-[120px] -bottom-[708px] */
+    position: absolute;
+    bottom: -708px;
+    right: -120px;
   }
 }
 @media (min-width: 1536px) {

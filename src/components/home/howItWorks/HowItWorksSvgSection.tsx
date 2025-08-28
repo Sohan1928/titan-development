@@ -147,33 +147,33 @@ const HowItWorksSvgSection = () => {
               </div>
 
               {/* bottom arrow and all svg setup */}
-              <div className="absolute -bottom-[545px] left-[183px]">
+              <div className="bottom-arrow-how-it absolute ">
                 <BottomArrow></BottomArrow>
               </div>
-              <div className="absolute -bottom-[556px] left-[0px]">
+              <div className="flat-arrow-how-it">
                 <FlatArrow></FlatArrow>
               </div>
-              <div className="absolute -bottom-[573px] left-[364.5px]">
+              <div className="small-arrow-how-it1">
                 <SmallArrow></SmallArrow>
               </div>
-              <div className="absolute -bottom-[573px] -left-[4px]">
+              <div className="small-arrow-how-it2">
                 <SmallArrow></SmallArrow>
               </div>
               {/* left box */}
-              <div className="absolute -bottom-[753px] -left-[130px]">
+              <div className="how-it-bottom-left-box ">
                 <BottomBox></BottomBox>
               </div>
-              <div className="howItWorksBottomBoxContent absolute -left-[120px] -bottom-[708px]">
+              <div className="howItWorksBottomBoxContent how-it-bottom-left-box-text">
                 <h4 className="text-center">
                   You receive <span>,03959%</span> APY in your wallet every 30
                   minutes
                 </h4>
               </div>
               {/* right box */}
-              <div className="absolute -bottom-[753px] -right-[130px]">
+              <div className="how-it-bottom-right-box">
                 <BottomBox></BottomBox>
               </div>
-              <div className="howItWorksBottomBoxContent absolute -right-[120px] -bottom-[708px]">
+              <div className="howItWorksBottomBoxContent how-it-bottom-right-box-text">
                 <h4 className="text-center">
                   You receive <span>,03959%</span> APY in your wallet every 30
                   minutes
