@@ -11,100 +11,90 @@ import { PiSliders } from "react-icons/pi";
 import { GiProgression } from "react-icons/gi";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHourglassOutline } from "react-icons/io5";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { SplitText } from "gsap/SplitText";
+// import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TitanoApp = () => {
-  useGSAP(() => {
-    // gsap.utils.toArray(".titano-finance-cards").forEach((card) => {
-    //   ScrollTrigger.create({
-    //     trigger: card as Element,
-    //     start: "top top",
-    //     end: "+=100%",
-    //     pin: true,
-    //     pinSpacing: false,
-    //     scrub: true,
-    //   });
-    // });
-    document.querySelectorAll(".titano-finance-cards").forEach((card) => {
-      gsap.to(card, {
-        scale: 0.7,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: card,
-          start: "top top",
-          end: "bottom top",
-          pin: true,
-          pinSpacing: false,
-          scrub: true,
-        },
-      });
-    });
-    document.fonts.ready.then(() => {
-      gsap.set(".titano-container .titanoLeftContent .titanoTitle", {
-        opacity: 1,
-      });
-      // SplitText
-      const split = new SplitText(
-        ".titano-container .titanoLeftContent .titanoTitle",
-        {
-          type: "words,lines,chars",
-          linesClass: "chars",
-          autoSplit: true,
-        }
-      );
-      // Animation
-      gsap.from(split.chars, {
-        duration: 1.8,
-        yPercent: 50,
-        opacity: 0,
-        stagger: 0.6,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".titano-container",
-          start: "top 80%",
-          end: "top 30%",
-          scrub: true,
-        },
-      });
-    });
-    document.fonts.ready.then(() => {
-      gsap.set(".titano-container .titanoLeftContent .titanoP", {
-        opacity: 1,
-      });
-      // SplitText
-      const split = new SplitText(
-        ".titano-container .titanoLeftContent .titanoP",
-        {
-          type: "words,lines,chars",
-          linesClass: "words",
-          autoSplit: true,
-        }
-      );
-      // Animation
-      gsap.from(split.words, {
-        duration: 1.8,
-        yPercent: 50,
-        opacity: 0,
-        stagger: 0.6,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".titano-container",
-          start: "top 70%",
-          end: "top 30%",
-          scrub: true,
-        },
-      });
-    });
-  }, []);
+  // useGSAP(() => {
+  //   document.querySelectorAll(".titano-finance-cards").forEach((card) => {
+  //     gsap.to(card, {
+  //       scale: 0.7,
+  //       opacity: 0,
+  //       scrollTrigger: {
+  //         trigger: card,
+  //         start: "top top",
+  //         end: "bottom top",
+  //         pin: true,
+  //         pinSpacing: false,
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
+  //   document.fonts.ready.then(() => {
+  //     gsap.set(".titano-container .titanoLeftContent .titanoTitle", {
+  //       opacity: 1,
+  //     });
+  //     // SplitText
+  //     const split = new SplitText(
+  //       ".titano-container .titanoLeftContent .titanoTitle",
+  //       {
+  //         type: "words,lines,chars",
+  //         linesClass: "chars",
+  //         autoSplit: true,
+  //       }
+  //     );
+  //     // Animation
+  //     gsap.from(split.chars, {
+  //       duration: 1.8,
+  //       yPercent: 50,
+  //       opacity: 0,
+  //       stagger: 0.6,
+  //       ease: "power2.out",
+  //       scrollTrigger: {
+  //         trigger: ".titano-container",
+  //         start: "top 80%",
+  //         end: "top 30%",
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
+  //   document.fonts.ready.then(() => {
+  //     gsap.set(".titano-container .titanoLeftContent .titanoP", {
+  //       opacity: 1,
+  //     });
+  //     // SplitText
+  //     const split = new SplitText(
+  //       ".titano-container .titanoLeftContent .titanoP",
+  //       {
+  //         type: "words,lines,chars",
+  //         linesClass: "words",
+  //         autoSplit: true,
+  //       }
+  //     );
+  //     // Animation
+  //     gsap.from(split.words, {
+  //       duration: 1.8,
+  //       yPercent: 50,
+  //       opacity: 0,
+  //       stagger: 0.6,
+  //       ease: "power2.out",
+  //       scrollTrigger: {
+  //         trigger: ".titano-container",
+  //         start: "top 70%",
+  //         end: "top 30%",
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
+  // }, []);
 
   return (
-    <section className="lg:pl-[100px] pt-[90px] pb-56 relative titano-container">
-      <div className="flex w-full justify-between gap-16">
+    <section className="2xl:pl-[100px] xl:pl-[90px] lg:pl-[60px] pt-[90px] pb-56 relative titano-container">
+      <div className="flex w-full justify-between 2xl:gap-16 lg:gap-4">
         {/* left side content */}
         <div className="titanoLeftContent w-4/12">
           <h5>TITANO APP</h5>
@@ -167,9 +157,9 @@ const TitanoApp = () => {
                     <button>Connect Wallet</button>
                   </div>
                 </div>
-                <div className="main-content flex items-start justify-between pt-7">
-                  <div className="menus w-1/8">
-                    <ul>
+                <div className="main-content 2xl:flex items-start 2xl:justify-between pt-7">
+                  <div className="menus w-1.5/8">
+                    <ul className="2xl:flex 2xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -187,111 +177,115 @@ const TitanoApp = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="account-details w-4/8">
+                  <div className="flex items-start gap-2 mt-8">
                     {/* top content */}
-                    <div className="top-content">
-                      <div className="progress-content">
-                        <ul>
-                          <li className="progress-icon">
-                            <GiProgression></GiProgression>
-                          </li>
-                          <li>Market Cap</li>
-                        </ul>
-                        <button>$ 229,114</button>
-                      </div>
-                      <div className="chart-content">
-                        <ul>
-                          <li className="chart-icon">
-                            <IoStatsChart></IoStatsChart>
-                          </li>
-                          <li>APY Statistics</li>
-                        </ul>
-                        <div className="chart-button">
-                          <button>10 43,58%</button>
-                          <span>APY</span>
+                    <div className="account-details xl:w-full lg:w-5/8 border">
+                      <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
+                        <div className="progress-content">
+                          <ul>
+                            <li className="progress-icon">
+                              <GiProgression></GiProgression>
+                            </li>
+                            <li>Market Cap</li>
+                          </ul>
+                          <button>$ 229,114</button>
+                        </div>
+                        <div className="chart-content">
+                          <ul>
+                            <li className="chart-icon">
+                              <IoStatsChart></IoStatsChart>
+                            </li>
+                            <li>APY Statistics</li>
+                          </ul>
+                          <div className="chart-button">
+                            <button>103,58%</button>
+                            <span>APY</span>
+                          </div>
+                        </div>
+                        <div className="rebase-content">
+                          <ul>
+                            <li className="rebase-icon">
+                              <IoHourglassOutline></IoHourglassOutline>
+                            </li>
+                            <li>Next Rebase</li>
+                          </ul>
+                          <button>00:10:09</button>
                         </div>
                       </div>
-                      <div className="rebase-content">
-                        <ul>
-                          <li className="rebase-icon">
-                            <IoHourglassOutline></IoHourglassOutline>
-                          </li>
-                          <li>Next Rebase</li>
-                        </ul>
-                        <button>00:10:09</button>
+                      {/* finance content */}
+                      <div className="finance-box-section">
+                        <div className="title">
+                          <h5>Staking Statistics</h5>
+                        </div>
+                        {/* finance box */}
+                        <div className="finance-box">
+                          <div className="finance-title">
+                            <h4>Current APY:</h4>
+                            <p>102 483.58%</p>
+                          </div>
+                          <div className="box-main-content">
+                            <ul className="wallet-balance">
+                              <li>Your Wallet Balance:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-amount">
+                              <li>Next Reward Amout:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-yield">
+                              <li>Next Reward yield:</li>
+                              <li>0,03958%</li>
+                            </ul>
+                            <ul className="roi">
+                              <li>ROI (5-Day Rate):</li>
+                              <li>9,94%</li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* finance content */}
-                    <div className="finance-box-section">
+
+                    {/* calculator */}
+                    <div className="calculator xl:w-full lg:w-3/8 border">
                       <div className="title">
-                        <h5>Staking Statistics</h5>
+                        <h4>
+                          <PiSliders></PiSliders>Calculator
+                        </h4>
                       </div>
-                      {/* finance box */}
-                      <div className="finance-box">
-                        <div className="finance-title">
-                          <h4>Current APY:</h4>
-                          <p>102 483.58%</p>
+                      {/* cart content */}
+                      <div className="cart-container">
+                        <div className="cart-title">
+                          <h4>Estimate Returns</h4>
+                          <input
+                            className="title-input"
+                            id="1"
+                            type="text"
+                            placeholder="Add Amount Here..."
+                          />
                         </div>
-                        <div className="box-main-content">
-                          <ul className="wallet-balance">
-                            <li>Your Wallet Balance:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-amount">
-                            <li>Next Reward Amout:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-yield">
-                            <li>Next Reward yield:</li>
-                            <li>0,03958%</li>
-                          </ul>
-                          <ul className="roi">
-                            <li>ROI (5-Day Rate):</li>
-                            <li>9,94%</li>
+                        <div className="cart-trial-btns">
+                          <ul>
+                            <li>7 Days</li>
+                            <li>1 Month</li>
+                            <li>6 Months</li>
+                            <li>1 Year</li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* calculator */}
-                  <div className="calculator w-3/8">
-                    <div className="title">
-                      <h4>
-                        <PiSliders></PiSliders>Calculator
-                      </h4>
-                    </div>
-                    {/* cart content */}
-                    <div className="cart-container">
-                      <div className="cart-title">
-                        <h4>Estimate Returns</h4>
-                        <input
-                          className="title-input"
-                          type="text"
-                          placeholder="Add Amount Here..."
-                        />
-                      </div>
-                      <div className="cart-trial-btns">
-                        <ul>
-                          <li>7 Days</li>
-                          <li>1 Month</li>
-                          <li>6 Months</li>
-                          <li>1 Year</li>
-                        </ul>
-                      </div>
-                      <div className="cart-last-contents">
-                        <div className="input-group">
-                          <label htmlFor="titano">$TITANO Balance</label>
-                          <input type="text" id="titano" value="0" readOnly />
+                        <div className="cart-last-contents">
+                          <div className="input-group">
+                            <label htmlFor="titano">$TITANO Balance</label>
+                            <input type="text" id="titano" value="0" readOnly />
+                          </div>
+                          <div className="input-group">
+                            <label htmlFor="usd">Total USD Balance:</label>
+                            <input type="text" id="usd" value="$ 0" readOnly />
+                          </div>
+                          <p>
+                            Earnings Calculated, Indicate When The Rebase Reward
+                            For 365 Days
+                          </p>
+                          <button className="mx-auto">Swap $TITANO</button>
                         </div>
-                        <div className="input-group">
-                          <label htmlFor="usd">Total USD Balance:</label>
-                          <input type="text" id="usd" value="$ 0" readOnly />
-                        </div>
-                        <p>
-                          Earnings Calculated, Indicate When The Rebase Reward
-                          For 365 Days
-                        </p>
-                        <button className="mx-auto">Swap $TITANO</button>
                       </div>
                     </div>
                   </div>
