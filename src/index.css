@@ -785,6 +785,7 @@ h3 {
   }
   #how-it-works-container .how-it-works-top-content p {
     font-size: 10px;
+    padding: 0px 8px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 124px;
@@ -817,8 +818,11 @@ h3 {
   }
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: -120px;
-    left: 90px;
+    /* top: -120px;
+    left: 90px; */
+    top: -98px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 8px;
     width: 150px;
   }
@@ -1088,8 +1092,11 @@ h3 {
   }
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: -70px;
-    left: 223px;
+    /* top: -70px;
+    left: 223px; */
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 10px;
     width: 180px;
   }
@@ -1360,8 +1367,11 @@ h3 {
   }
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: -55px;
-    left: 213px;
+    /* top: -55px;
+    left: 213px; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 12px;
     width: 256px;
   }
@@ -1380,7 +1390,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-arrow {
     width: 8px;
     height: 86px;
-    /* absolute left-[193.5px] -bottom-24 */
     position: absolute;
     left: 102px;
     bottom: -70px;
@@ -1388,7 +1397,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow1 {
     width: 141px;
     height: 2px;
-    /* absolute -right-44 top-14 */
     position: absolute;
     right: -140px;
     top: 30px;
@@ -1396,7 +1404,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow1 {
     width: 141px;
     height: 2px;
-    /*  absolute -left-48 top-14 */
     position: absolute;
     left: -140px;
     top: 30px;
@@ -1404,7 +1411,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*   absolute -right-[179.5px] top-[57px] */
     position: absolute;
     right: -143px;
     top: 31px;
@@ -1412,7 +1418,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-line-arrow2 {
     width: 8px;
     height: 80px;
-    /*    absolute -left-[195.5px] top-[57px] */
     position: absolute;
     left: -143.5px;
     top: 31px;
@@ -1420,7 +1425,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-right-box {
     width: 240px;
     height: 184px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
     right: -250px;
     top: 196px;
@@ -1428,7 +1432,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-left-box {
     width: 240px;
     height: 184px;
-    /*    absolute -right-[350px] top-64 */
     position: absolute;
     left: -240px;
     top: 196px;
@@ -1475,7 +1478,6 @@ h3 {
     .how-it-works-left-middle-box {
     width: 283px;
     height: 283px;
-    /* absolute top-[74px] left-6  */
     position: absolute;
     left: -19px;
     top: -54px;
@@ -1505,7 +1507,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .bottom-arrow-how-it {
     width: 8px;
     height: 68px;
-    /* -bottom-[545px] left-[183px] */
     position: absolute;
     bottom: -395px;
     left: 100px;
@@ -1513,7 +1514,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .flat-arrow-how-it {
     width: 339px;
     height: 2px;
-    /* absolute -bottom-[556px] left-[0px] */
     position: absolute;
     bottom: -402px;
     left: -55px;
@@ -1521,7 +1521,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it1 {
     width: 8px;
     height: 18px;
-    /* absolute -bottom-[573px] left-[364.5px] */
     position: absolute;
     bottom: -419px;
     left: 278px;
@@ -1529,7 +1528,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .small-arrow-how-it2 {
     width: 8px;
     height: 18px;
-    /* absolute -bottom-[573px] -left-[4px] */
     position: absolute;
     bottom: -419px;
     left: -58px;
@@ -1537,7 +1535,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-left-box {
     width: 244px;
     height: 123px;
-    /* absolute -bottom-[753px] -left-[130px] */
     position: absolute;
     bottom: -580px;
     right: 130px;
@@ -1545,7 +1542,6 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .how-it-bottom-right-box {
     width: 244px;
     height: 123px;
-    /* absolute -bottom-[753px] -right-[130px] */
     position: absolute;
     bottom: -580px;
     right: -190px;
@@ -1553,7 +1549,6 @@ h3 {
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-bottom-left-box-text {
-    /* absolute -left-[120px] -bottom-[708px] */
     position: absolute;
     bottom: -543px;
     left: -176px;
@@ -1561,21 +1556,17 @@ h3 {
   .howItWorksSvgSectionContainer
     .how-it-svg-section
     .how-it-bottom-right-box-text {
-    /* absolute -right-[120px] -bottom-[708px] */
     position: absolute;
     bottom: -543px;
     right: -192px;
   }
   .howItWorksSvgSectionContainer .how-it-rotate-text {
     font-size: 40px;
-    /* -left-[650px] top-[300px] */
     position: absolute;
     top: -180px;
     left: -294px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
-    /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
-  font-size: 12px; */
     font-size: 12px;
     position: absolute;
     right: -138px;
@@ -1583,8 +1574,6 @@ h3 {
   }
 
   .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
-    /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
-  font-size: 12px;  */
     font-size: 12px;
     position: absolute;
     left: -138px;
@@ -1630,8 +1619,11 @@ h3 {
   }
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: -40px;
-    left: 298px;
+    /* top: -40px;
+    left: 298px; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 12px;
     width: 256px;
   }
@@ -1871,8 +1863,11 @@ h3 {
   }
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: 0px;
-    left: 432px;
+    /* top: 0px;
+    left: 432px; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 15px;
   }
   .howItWorksSvgSectionContainer .theAutomaticText span {
@@ -2103,8 +2098,11 @@ h3 {
 @media (min-width: 1536px) {
   .howItWorksSvgSectionContainer .theAutomaticText {
     position: absolute;
-    top: 0px;
-    left: 559px;
+    /* top: 0px;
+    left: 559px; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 15px;
   }
 }

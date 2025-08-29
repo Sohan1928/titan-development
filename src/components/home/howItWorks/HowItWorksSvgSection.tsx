@@ -40,9 +40,9 @@ const HowItWorksSvgSection = () => {
   return (
     <section className="howItWorksSvgSectionContainer">
       <div className="relative">
-        <h4 className="theAutomaticText z-50">
+        <div className="theAutomaticText z-50">
           <span>The Automatic Stacking,</span> and Compounding Titaton Token
-        </h4>
+        </div>
         <h4 className="works-titan-icon-svg flex flex-col items-center justify-center">
           <TitanIconSvg></TitanIconSvg>
         </h4>
