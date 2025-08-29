@@ -94,9 +94,9 @@ const TitanoApp = () => {
 
   return (
     <section className="2xl:pl-[100px] xl:pl-[90px] lg:pl-[60px] pt-[90px] pb-56 relative titano-container">
-      <div className="flex w-full justify-between 2xl:gap-16 lg:gap-4">
+      <div className="titano-content-container w-full 2xl:gap-16 lg:gap-4">
         {/* left side content */}
-        <div className="titanoLeftContent w-4/12">
+        <div className="titanoLeftContent w-3/12">
           <h5>TITANO APP</h5>
           <h3 className="titanoTitle mt-5">The TITANO APP</h3>
           <p className="mt-5 titanoP">
@@ -112,16 +112,16 @@ const TitanoApp = () => {
               A calculator to project your future Titano token and dollar
               amounts in 7 Days, 1 Month, 6 Months and 1 Year.
             </h4>
-            <div className="absolute left-0 top-2">
+            <div className="small-circle1">
               <SmallCircle></SmallCircle>
             </div>
-            <div className="absolute left-0 top-[50px]">
+            <div className="small-circle2">
               <SmallCircle></SmallCircle>
             </div>
-            <div className="absolute left-0 top-[95px]">
+            <div className="small-circle3">
               <SmallCircle></SmallCircle>
             </div>
-            <div className="absolute left-0 top-[139px]">
+            <div className="small-circle4">
               <SmallCircle></SmallCircle>
             </div>
           </div>
@@ -131,7 +131,7 @@ const TitanoApp = () => {
           </div>
         </div>
         {/* right side content */}
-        <div className="w-8/12 flex flex-col items-center gap-8">
+        <div className="titano-right-content w-full flex flex-col items-center gap-8">
           {/* cards section pin property */}
           <div className="card-section">
             <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
@@ -157,9 +157,9 @@ const TitanoApp = () => {
                     <button>Connect Wallet</button>
                   </div>
                 </div>
-                <div className="main-content 2xl:flex items-start 2xl:justify-between pt-7">
-                  <div className="menus w-1.5/8">
-                    <ul className="2xl:flex 2xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
+                <div className="main-content xl:flex items-start 2xl:justify-between pt-7">
+                  <div className="menus xl:w-1.5/8">
+                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -179,7 +179,7 @@ const TitanoApp = () => {
                   </div>
                   <div className="flex items-start gap-2 mt-8">
                     {/* top content */}
-                    <div className="account-details xl:w-full lg:w-5/8 border">
+                    <div className="account-details">
                       <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
                         <div className="progress-content">
                           <ul>
@@ -244,9 +244,8 @@ const TitanoApp = () => {
                         </div>
                       </div>
                     </div>
-
                     {/* calculator */}
-                    <div className="calculator xl:w-full lg:w-3/8 border">
+                    <div className="calculator ">
                       <div className="title">
                         <h4>
                           <PiSliders></PiSliders>Calculator

@@ -41,7 +41,7 @@ function App() {
             id="smooth-content"
             className="bg-gradient-to-b from-[#1C1B2E] to-[#000000] gsap-animated"
           >
-            <div className="max-w-[1600px] mx-auto">
+            <div className="max-w-[1600px] mx-auto border">
               <Navbar></Navbar>
               <Banner></Banner>
               <About></About>
