@@ -177,7 +177,7 @@ const TitanoApp = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="flex items-start gap-2 mt-8">
+                  <div className="main-box-content-titan">
                     {/* top content */}
                     <div className="account-details">
                       <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">

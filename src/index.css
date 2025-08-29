@@ -2352,15 +2352,110 @@ h3 {
   justify-content: space-around;
 }
 @media (min-width: 320px) {
+  .account-details .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .titano-right-box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titano-right-box-title .title {
+    display: flex;
+    gap: 12px;
+    color: #d0dce8;
+    align-items: center;
+    justify-content: center;
+  }
+  .titano-right-box-title h4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .titano-right-box-title .summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #d0dce8;
+    font-size: 16px;
+    list-style: none;
+  }
+
+  .titano-right-box-title .title-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .titano-right-box-title .title-right button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
   .titano-right-content {
-    width: 100%;
+    width: 100vw;
+  }
+
+  .main-box-content-titan {
+    /*  flex items-start gap-2 mt-8 */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+    margin-top: 32px;
   }
 }
 @media (min-width: 640px) {
   .account-details .top-content {
     display: flex;
+    flex-direction: row;
     align-items: start;
     justify-content: center;
+  }
+  .titano-right-box-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titano-right-box-title .title {
+    display: flex;
+    gap: 12px;
+    color: #d0dce8;
+    align-items: center;
+    justify-content: center;
+  }
+  .titano-right-box-title h4 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .titano-right-box-title .summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #d0dce8;
+    font-size: 18px;
+    list-style: none;
+  }
+
+  .titano-right-box-title .title-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 0px;
+  }
+  .titano-right-box-title .title-right button {
+    background: linear-gradient(#8ddab6, #659f82);
+    padding: 14px 18px;
+    font-size: 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all linear 0.3s;
   }
   .titano-right-content {
     width: 100%;
@@ -2373,6 +2468,15 @@ h3 {
     gap: 25px;
     padding: 0 0 0 6vw;
   }
+  .main-box-content-titan {
+    /*  flex items-start gap-2 mt-8 */
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 2px;
+    margin-top: 32px;
+  }
+
   .account-details {
     width: 65%;
   }
@@ -2469,10 +2573,31 @@ h3 {
   font-size: 18px;
   font-weight: 600;
 }
+@media (min-width: 320px) {
+  .right-content .main-content .menus ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .right-content .main-content .menus ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    margin-top: 16px;
+  }
+}
 @media (min-width: 640px) {
   .right-content .account-details .top-content ul li {
     font-size: 16px;
     font-weight: 600;
+  }
+  .right-content .main-content .menus ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    margin-top: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -2492,6 +2617,11 @@ h3 {
     font-size: 18px;
     font-weight: 600;
   }
+}
+.right-content .main-content .menus ul {
+  display: flex;
+  align-items: start;
+  gap: 8px;
 }
 .right-content .account-details .top-content .progress-icon {
   color: #e7b562;
