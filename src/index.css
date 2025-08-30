@@ -3327,6 +3327,7 @@ h3 {
   font-weight: 700;
   line-height: 130%;
 }
+/* @media query */
 @media (min-width: 320px) {
   .earn-container {
     padding: 0px 12px;
@@ -3336,6 +3337,62 @@ h3 {
   }
   .earn-container .title p {
     font-size: 18px;
+  }
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 310px;
+    height: 80px;
+  }
+  .earn-container .svg-section .svg1 p {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 290px;
+    font-size: 16px;
+  }
+  .earn-container .svg-section .title-color {
+    font-size: 16px;
+  }
+  /* ============== */
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    visibility: hidden;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 62px;
+    height: 33px;
+    position: absolute;
+    right: 4vw;
+    bottom: -2vw;
+    visibility: hidden;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 290px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 16px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 4px;
+    font-size: 7px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button {
+    margin-top: 8px;
+    height: 40px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button .into-btn {
+    font-size: 0.6rem;
+    padding: 2px 12px;
   }
 }
 @media (min-width: 640px) {
@@ -3348,6 +3405,62 @@ h3 {
   .earn-container .title p {
     font-size: 20px;
   }
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 610px;
+    height: 148px;
+  }
+  .earn-container .svg-section .svg1 p {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    width: 520px;
+    font-size: 28px;
+  }
+  .earn-container .svg-section .title-color {
+    font-size: 28px;
+  }
+
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+    visibility: visible;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 62px;
+    height: 33px;
+    position: absolute;
+    right: 28px;
+    bottom: -18px;
+    visibility: visible;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 560px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 28px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 3px;
+    font-size: 14px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button {
+    margin-top: 20px;
+    height: 56px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button .into-btn {
+    font-size: 1rem;
+    padding: 4px 24px;
+  }
 }
 @media (min-width: 768px) {
   .earn-container {
@@ -3358,6 +3471,54 @@ h3 {
   }
   .earn-container .title p {
     font-size: 24px;
+  }
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 720px;
+    height: 168px;
+  }
+  .earn-container .svg-section .svg1 p {
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    width: 620px;
+    font-size: 30px;
+  }
+  .earn-container .svg-section .title-color {
+    font-size: 30px;
+  }
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    right: 8px;
+    bottom: -6px;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 82px;
+    height: 83px;
+    position: absolute;
+    right: 35px;
+    bottom: -65px;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 590px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    position: absolute;
+    top: 28px;
+    left: 30px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 30px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 3px;
+    font-size: 14px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button {
+    margin-top: 26px;
   }
 }
 @media (min-width: 1024px) {
@@ -3370,13 +3531,145 @@ h3 {
   .earn-container .title p {
     font-size: 28px;
   }
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 1000px;
+    height: 228px;
+  }
+  .earn-container .svg-section .svg1 p {
+    position: absolute;
+    top: 52px;
+    left: 42px;
+    width: 708px;
+    font-size: 34px;
+  }
+  .earn-container .svg-section .title-color {
+    font-size: 34px;
+  }
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    right: 10px;
+    bottom: -8px;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 112px;
+    height: 93px;
+    position: absolute;
+    right: 42px;
+    bottom: -75px;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 820px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    /* absolute top-[63px] left-[45px] */
+    position: absolute;
+    top: 45px;
+    left: 42px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 34px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content button {
+    margin-top: 52px;
+  }
 }
 @media (min-width: 1280px) {
   .earn-container {
     padding: 0px 100px;
   }
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 1139px;
+    height: 228px;
+  }
+  .earn-container .svg-section .svg1 p {
+    position: absolute;
+    top: 63px;
+    left: 45px;
+    width: 708px;
+    font-size: 39px;
+  }
+  .earn-container .svg-section .title-color {
+    font-size: 39px;
+  }
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 79px;
+    height: 79px;
+    /* absolute -bottom-[44px] right-8 */
+    position: absolute;
+    right: 32px;
+    bottom: -44px;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 162px;
+    height: 153px;
+    /* absolute -bottom-[168px] right-[70px] */
+    position: absolute;
+    right: 70px;
+    bottom: -168px;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 860px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    /* absolute top-[63px] left-[45px] */
+    position: absolute;
+    top: 63px;
+    left: 45px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 39px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 15px;
+    font-size: 18px;
+  }
 }
 @media (min-width: 1536px) {
+  .earn-container .svg-section .earn-box-svg1 {
+    width: 1139px;
+    height: 228px;
+  }
+  .earn-container .svg-section .svg1 .earn-green-svg {
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    right: 32px;
+    bottom: -44px;
+  }
+  .earn-container .svg-section .svg1 .earn-line-arrow-svg {
+    width: 162px;
+    height: 153px;
+    position: absolute;
+    right: 70px;
+    bottom: -168px;
+  }
+  .earn-container .svg-section .svg2 .earn-box-svg2 {
+    width: 860px;
+    height: 270px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content {
+    position: absolute;
+    top: 63px;
+    left: 45px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content h4 {
+    width: 708px;
+    font-size: 39px;
+  }
+  .earn-container .svg-section .svg2 .earn-svg2-content p {
+    padding-top: 15px;
+    font-size: 18px;
+  }
 }
 /* ------------Tokenomics section css start------------ */
 /* .tokenomics-container {

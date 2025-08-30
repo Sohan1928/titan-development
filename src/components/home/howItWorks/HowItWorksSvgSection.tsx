@@ -54,12 +54,12 @@ const HowItWorksSvgSection = () => {
             </div>
             {/* Text Overlay */}
             <div className="pancake-swap-section inset-0 flex items-center justify-center">
-              <p className="flex items-center justify-center gap-1 font-bold text-white">
+              <div className="flex items-center justify-center gap-1 font-bold text-white">
                 <div className="pancake-swap-icon-svg">
                   <PancakeSwapIconSvg></PancakeSwapIconSvg>
                 </div>
                 <h6 className="pancake-swap-text">PancakeSwap</h6>
-              </p>
+              </div>
             </div>
             {/* circle ellips */}
             <div className="how-it-right-ellipse-svg">

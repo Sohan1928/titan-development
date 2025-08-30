@@ -1,8 +1,8 @@
 const Box1Svg = () => {
   return (
     <svg
-      width={1139}
-      height={228}
+      // width={1139}
+      // height={228}
       viewBox="0 0 1139 228"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
