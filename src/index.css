@@ -3675,7 +3675,11 @@ h3 {
 /* .tokenomics-container {
   margin-top: 100vh;
 } */
-
+.tokenomics-container .top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 .tokenomics-container .top-content h5 {
   font-size: 18px;
   line-height: 120%;
@@ -3871,6 +3875,75 @@ p.center2 {
   position: absolute;
   right: -36px;
   top: 115px;
+}
+
+/* ------------- @media query---------- */
+@media (min-width: 320px) {
+  .tokenomics-container .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .tokenomics-container .top-content h5 {
+    font-size: 16px;
+  }
+  .tokenomics-container .top-content h3 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .tokenomics-container .top-content p {
+    width: 318px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 640px) {
+  .tokenomics-container .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .tokenomics-container .top-content h5 {
+    font-size: 18px;
+  }
+  .tokenomics-container .top-content h3 {
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+  .tokenomics-container .top-content p {
+    width: 558px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .tokenomics-container {
+    padding-left: 60px;
+  }
+  .tokenomics-container .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+  .tokenomics-container .top-content h5 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .tokenomics-container {
+    padding-left: 90px;
+  }
+  .tokenomics-container .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
 }
 
 /* --------------Milestones section css start------------- */
