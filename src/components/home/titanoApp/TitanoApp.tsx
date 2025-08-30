@@ -316,9 +316,9 @@ const TitanoApp = () => {
                     <button>Connect Wallet</button>
                   </div>
                 </div>
-                <div className="main-content flex items-start justify-between pt-7">
-                  <div className="menus w-1/8">
-                    <ul>
+                <div className="main-content xl:flex items-start 2xl:justify-between pt-7">
+                  <div className="menus xl:w-1.5/8">
+                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -336,111 +336,114 @@ const TitanoApp = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="account-details w-4/8">
+                  <div className="main-box-content-titan">
                     {/* top content */}
-                    <div className="top-content">
-                      <div className="progress-content">
-                        <ul>
-                          <li className="progress-icon">
-                            <GiProgression></GiProgression>
-                          </li>
-                          <li>Market Cap</li>
-                        </ul>
-                        <button>$ 229,114</button>
-                      </div>
-                      <div className="chart-content">
-                        <ul>
-                          <li className="chart-icon">
-                            <IoStatsChart></IoStatsChart>
-                          </li>
-                          <li>APY Statistics</li>
-                        </ul>
-                        <div className="chart-button">
-                          <button>10 43,58%</button>
-                          <span>APY</span>
+                    <div className="account-details">
+                      <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
+                        <div className="progress-content">
+                          <ul>
+                            <li className="progress-icon">
+                              <GiProgression></GiProgression>
+                            </li>
+                            <li>Market Cap</li>
+                          </ul>
+                          <button>$ 229,114</button>
+                        </div>
+                        <div className="chart-content">
+                          <ul>
+                            <li className="chart-icon">
+                              <IoStatsChart></IoStatsChart>
+                            </li>
+                            <li>APY Statistics</li>
+                          </ul>
+                          <div className="chart-button">
+                            <button>103,58%</button>
+                            <span>APY</span>
+                          </div>
+                        </div>
+                        <div className="rebase-content">
+                          <ul>
+                            <li className="rebase-icon">
+                              <IoHourglassOutline></IoHourglassOutline>
+                            </li>
+                            <li>Next Rebase</li>
+                          </ul>
+                          <button>00:10:09</button>
                         </div>
                       </div>
-                      <div className="rebase-content">
-                        <ul>
-                          <li className="rebase-icon">
-                            <IoHourglassOutline></IoHourglassOutline>
-                          </li>
-                          <li>Next Rebase</li>
-                        </ul>
-                        <button>00:10:09</button>
+                      {/* finance content */}
+                      <div className="finance-box-section">
+                        <div className="title">
+                          <h5>Staking Statistics</h5>
+                        </div>
+                        {/* finance box */}
+                        <div className="finance-box">
+                          <div className="finance-title">
+                            <h4>Current APY:</h4>
+                            <p>102 483.58%</p>
+                          </div>
+                          <div className="box-main-content">
+                            <ul className="wallet-balance">
+                              <li>Your Wallet Balance:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-amount">
+                              <li>Next Reward Amout:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-yield">
+                              <li>Next Reward yield:</li>
+                              <li>0,03958%</li>
+                            </ul>
+                            <ul className="roi">
+                              <li>ROI (5-Day Rate):</li>
+                              <li>9,94%</li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* finance content */}
-                    <div className="finance-box-section">
+                    {/* calculator */}
+                    <div className="calculator ">
                       <div className="title">
-                        <h5>Staking Statistics</h5>
+                        <h4>
+                          <PiSliders></PiSliders>Calculator
+                        </h4>
                       </div>
-                      {/* finance box */}
-                      <div className="finance-box">
-                        <div className="finance-title">
-                          <h4>Current APY:</h4>
-                          <p>102 483.58%</p>
+                      {/* cart content */}
+                      <div className="cart-container">
+                        <div className="cart-title">
+                          <h4>Estimate Returns</h4>
+                          <input
+                            className="title-input"
+                            id="1"
+                            type="text"
+                            placeholder="Add Amount Here..."
+                          />
                         </div>
-                        <div className="box-main-content">
-                          <ul className="wallet-balance">
-                            <li>Your Wallet Balance:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-amount">
-                            <li>Next Reward Amout:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-yield">
-                            <li>Next Reward yield:</li>
-                            <li>0,03958%</li>
-                          </ul>
-                          <ul className="roi">
-                            <li>ROI (5-Day Rate):</li>
-                            <li>9,94%</li>
+                        <div className="cart-trial-btns">
+                          <ul>
+                            <li>7 Days</li>
+                            <li>1 Month</li>
+                            <li>6 Months</li>
+                            <li>1 Year</li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* calculator */}
-                  <div className="calculator w-3/8">
-                    <div className="title">
-                      <h4>
-                        <PiSliders></PiSliders>Calculator
-                      </h4>
-                    </div>
-                    {/* cart content */}
-                    <div className="cart-container">
-                      <div className="cart-title">
-                        <h4>Estimate Returns</h4>
-                        <input
-                          className="title-input"
-                          type="text"
-                          placeholder="Add Amount Here..."
-                        />
-                      </div>
-                      <div className="cart-trial-btns">
-                        <ul>
-                          <li>7 Days</li>
-                          <li>1 Month</li>
-                          <li>6 Months</li>
-                          <li>1 Year</li>
-                        </ul>
-                      </div>
-                      <div className="cart-last-contents">
-                        <div className="input-group">
-                          <label htmlFor="titano">$TITANO Balance</label>
-                          <input type="text" id="titano" value="0" readOnly />
+                        <div className="cart-last-contents">
+                          <div className="input-group">
+                            <label htmlFor="titano">$TITANO Balance</label>
+                            <input type="text" id="titano" value="0" readOnly />
+                          </div>
+                          <div className="input-group">
+                            <label htmlFor="usd">Total USD Balance:</label>
+                            <input type="text" id="usd" value="$ 0" readOnly />
+                          </div>
+                          <p>
+                            Earnings Calculated, Indicate When The Rebase Reward
+                            For 365 Days
+                          </p>
+                          <button className="mx-auto">Swap $TITANO</button>
                         </div>
-                        <div className="input-group">
-                          <label htmlFor="usd">Total USD Balance:</label>
-                          <input type="text" id="usd" value="$ 0" readOnly />
-                        </div>
-                        <p>
-                          Earnings Calculated, Indicate When The Rebase Reward
-                          For 365 Days
-                        </p>
-                        <button className="mx-auto">Swap $TITANO</button>
                       </div>
                     </div>
                   </div>
@@ -472,9 +475,9 @@ const TitanoApp = () => {
                     <button>Connect Wallet</button>
                   </div>
                 </div>
-                <div className="main-content flex items-start justify-between pt-7">
-                  <div className="menus w-1/8">
-                    <ul>
+                <div className="main-content xl:flex items-start 2xl:justify-between pt-7">
+                  <div className="menus xl:w-1.5/8">
+                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -492,111 +495,114 @@ const TitanoApp = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="account-details w-4/8">
+                  <div className="main-box-content-titan">
                     {/* top content */}
-                    <div className="top-content">
-                      <div className="progress-content">
-                        <ul>
-                          <li className="progress-icon">
-                            <GiProgression></GiProgression>
-                          </li>
-                          <li>Market Cap</li>
-                        </ul>
-                        <button>$ 229,114</button>
-                      </div>
-                      <div className="chart-content">
-                        <ul>
-                          <li className="chart-icon">
-                            <IoStatsChart></IoStatsChart>
-                          </li>
-                          <li>APY Statistics</li>
-                        </ul>
-                        <div className="chart-button">
-                          <button>10 43,58%</button>
-                          <span>APY</span>
+                    <div className="account-details">
+                      <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
+                        <div className="progress-content">
+                          <ul>
+                            <li className="progress-icon">
+                              <GiProgression></GiProgression>
+                            </li>
+                            <li>Market Cap</li>
+                          </ul>
+                          <button>$ 229,114</button>
+                        </div>
+                        <div className="chart-content">
+                          <ul>
+                            <li className="chart-icon">
+                              <IoStatsChart></IoStatsChart>
+                            </li>
+                            <li>APY Statistics</li>
+                          </ul>
+                          <div className="chart-button">
+                            <button>103,58%</button>
+                            <span>APY</span>
+                          </div>
+                        </div>
+                        <div className="rebase-content">
+                          <ul>
+                            <li className="rebase-icon">
+                              <IoHourglassOutline></IoHourglassOutline>
+                            </li>
+                            <li>Next Rebase</li>
+                          </ul>
+                          <button>00:10:09</button>
                         </div>
                       </div>
-                      <div className="rebase-content">
-                        <ul>
-                          <li className="rebase-icon">
-                            <IoHourglassOutline></IoHourglassOutline>
-                          </li>
-                          <li>Next Rebase</li>
-                        </ul>
-                        <button>00:10:09</button>
+                      {/* finance content */}
+                      <div className="finance-box-section">
+                        <div className="title">
+                          <h5>Staking Statistics</h5>
+                        </div>
+                        {/* finance box */}
+                        <div className="finance-box">
+                          <div className="finance-title">
+                            <h4>Current APY:</h4>
+                            <p>102 483.58%</p>
+                          </div>
+                          <div className="box-main-content">
+                            <ul className="wallet-balance">
+                              <li>Your Wallet Balance:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-amount">
+                              <li>Next Reward Amout:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-yield">
+                              <li>Next Reward yield:</li>
+                              <li>0,03958%</li>
+                            </ul>
+                            <ul className="roi">
+                              <li>ROI (5-Day Rate):</li>
+                              <li>9,94%</li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* finance content */}
-                    <div className="finance-box-section">
+                    {/* calculator */}
+                    <div className="calculator ">
                       <div className="title">
-                        <h5>Staking Statistics</h5>
+                        <h4>
+                          <PiSliders></PiSliders>Calculator
+                        </h4>
                       </div>
-                      {/* finance box */}
-                      <div className="finance-box">
-                        <div className="finance-title">
-                          <h4>Current APY:</h4>
-                          <p>102 483.58%</p>
+                      {/* cart content */}
+                      <div className="cart-container">
+                        <div className="cart-title">
+                          <h4>Estimate Returns</h4>
+                          <input
+                            className="title-input"
+                            id="1"
+                            type="text"
+                            placeholder="Add Amount Here..."
+                          />
                         </div>
-                        <div className="box-main-content">
-                          <ul className="wallet-balance">
-                            <li>Your Wallet Balance:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-amount">
-                            <li>Next Reward Amout:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-yield">
-                            <li>Next Reward yield:</li>
-                            <li>0,03958%</li>
-                          </ul>
-                          <ul className="roi">
-                            <li>ROI (5-Day Rate):</li>
-                            <li>9,94%</li>
+                        <div className="cart-trial-btns">
+                          <ul>
+                            <li>7 Days</li>
+                            <li>1 Month</li>
+                            <li>6 Months</li>
+                            <li>1 Year</li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* calculator */}
-                  <div className="calculator w-3/8">
-                    <div className="title">
-                      <h4>
-                        <PiSliders></PiSliders>Calculator
-                      </h4>
-                    </div>
-                    {/* cart content */}
-                    <div className="cart-container">
-                      <div className="cart-title">
-                        <h4>Estimate Returns</h4>
-                        <input
-                          className="title-input"
-                          type="text"
-                          placeholder="Add Amount Here..."
-                        />
-                      </div>
-                      <div className="cart-trial-btns">
-                        <ul>
-                          <li>7 Days</li>
-                          <li>1 Month</li>
-                          <li>6 Months</li>
-                          <li>1 Year</li>
-                        </ul>
-                      </div>
-                      <div className="cart-last-contents">
-                        <div className="input-group">
-                          <label htmlFor="titano">$TITANO Balance</label>
-                          <input type="text" id="titano" value="0" readOnly />
+                        <div className="cart-last-contents">
+                          <div className="input-group">
+                            <label htmlFor="titano">$TITANO Balance</label>
+                            <input type="text" id="titano" value="0" readOnly />
+                          </div>
+                          <div className="input-group">
+                            <label htmlFor="usd">Total USD Balance:</label>
+                            <input type="text" id="usd" value="$ 0" readOnly />
+                          </div>
+                          <p>
+                            Earnings Calculated, Indicate When The Rebase Reward
+                            For 365 Days
+                          </p>
+                          <button className="mx-auto">Swap $TITANO</button>
                         </div>
-                        <div className="input-group">
-                          <label htmlFor="usd">Total USD Balance:</label>
-                          <input type="text" id="usd" value="$ 0" readOnly />
-                        </div>
-                        <p>
-                          Earnings Calculated, Indicate When The Rebase Reward
-                          For 365 Days
-                        </p>
-                        <button className="mx-auto">Swap $TITANO</button>
                       </div>
                     </div>
                   </div>
@@ -628,9 +634,9 @@ const TitanoApp = () => {
                     <button>Connect Wallet</button>
                   </div>
                 </div>
-                <div className="main-content flex items-start justify-between pt-7">
-                  <div className="menus w-1/8">
-                    <ul>
+                <div className="main-content xl:flex items-start 2xl:justify-between pt-7">
+                  <div className="menus xl:w-1.5/8">
+                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -648,111 +654,114 @@ const TitanoApp = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="account-details w-4/8">
+                  <div className="main-box-content-titan">
                     {/* top content */}
-                    <div className="top-content">
-                      <div className="progress-content">
-                        <ul>
-                          <li className="progress-icon">
-                            <GiProgression></GiProgression>
-                          </li>
-                          <li>Market Cap</li>
-                        </ul>
-                        <button>$ 229,114</button>
-                      </div>
-                      <div className="chart-content">
-                        <ul>
-                          <li className="chart-icon">
-                            <IoStatsChart></IoStatsChart>
-                          </li>
-                          <li>APY Statistics</li>
-                        </ul>
-                        <div className="chart-button">
-                          <button>10 43,58%</button>
-                          <span>APY</span>
+                    <div className="account-details">
+                      <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
+                        <div className="progress-content">
+                          <ul>
+                            <li className="progress-icon">
+                              <GiProgression></GiProgression>
+                            </li>
+                            <li>Market Cap</li>
+                          </ul>
+                          <button>$ 229,114</button>
+                        </div>
+                        <div className="chart-content">
+                          <ul>
+                            <li className="chart-icon">
+                              <IoStatsChart></IoStatsChart>
+                            </li>
+                            <li>APY Statistics</li>
+                          </ul>
+                          <div className="chart-button">
+                            <button>103,58%</button>
+                            <span>APY</span>
+                          </div>
+                        </div>
+                        <div className="rebase-content">
+                          <ul>
+                            <li className="rebase-icon">
+                              <IoHourglassOutline></IoHourglassOutline>
+                            </li>
+                            <li>Next Rebase</li>
+                          </ul>
+                          <button>00:10:09</button>
                         </div>
                       </div>
-                      <div className="rebase-content">
-                        <ul>
-                          <li className="rebase-icon">
-                            <IoHourglassOutline></IoHourglassOutline>
-                          </li>
-                          <li>Next Rebase</li>
-                        </ul>
-                        <button>00:10:09</button>
+                      {/* finance content */}
+                      <div className="finance-box-section">
+                        <div className="title">
+                          <h5>Staking Statistics</h5>
+                        </div>
+                        {/* finance box */}
+                        <div className="finance-box">
+                          <div className="finance-title">
+                            <h4>Current APY:</h4>
+                            <p>102 483.58%</p>
+                          </div>
+                          <div className="box-main-content">
+                            <ul className="wallet-balance">
+                              <li>Your Wallet Balance:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-amount">
+                              <li>Next Reward Amout:</li>
+                              <li>0</li>
+                            </ul>
+                            <ul className="next-yield">
+                              <li>Next Reward yield:</li>
+                              <li>0,03958%</li>
+                            </ul>
+                            <ul className="roi">
+                              <li>ROI (5-Day Rate):</li>
+                              <li>9,94%</li>
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    {/* finance content */}
-                    <div className="finance-box-section">
+                    {/* calculator */}
+                    <div className="calculator ">
                       <div className="title">
-                        <h5>Staking Statistics</h5>
+                        <h4>
+                          <PiSliders></PiSliders>Calculator
+                        </h4>
                       </div>
-                      {/* finance box */}
-                      <div className="finance-box">
-                        <div className="finance-title">
-                          <h4>Current APY:</h4>
-                          <p>102 483.58%</p>
+                      {/* cart content */}
+                      <div className="cart-container">
+                        <div className="cart-title">
+                          <h4>Estimate Returns</h4>
+                          <input
+                            className="title-input"
+                            id="1"
+                            type="text"
+                            placeholder="Add Amount Here..."
+                          />
                         </div>
-                        <div className="box-main-content">
-                          <ul className="wallet-balance">
-                            <li>Your Wallet Balance:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-amount">
-                            <li>Next Reward Amout:</li>
-                            <li>0</li>
-                          </ul>
-                          <ul className="next-yield">
-                            <li>Next Reward yield:</li>
-                            <li>0,03958%</li>
-                          </ul>
-                          <ul className="roi">
-                            <li>ROI (5-Day Rate):</li>
-                            <li>9,94%</li>
+                        <div className="cart-trial-btns">
+                          <ul>
+                            <li>7 Days</li>
+                            <li>1 Month</li>
+                            <li>6 Months</li>
+                            <li>1 Year</li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* calculator */}
-                  <div className="calculator w-3/8">
-                    <div className="title">
-                      <h4>
-                        <PiSliders></PiSliders>Calculator
-                      </h4>
-                    </div>
-                    {/* cart content */}
-                    <div className="cart-container">
-                      <div className="cart-title">
-                        <h4>Estimate Returns</h4>
-                        <input
-                          className="title-input"
-                          type="text"
-                          placeholder="Add Amount Here..."
-                        />
-                      </div>
-                      <div className="cart-trial-btns">
-                        <ul>
-                          <li>7 Days</li>
-                          <li>1 Month</li>
-                          <li>6 Months</li>
-                          <li>1 Year</li>
-                        </ul>
-                      </div>
-                      <div className="cart-last-contents">
-                        <div className="input-group">
-                          <label htmlFor="titano">$TITANO Balance</label>
-                          <input type="text" id="titano" value="0" readOnly />
+                        <div className="cart-last-contents">
+                          <div className="input-group">
+                            <label htmlFor="titano">$TITANO Balance</label>
+                            <input type="text" id="titano" value="0" readOnly />
+                          </div>
+                          <div className="input-group">
+                            <label htmlFor="usd">Total USD Balance:</label>
+                            <input type="text" id="usd" value="$ 0" readOnly />
+                          </div>
+                          <p>
+                            Earnings Calculated, Indicate When The Rebase Reward
+                            For 365 Days
+                          </p>
+                          <button className="mx-auto">Swap $TITANO</button>
                         </div>
-                        <div className="input-group">
-                          <label htmlFor="usd">Total USD Balance:</label>
-                          <input type="text" id="usd" value="$ 0" readOnly />
-                        </div>
-                        <p>
-                          Earnings Calculated, Indicate When The Rebase Reward
-                          For 365 Days
-                        </p>
-                        <button className="mx-auto">Swap $TITANO</button>
                       </div>
                     </div>
                   </div>

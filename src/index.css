@@ -2286,7 +2286,7 @@ h3 {
     font-size: 18px;
   }
   .titanoLeftContent .contentlist {
-    width: 430px;
+    width: 440px !important;
     font-size: 18px;
   }
 }
@@ -2931,7 +2931,7 @@ h3 {
   .right-content .main-content .calculator .cart-container .cart-trial-btns ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2px;
   }
   .right-content
@@ -2941,7 +2941,7 @@ h3 {
     .cart-trial-btns
     ul
     li {
-    padding: 12px 4px;
+    padding: 12px 8px;
     font-size: 10px;
     border-radius: 8px;
   }
@@ -2950,7 +2950,7 @@ h3 {
   .right-content .main-content .calculator .cart-container .cart-trial-btns ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2px;
   }
   .right-content
@@ -2960,7 +2960,7 @@ h3 {
     .cart-trial-btns
     ul
     li {
-    padding: 12px 4px;
+    padding: 12px 10px;
     font-size: 10px;
     border-radius: 8px;
   }
@@ -2969,8 +2969,8 @@ h3 {
   .right-content .main-content .calculator .cart-container .cart-trial-btns ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: space-around;
+    gap: 12px;
   }
   .right-content
     .main-content
@@ -2979,7 +2979,7 @@ h3 {
     .cart-trial-btns
     ul
     li {
-    padding: 8px 4px;
+    padding: 8px 10px;
     font-size: 12px;
     border-radius: 8px;
   }
@@ -2988,7 +2988,7 @@ h3 {
   .right-content .main-content .calculator .cart-container .cart-trial-btns ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 8px;
   }
   .right-content
@@ -2998,7 +2998,7 @@ h3 {
     .cart-trial-btns
     ul
     li {
-    padding: 12px 9px;
+    padding: 12px 14px;
     font-size: 12px;
     border-radius: 12px;
   }
@@ -3007,8 +3007,8 @@ h3 {
   .right-content .main-content .calculator .cart-container .cart-trial-btns ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: center;
+    gap: 12px;
   }
   .right-content
     .main-content
@@ -3017,7 +3017,7 @@ h3 {
     .cart-trial-btns
     ul
     li {
-    padding: 12px 12px;
+    padding: 12px 14px;
     font-size: 14px;
     border-radius: 12px;
   }
@@ -3327,7 +3327,57 @@ h3 {
   font-weight: 700;
   line-height: 130%;
 }
-
+@media (min-width: 320px) {
+  .earn-container {
+    padding: 0px 12px;
+  }
+  .earn-container .title h2 {
+    font-size: 8vw;
+  }
+  .earn-container .title p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 640px) {
+  .earn-container {
+    padding: 0px 30px;
+  }
+  .earn-container .title h2 {
+    font-size: 6.5vw;
+  }
+  .earn-container .title p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .earn-container {
+    padding: 0px 50px;
+  }
+  .earn-container .title h2 {
+    font-size: 7vw;
+  }
+  .earn-container .title p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .earn-container {
+    padding: 0px 70px;
+  }
+  .earn-container .title h2 {
+    font-size: 6vw;
+  }
+  .earn-container .title p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1280px) {
+  .earn-container {
+    padding: 0px 100px;
+  }
+}
+@media (min-width: 1536px) {
+}
 /* ------------Tokenomics section css start------------ */
 /* .tokenomics-container {
   margin-top: 100vh;
