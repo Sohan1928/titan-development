@@ -23,7 +23,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 50%",
-        end: "top bottom",
+        end: "bottom bottom",
         scrub: true,
       },
     });
@@ -37,7 +37,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 60%",
-        end: "top bottom",
+        end: "bottom bottom",
         scrub: true,
       },
     });
@@ -51,7 +51,7 @@ const Footer = () => {
       scrollTrigger: {
         trigger: ".footer-container",
         start: "top 40%",
-        end: "top bottom",
+        end: "bottom bottom",
         scrub: true,
       },
     });
@@ -62,16 +62,16 @@ const Footer = () => {
         <LogoSvg></LogoSvg>
       </div>
       <div className="social-icon">
-        <span className="footer-social">
+        <span className="twitter-icon footer-social">
           <TwitterSvg></TwitterSvg>
         </span>
-        <span className="footer-social">
+        <span className="discord-icon footer-social">
           <DiscordSvg></DiscordSvg>
         </span>
-        <span className="footer-social">
+        <span className="telegram-icon footer-social">
           <TelegramSvg></TelegramSvg>
         </span>
-        <span className="footer-social">
+        <span className="other-svg footer-social">
           <OtherSvg></OtherSvg>
         </span>
       </div>

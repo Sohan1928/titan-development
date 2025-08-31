@@ -4,51 +4,51 @@ import Box2Svg from "./svg/Box2Svg";
 import CircleSvg from "./svg/CircleSvg";
 import GreenCircleSvg from "./svg/GreenCircleSvg";
 import LineArrowSvg from "./svg/LineArrowSvg";
-// import { SplitText } from "gsap/SplitText";
-// import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Earn = () => {
-  // useGSAP(() => {
-  //   const tl = gsap.timeline();
-  //   document.querySelectorAll(".earnSvgBoxAnimation").forEach((card) => {
-  //     gsap.to(card, {
-  //       scale: 0.7,
-  //       opacity: 0,
-  //       scrollTrigger: {
-  //         trigger: card,
-  //         start: "top 15%",
-  //         end: "bottom 15%",
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
-  //   document.fonts.ready.then(() => {
-  //     gsap.set(".earn-container .title", { opacity: 1 });
-  //     // SplitText
-  //     const split = new SplitText(".earn-container .title", {
-  //       type: "words,lines",
-  //       linesClass: "lines",
-  //       autoSplit: true,
-  //     });
-  //     // Animation
-  //     tl.from(split.words, {
-  //       duration: 1.8,
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       stagger: 0.8,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: ".earn-container",
-  //         start: "top 90%",
-  //         end: "top 30%",
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
-  // }, []);
+  useGSAP(() => {
+    const tl = gsap.timeline();
+    document.querySelectorAll(".earnSvgBoxAnimation").forEach((card) => {
+      gsap.to(card, {
+        scale: 0.7,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: card,
+          start: "top 15%",
+          end: "bottom 15%",
+          scrub: true,
+        },
+      });
+    });
+    document.fonts.ready.then(() => {
+      gsap.set(".earn-container .title", { opacity: 1 });
+      // SplitText
+      const split = new SplitText(".earn-container .title", {
+        type: "words,lines",
+        linesClass: "lines",
+        autoSplit: true,
+      });
+      // Animation
+      tl.from(split.words, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        stagger: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".earn-container",
+          start: "top 90%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
+  }, []);
 
   return (
     <section className="earn-container relative">

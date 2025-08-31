@@ -1,8 +1,8 @@
 const DiscordSvg = () => {
   return (
     <svg
-      width={32}
-      height={33}
+      // width={32}
+      // height={33}
       viewBox="0 0 32 33"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

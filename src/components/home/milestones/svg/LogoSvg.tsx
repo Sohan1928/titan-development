@@ -2,8 +2,8 @@ const LogoSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="166"
-      height="33"
+      // width="166"
+      // height="33"
       viewBox="0 0 166 33"
       fill="none"
     >

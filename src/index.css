@@ -2112,6 +2112,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 160px;
 }
 .titanoLeftContent h5 {
   font-size: 18px;
@@ -2153,6 +2154,9 @@ h3 {
   cursor: pointer;
 }
 @media (min-width: 320px) {
+  .titano-content-container {
+    padding-top: 90px;
+  }
   .titanoLeftContent {
     display: flex;
     flex-direction: column;
@@ -2191,6 +2195,9 @@ h3 {
   }
 }
 @media (min-width: 768px) {
+  .titano-content-container {
+    padding-top: 100px;
+  }
   .titanoLeftContent {
     display: flex;
     flex-direction: column;
@@ -2230,6 +2237,9 @@ h3 {
 }
 @media (min-width: 1024px) {
   .titano-content-container {
+    padding-top: 110px;
+  }
+  .titano-content-container {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -2258,6 +2268,9 @@ h3 {
   }
 }
 @media (min-width: 1280px) {
+  .titano-content-container {
+    padding-top: 160px;
+  }
   .titano-content-container {
     display: flex;
     flex-direction: row;
@@ -3271,7 +3284,6 @@ h3 {
 }
 /* ----------Earn section css start---------- */
 .earn-container {
-  margin-top: 40px;
   padding-bottom: 60px;
   position: relative;
   width: 100%;
@@ -4924,6 +4936,9 @@ p.center2 {
 }
 /*------------ @media query------------- */
 @media (min-width: 320px) {
+  .milestones-container {
+    margin-top: 270vh;
+  }
   .milestones-container .container-content {
     display: flex;
     flex-direction: column;
@@ -4961,6 +4976,9 @@ p.center2 {
   }
 }
 @media (min-width: 640px) {
+  .milestones-container {
+    margin-top: 200vh;
+  }
   .milestones-container .container-content {
     display: flex;
     flex-direction: row;
@@ -4997,6 +5015,9 @@ p.center2 {
   }
 }
 @media (min-width: 768px) {
+  .milestones-container {
+    margin-top: 200vh;
+  }
   .milestones-container .container-content {
     display: flex;
     flex-direction: row;
@@ -5032,6 +5053,9 @@ p.center2 {
   }
 }
 @media (min-width: 1024px) {
+  .milestones-container {
+    margin-top: 100vh;
+  }
   .milestones-container .container-content {
     display: flex;
     flex-direction: row;
@@ -5079,26 +5103,18 @@ p.center2 {
     padding-top: 20px;
   }
   .milestones-container .container-content .title-section h4 {
-    color: #d0dce8;
     font-size: 28px;
-    line-height: 120%;
   }
   .milestones-container .container-content .title-section p {
     width: 506px;
-    color: #7a8699;
     font-size: 18px;
-    line-height: 150%;
   }
   .milestones-container .container-content .audited-section h4 {
-    color: #d0dce8;
     font-size: 28px;
-    line-height: 120%;
   }
   .milestones-container .container-content .audited-section p {
     width: 506px;
-    color: #7a8699;
     font-size: 18px;
-    line-height: 150%;
   }
   .milestones-container .rotate-titano-roadmap {
     font-size: 79px;
@@ -5906,4 +5922,50 @@ p.center2 {
   color: #8993a4;
   font-size: 14px;
   line-height: 120%;
+}
+
+/* -------@media query---------- */
+@media (min-width: 320px) {
+  .footer-container {
+    padding-top: 170px;
+    padding-bottom: 57px;
+  }
+  .footer-container .footerSvg {
+    width: 166px;
+    height: 33px;
+  }
+  .footer-container .social-icon .footer-social {
+    width: 22px;
+    height: 23px;
+  }
+}
+@media (min-width: 640px) {
+  .footer-container {
+    padding-top: 320px;
+    padding-bottom: 77px;
+  }
+  .footer-container .social-icon .footer-social {
+    width: 25px;
+    height: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-container {
+    padding-top: 350px;
+    padding-bottom: 77px;
+  }
+  .footer-container .social-icon .footer-social {
+    width: 28px;
+    height: 29px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-container {
+    padding-top: 350px;
+    padding-bottom: 77px;
+  }
+  .footer-container .social-icon .footer-social {
+    width: 32px;
+    height: 33px;
+  }
 }

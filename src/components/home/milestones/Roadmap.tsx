@@ -3,109 +3,109 @@ import Footer from "./Footer";
 import ConnectorLineSvg from "./svg/ConnectorLineSvg";
 import PortfolioGreenCircleSvg from "./svg/PortfolioGreenCircleSvg";
 import { ScrollTrigger } from "gsap/all";
-// import { SplitText } from "gsap/SplitText";
-// import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Roadmap = () => {
-  // useGSAP(() => {
-  //   gsap.from(".roadmapSubtitle", {
-  //     x: 400,
-  //     y: -300,
-  //     scale: 2.5,
-  //     opacity: 0,
-  //     duration: 1.2,
-  //     scrollTrigger: {
-  //       trigger: ".roadmap-container",
-  //       start: "top 70%",
-  //       end: "top 20%",
-  //       scrub: true,
-  //     },
-  //   });
-  //   const tl = gsap.timeline();
-  //   document.fonts.ready.then(() => {
-  //     gsap.set(".roadmap-container .roadmapTitle", { opacity: 1 });
-  //     const splitH2 = new SplitText(".roadmapTitleh2", {
-  //       type: "words,lines",
-  //       linesClass: "words",
-  //       autoSplit: true,
-  //     });
-  //     const splitP = new SplitText(".roadmapTitleP", {
-  //       type: "words,lines",
-  //       linesClass: "lines",
-  //       autoSplit: true,
-  //     });
-  //     tl.from(splitH2.words, {
-  //       duration: 1.8,
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       scale: 0.7,
-  //       stagger: 0.8,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: ".roadmap-container",
-  //         start: "top 70%",
-  //         end: "top 30%",
-  //         scrub: true,
-  //       },
-  //     });
-  //     tl.from(splitP.words, {
-  //       duration: 1.8,
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       scale: 0.7,
-  //       stagger: 0.8,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: ".roadmap-container",
-  //         start: "top 70%",
-  //         end: "top 30%",
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
+  useGSAP(() => {
+    gsap.from(".roadmapSubtitle", {
+      x: 400,
+      y: -300,
+      scale: 2.5,
+      opacity: 0,
+      duration: 1.2,
+      scrollTrigger: {
+        trigger: ".roadmap-container",
+        start: "top 70%",
+        end: "top 20%",
+        scrub: true,
+      },
+    });
+    const tl = gsap.timeline();
+    document.fonts.ready.then(() => {
+      gsap.set(".roadmap-container .roadmapTitle", { opacity: 1 });
+      const splitH2 = new SplitText(".roadmapTitleh2", {
+        type: "words,lines",
+        linesClass: "words",
+        autoSplit: true,
+      });
+      const splitP = new SplitText(".roadmapTitleP", {
+        type: "words,lines",
+        linesClass: "lines",
+        autoSplit: true,
+      });
+      tl.from(splitH2.words, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        scale: 0.7,
+        stagger: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".roadmap-container",
+          start: "top 70%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+      tl.from(splitP.words, {
+        duration: 1.8,
+        yPercent: 50,
+        opacity: 0,
+        scale: 0.7,
+        stagger: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".roadmap-container",
+          start: "top 70%",
+          end: "top 30%",
+          scrub: true,
+        },
+      });
+    });
 
-  //   tl.from(".connectorLineSvg", {
-  //     x: -400,
-  //     y: 300,
-  //     opacity: 0,
-  //     duration: 1.4,
-  //     scrollTrigger: {
-  //       trigger: ".portfolio-section",
-  //       start: "top 70%",
-  //       end: "top 20%",
-  //       scrub: 1,
-  //     },
-  //   });
-  //   tl.from(".roadmapPortfolioGreenCircleSvg", {
-  //     y: -300,
-  //     opacity: 0,
-  //     duration: 1.4,
-  //     stagger: 1.2,
-  //     ease: "power1.out",
-  //     scrollTrigger: {
-  //       trigger: ".portfolio-section",
-  //       start: "top 60%",
-  //       end: "top 20%",
-  //       scrub: 1,
-  //     },
-  //   });
-  //   tl.from(".q1", {
-  //     y: -400,
-  //     x: -400,
-  //     opacity: 0,
-  //     duration: 1.8,
-  //     stagger: 1.4,
-  //     ease: "power1.out",
-  //     scrollTrigger: {
-  //       trigger: ".portfolio-section",
-  //       start: "top 60%",
-  //       end: "top 10%",
-  //       scrub: 1,
-  //     },
-  //   });
-  // }, []);
+    tl.from(".connectorLineSvg", {
+      x: -400,
+      y: 300,
+      opacity: 0,
+      duration: 1.4,
+      scrollTrigger: {
+        trigger: ".portfolio-section",
+        start: "top 70%",
+        end: "top 20%",
+        scrub: 1,
+      },
+    });
+    tl.from(".roadmapPortfolioGreenCircleSvg", {
+      y: -300,
+      opacity: 0,
+      duration: 1.4,
+      stagger: 1.2,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".portfolio-section",
+        start: "top 60%",
+        end: "top 20%",
+        scrub: 1,
+      },
+    });
+    tl.from(".q1", {
+      y: -400,
+      x: -400,
+      opacity: 0,
+      duration: 1.8,
+      stagger: 1.4,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".portfolio-section",
+        start: "top 60%",
+        end: "top 10%",
+        scrub: 1,
+      },
+    });
+  }, []);
 
   return (
     <section className="roadmap-container pt-[127px] overflow-hidden relative">
