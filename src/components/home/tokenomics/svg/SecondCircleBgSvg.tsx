@@ -2,8 +2,8 @@ const SecondCircleBgSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="232"
-      height="240"
+      // width="232"
+      // height="240"
       viewBox="0 0 232 240"
       fill="none"
     >

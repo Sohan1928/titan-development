@@ -138,6 +138,7 @@ const Tokenomics = () => {
           using a positive rebase formula.
         </p>
       </div>
+
       {/* donut chart */}
       <div className="donut-chart-container pt-[110px]">
         <div className="donut-chart-block block relative">
@@ -156,46 +157,55 @@ const Tokenomics = () => {
             <div className="chart-icon-logo">
               <ChartIconSvg></ChartIconSvg>
             </div>
-            <div className="absolute -right-[125px] top-48 rightArrowLineSvg">
+            <div className="rightArrowLineSvg">
               <RightArrowLineSvg></RightArrowLineSvg>
             </div>
-            <div className="absolute -right-[125px] top-[26px] upperLineSvg">
+            <div className="upperLineSvg">
               <UpperLineSvg></UpperLineSvg>
             </div>
-            <div className="absolute -right-[125px] bottom-[31px] downLineSvg">
+            <div className="downLineSvg">
               <DownLineSvg></DownLineSvg>
             </div>
             {/* first circle */}
-            <div className="absolute -right-[255px] -top-[24px] firstCircle">
+            <div className="firstCircle">
               <div className="relative z-50">
-                <RoundCircleSvg></RoundCircleSvg>
-                <div className="absolute z-0 -top-[50px] -left-[71px]">
+                <div className="round-circle">
+                  <RoundCircleSvg></RoundCircleSvg>
+                </div>
+                <div className="first-circle-bg z-0">
                   <FirstCircleBgSvg></FirstCircleBgSvg>
                 </div>
               </div>
             </div>
             {/* second circle */}
-            <div className="absolute -right-[255px] top-[144px] secondCircle">
+            <div className="secondCircle">
               <div className="relative z-50">
-                <RoundCircleSvg></RoundCircleSvg>
-                <div className="absolute z-0 -top-[47px] -left-[68px]">
+                <div className="round-circle">
+                  <RoundCircleSvg></RoundCircleSvg>
+                </div>
+                <div className="second-circle-bg z-0">
                   <SecondCircleBgSvg></SecondCircleBgSvg>
                 </div>
               </div>
             </div>
             {/* third circle */}
-            <div className="absolute -right-[255px] top-[314px] thirdCircle">
+            <div className="thirdCircle">
               <div className="relative z-50">
-                <RoundCircleSvg></RoundCircleSvg>
-                <div className="absolute z-0 -top-[47px] -left-[68px]">
+                <div className="round-circle">
+                  <RoundCircleSvg></RoundCircleSvg>
+                </div>
+                <div className="third-circle-bg z-0">
                   <ThirdCircleBgSvg></ThirdCircleBgSvg>
                 </div>
               </div>
             </div>
+
             {/* box svg */}
-            <div className="absolute -top-[52px] -right-[685px] box1SvgP box1Svg">
+            <div className="tokenomics-box1-svg box1SvgP box1Svg">
               <div className="relative">
-                <BoxSvg></BoxSvg>
+                <div className="box-svg">
+                  <BoxSvg></BoxSvg>
+                </div>
                 <div className="absolute top-[23px] left-6">
                   <h5>Automatic LP</h5>
                   <p>
@@ -205,9 +215,11 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[116px] -right-[685px] box1SvgP box2Svg">
+            <div className="tokenomics-box2-svg box1SvgP box2Svg">
               <div className="relative">
-                <BoxSvg></BoxSvg>
+                <div className="box-svg">
+                  <BoxSvg></BoxSvg>
+                </div>
                 <div className="absolute top-[23px] left-6">
                   <h5>Treasury</h5>
                   <p>
@@ -217,9 +229,11 @@ const Tokenomics = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-[288px] -right-[685px] box1SvgP box3Svg">
+            <div className="tokenomics-box3-svg box1SvgP box3Svg">
               <div className="relative">
-                <BoxSvg></BoxSvg>
+                <div className="box-svg">
+                  <BoxSvg></BoxSvg>
+                </div>
                 <div className="absolute top-[23px] left-6">
                   <h5>Risk Free Value</h5>
                   <p>

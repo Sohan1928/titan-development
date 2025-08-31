@@ -3526,7 +3526,7 @@ h3 {
     padding: 0px 70px;
   }
   .earn-container .title h2 {
-    font-size: 6vw;
+    font-size: 59px;
   }
   .earn-container .title p {
     font-size: 28px;
@@ -3767,14 +3767,14 @@ p.center2 {
   border-radius: 50%;
   clip: rect(0px, 402px, 402px, 201px);
   height: 100%;
-  position: absolute;
   width: 100%;
+  position: absolute;
 }
 .circle {
   border-radius: 50%;
   clip: rect(0px, 201px, 402px, 0px);
-  height: 100%;
   position: absolute;
+  height: 100%;
   width: 100%;
 }
 
@@ -3940,10 +3940,306 @@ p.center2 {
     align-items: start;
     text-align: start;
   }
+
+  /* ------- */
+  .donut-chart {
+    width: 302px;
+    height: 302px;
+    margin-left: 28px;
+  }
+  p.center {
+    width: 210px;
+    height: 210px;
+  }
+  p.center2 {
+    width: 140px;
+    height: 140px;
+  }
+  .portion-block {
+    clip: rect(0px, 302px, 302px, 151px);
+  }
+  .circle {
+    clip: rect(0px, 151px, 302px, 0px);
+  }
+  .donut-chart-container .donut-chart-block .rightArrowLineSvg {
+    width: 85px;
+    height: 10px;
+    /* absolute -right-[125px] top-48 */
+    position: absolute;
+    right: -85px;
+    top: 140px;
+  }
+  .donut-chart-container .donut-chart-block .upperLineSvg {
+    width: 85px;
+    height: 171px;
+    /* absolute -right-[125px] top-[26px] */
+    position: absolute;
+    right: -85px;
+    top: 27px;
+  }
+  .donut-chart-container .donut-chart-block .downLineSvg {
+    width: 85px;
+    height: 176px;
+    /* absolute -right-[125px] bottom-[31px] */
+    position: absolute;
+    right: -85px;
+    bottom: -16px;
+  }
+  .donut-chart-container .donut-chart-block .firstCircle {
+    /* absolute -right-[255px] -top-[24px] */
+    position: absolute;
+    right: -185px;
+    top: -18px;
+  }
+  .donut-chart-container .donut-chart-block .firstCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 80px;
+    height: 80px;
+  }
+  .donut-chart-container .donut-chart-block .firstCircle .first-circle-bg {
+    /*  absolute z-0 -top-[50px] -left-[71px] */
+    width: 213px;
+    height: 213px;
+    position: absolute;
+    top: -50px;
+    left: -68px;
+  }
+
+  .donut-chart-container .donut-chart-block .secondCircle {
+    /* absolute -right-[255px] top-[144px] */
+    position: absolute;
+    right: -185px;
+    top: 100px;
+  }
+  .donut-chart-container .donut-chart-block .secondCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 80px;
+    height: 80px;
+  }
+  .donut-chart-container .donut-chart-block .secondCircle .second-circle-bg {
+    /* absolute z-0 -top-[47px] -left-[68px] */
+    width: 202px;
+    height: 210px;
+    position: absolute;
+    top: -45px;
+    left: -62px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle {
+    /* absolute -right-[255px] top-[314px] */
+    position: absolute;
+    right: -185px;
+    top: 214px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 80px;
+    height: 80px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle .third-circle-bg {
+    /*  absolute z-0 -top-[47px] -left-[68px] */
+    width: 219px;
+    height: 218px;
+    position: absolute;
+    top: -47px;
+    left: -68px;
+  }
+
+  .donut-chart-container .donut-chart-block .tokenomics-box1-svg {
+    position: absolute;
+    top: -52px;
+    right: -635px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box2-svg {
+    position: absolute;
+    top: 116px;
+    right: -635px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box3-svg {
+    position: absolute;
+    top: 288px;
+    right: -635px;
+  }
+  .rotate-tokenomics-right {
+    font-size: 82px;
+    position: absolute;
+    right: -186px;
+    top: 115px;
+  }
 }
 @media (min-width: 1280px) {
+  .donut-chart {
+    width: 402px;
+    height: 402px;
+    margin-left: 28px;
+  }
+  p.center {
+    width: 260px;
+    height: 260px;
+  }
+  p.center2 {
+    width: 180px;
+    height: 180px;
+  }
+  .portion-block {
+    clip: rect(0px, 402px, 402px, 201px);
+  }
+  .circle {
+    clip: rect(0px, 201px, 402px, 0px);
+  }
+
+  .donut-chart-container .donut-chart-block .rightArrowLineSvg {
+    width: 126px;
+    height: 8px;
+    /* absolute -right-[125px] top-48 */
+    position: absolute;
+    right: -125px;
+    top: 192px;
+  }
+  .donut-chart-container .donut-chart-block .upperLineSvg {
+    width: 125px;
+    height: 171px;
+    /* absolute -right-[125px] top-[26px] */
+    position: absolute;
+    right: -125px;
+    top: 26px;
+  }
+  .donut-chart-container .donut-chart-block .downLineSvg {
+    width: 125px;
+    height: 176px;
+    /* absolute -right-[125px] bottom-[31px] */
+    position: absolute;
+    right: -125px;
+    bottom: 31px;
+  }
+
+  .donut-chart-container .donut-chart-block .firstCircle {
+    /* absolute -right-[255px] -top-[24px] */
+    position: absolute;
+    right: -255px;
+    top: -24px;
+  }
+  .donut-chart-container .donut-chart-block .firstCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 100px;
+    height: 100px;
+  }
+  .donut-chart-container .donut-chart-block .firstCircle .first-circle-bg {
+    /*  absolute z-0 -top-[50px] -left-[71px] */
+    width: 243px;
+    height: 243px;
+    position: absolute;
+    top: -50px;
+    left: -71px;
+  }
+
+  .donut-chart-container .donut-chart-block .secondCircle {
+    /* absolute -right-[255px] top-[144px] */
+    position: absolute;
+    right: -255px;
+    top: 144px;
+  }
+  .donut-chart-container .donut-chart-block .secondCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 100px;
+    height: 100px;
+  }
+  .donut-chart-container .donut-chart-block .secondCircle .second-circle-bg {
+    /* absolute z-0 -top-[47px] -left-[68px] */
+    width: 232px;
+    height: 240px;
+    position: absolute;
+    top: -47px;
+    left: -68px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle {
+    /* absolute -right-[255px] top-[314px] */
+    position: absolute;
+    right: -255px;
+    top: 314px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle .round-circle {
+    /* absolute -right-[255px] -top-[24px] */
+    width: 100px;
+    height: 100px;
+  }
+  .donut-chart-container .donut-chart-block .thirdCircle .third-circle-bg {
+    /*  absolute z-0 -top-[47px] -left-[68px] */
+    width: 239px;
+    height: 238px;
+    position: absolute;
+    top: -47px;
+    left: -68px;
+  }
+
+  /* first box */
+  .donut-chart-container .donut-chart-block .tokenomics-box1-svg {
+    /* absolute -top-[52px] -right-[685px]  */
+    position: absolute;
+    top: -52px;
+    right: -635px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box1-svg .box-svg {
+    /* absolute -top-[52px] -right-[685px]  */
+    width: 360px;
+    height: 142px;
+  }
+  /* second box */
+  .donut-chart-container .donut-chart-block .tokenomics-box2-svg {
+    /* absolute top-[116px] -right-[685px]  */
+    position: absolute;
+    top: 116px;
+    right: -635px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box2-svg .box-svg {
+    /* absolute -top-[52px] -right-[685px]  */
+    width: 360px;
+    height: 142px;
+  }
+  /* third box */
+  .donut-chart-container .donut-chart-block .tokenomics-box3-svg {
+    /* absolute top-[288px] -right-[685px]  */
+    position: absolute;
+    top: 288px;
+    right: -635px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box3-svg .box-svg {
+    /* absolute -top-[52px] -right-[685px]  */
+    width: 360px;
+    height: 142px;
+  }
+
+  .rotate-tokenomics-right {
+    font-size: 82px;
+    position: absolute;
+    right: -156px;
+    top: 115px;
+  }
 }
 @media (min-width: 1536px) {
+  .donut-chart-container .donut-chart-block .tokenomics-box1-svg {
+    /* absolute -top-[52px] -right-[685px]  */
+    position: absolute;
+    top: -52px;
+    right: -685px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box2-svg {
+    /* absolute top-[116px] -right-[685px]  */
+    position: absolute;
+    top: 116px;
+    right: -685px;
+  }
+  .donut-chart-container .donut-chart-block .tokenomics-box3-svg {
+    /* absolute top-[288px] -right-[685px]  */
+    position: absolute;
+    top: 288px;
+    right: -685px;
+  }
+  .rotate-tokenomics-right {
+    font-size: 89.59px;
+    position: absolute;
+    right: -36px;
+    top: 115px;
+  }
 }
 
 /* --------------Milestones section css start------------- */

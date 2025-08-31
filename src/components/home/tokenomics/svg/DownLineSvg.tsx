@@ -1,8 +1,8 @@
 const DownLineSvg = () => {
   return (
     <svg
-      width={125}
-      height={176}
+      // width={125}
+      // height={176}
       viewBox="0 0 125 176"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

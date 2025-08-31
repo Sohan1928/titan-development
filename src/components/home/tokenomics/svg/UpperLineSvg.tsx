@@ -1,8 +1,8 @@
 const UpperLineSvg = () => {
   return (
     <svg
-      width={125}
-      height={171}
+      // width={125}
+      // height={171}
       viewBox="0 0 125 171"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
