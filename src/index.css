@@ -5225,6 +5225,104 @@ p.center2 {
     padding-top: 20px;
     font-size: 15px;
   }
+  /* ================== */
+  .roadmap-container .portfolio-section .connectorLineSvg {
+    width: 320px;
+    height: 240px;
+    /* absolute top-[305px] right-0 */
+    position: absolute;
+    top: 299px;
+    right: 0;
+  }
+  .roadmap-container .portfolio-section .roadmapPortfolioGreenCircleSvg {
+    width: 30px;
+    height: 30px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg1 {
+    /* absolute top-[390px] -right-[34px]  */
+    position: absolute;
+    top: 313px;
+    right: -10px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg2 {
+    /* absolute top-[496px] right-[278px] */
+    position: absolute;
+    top: 338px;
+    right: 50px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg3 {
+    /* absolute top-[276px] right-[699px] */
+    position: absolute;
+    top: 286px;
+    right: 155px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg4 {
+    /*  absolute top-[512px] left-[616px] */
+    position: absolute;
+    top: 341px;
+    right: 195px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg5 {
+    /*   absolute top-[320px] left-[445px] */
+    position: absolute;
+    top: 296px;
+    right: 245px;
+  }
+  .roadmap-container .portfolio-section .q1 h6 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .roadmap-container .portfolio-section .q1 h5 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .roadmap-container .portfolio-section .q1 p {
+    width: 130px;
+    margin: auto;
+    text-align: center;
+    font-size: 8px;
+  }
+  .roadmap-container .portfolio-section .q1-p1 {
+    /* absolute top-[142px] right-[554px] */
+    position: absolute;
+    top: 180px;
+    right: 80px;
+  }
+  .roadmap-container .portfolio-section .q1-p2 {
+    /* absolute top-[565px] right-[133px] */
+    position: absolute;
+    top: 365px;
+    right: 5px;
+  }
+  .roadmap-container .portfolio-section .q1-p3 {
+    /* absolute top-[578px] left-[472px] */
+    position: absolute;
+    top: 365px;
+    right: 150px;
+  }
+  .roadmap-container .portfolio-section .q1-p4 {
+    /* absolute top-[378px] left-[245px] */
+    position: absolute;
+    top: 165px;
+    right: 230px;
+  }
+
+  .roadmap-container .portfolio-section .q2 h6 {
+    font-size: 9px;
+  }
+  .roadmap-container .portfolio-section .q2 h5 {
+    font-size: 10px;
+  }
+  .roadmap-container .portfolio-section .q2 p {
+    width: 90px;
+    font-size: 8px;
+    text-align: right;
+  }
+  .roadmap-container .portfolio-section .q2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
 }
 @media (min-width: 640px) {
   .roadmap-container .title h5 {
@@ -5238,6 +5336,104 @@ p.center2 {
     width: 587px;
     padding-top: 20px;
     font-size: 16px;
+  }
+  /* ================== */
+  .roadmap-container .portfolio-section .connectorLineSvg {
+    width: 620px;
+    height: 240px;
+    /* absolute top-[305px] right-0 */
+    position: absolute;
+    top: 399px;
+    right: 0;
+  }
+  .roadmap-container .portfolio-section .roadmapPortfolioGreenCircleSvg {
+    width: 50px;
+    height: 50px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg1 {
+    /* absolute top-[390px] -right-[34px]  */
+    position: absolute;
+    top: 430px;
+    right: -17px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg2 {
+    /* absolute top-[496px] right-[278px] */
+    position: absolute;
+    top: 477px;
+    right: 120px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg3 {
+    /* absolute top-[276px] right-[699px] */
+    position: absolute;
+    top: 377px;
+    right: 308px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg4 {
+    /*  absolute top-[512px] left-[616px] */
+    position: absolute;
+    top: 399px;
+    right: 490px;
+  }
+  .roadmap-container .portfolio-section .portfolio-green-svg5 {
+    /*   absolute top-[320px] left-[445px] */
+    position: absolute;
+    top: 485px;
+    right: 400px;
+  }
+  .roadmap-container .portfolio-section .q1 h6 {
+    text-align: center;
+    font-size: 12px;
+  }
+  .roadmap-container .portfolio-section .q1 h5 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .roadmap-container .portfolio-section .q1 p {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+  }
+  .roadmap-container .portfolio-section .q1-p1 {
+    /* absolute top-[142px] right-[554px] */
+    position: absolute;
+    top: 240px;
+    right: 230px;
+  }
+  .roadmap-container .portfolio-section .q1-p2 {
+    /* absolute top-[565px] right-[133px] */
+    position: absolute;
+    top: 520px;
+    right: 35px;
+  }
+  .roadmap-container .portfolio-section .q1-p3 {
+    /* absolute top-[578px] left-[472px] */
+    position: absolute;
+    top: 538px;
+    right: 302px;
+  }
+  .roadmap-container .portfolio-section .q1-p4 {
+    /* absolute top-[378px] left-[245px] */
+    position: absolute;
+    top: 442px;
+    right: 502px;
+  }
+
+  .roadmap-container .portfolio-section .q2 h6 {
+    font-size: 12px;
+  }
+  .roadmap-container .portfolio-section .q2 h5 {
+    font-size: 14px;
+  }
+  .roadmap-container .portfolio-section .q2 p {
+    width: 150px;
+    font-size: 11px;
+    text-align: right;
+  }
+  .roadmap-container .portfolio-section .q2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 }
 @media (min-width: 768px) {
