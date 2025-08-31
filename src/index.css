@@ -5016,7 +5016,7 @@ p.center2 {
 }
 @media (min-width: 768px) {
   .milestones-container {
-    margin-top: 250vh;
+    margin-top: 200vh;
   }
   .milestones-container .container-content {
     display: flex;
