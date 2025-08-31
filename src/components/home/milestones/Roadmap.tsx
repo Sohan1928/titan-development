@@ -120,25 +120,25 @@ const Roadmap = () => {
       </div>
 
       <div className="portfolio-section pt-[127px] relative pb-[400px]">
-        <div className="connectorLineSvg absolute top-[305px] right-0 pointer-events-none">
+        <div className="connectorLineSvg pointer-events-none">
           <ConnectorLineSvg></ConnectorLineSvg>
         </div>
-        <div className="roadmapPortfolioGreenCircleSvg absolute top-[390px] -right-[34px] overflow-hidden pointer-events-none">
+        <div className="roadmapPortfolioGreenCircleSvg portfolio-green-svg1 overflow-hidden pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="roadmapPortfolioGreenCircleSvg absolute top-[496px] right-[278px] pointer-events-none">
+        <div className="roadmapPortfolioGreenCircleSvg portfolio-green-svg2 pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="roadmapPortfolioGreenCircleSvg absolute top-[276px] right-[699px] pointer-events-none">
+        <div className="roadmapPortfolioGreenCircleSvg portfolio-green-svg3 pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="roadmapPortfolioGreenCircleSvg absolute top-[512px] left-[616px] pointer-events-none">
+        <div className="roadmapPortfolioGreenCircleSvg portfolio-green-svg4 pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="roadmapPortfolioGreenCircleSvg absolute top-[320px] left-[445px] pointer-events-none">
+        <div className="roadmapPortfolioGreenCircleSvg portfolio-green-svg5 pointer-events-none">
           <PortfolioGreenCircleSvg></PortfolioGreenCircleSvg>
         </div>
-        <div className="q1 absolute top-[142px] right-[554px]">
+        <div className="q1 q1-p1">
           <h6>Q1 2022</h6>
           <h5 className="pt-[10px]">MERITOCRATIC PORTFOLIO’S</h5>
           <p className="pt-[23px]">
@@ -146,7 +146,7 @@ const Roadmap = () => {
             portfolios and the wider Nova ecosystem.
           </p>
         </div>
-        <div className="q1 absolute top-[565px] right-[133px]">
+        <div className="q1 q1-p2">
           <h6>Q1 2022</h6>
           <h5 className="pt-[10px]">ETHEREUM DEPLOYMENT</h5>
           <p className="pt-[23px]">
@@ -154,7 +154,7 @@ const Roadmap = () => {
             multiple blockchains.
           </p>
         </div>
-        <div className="q1 absolute top-[578px] left-[472px]">
+        <div className="q1 q1-p3">
           <h6>Q1 2022</h6>
           <h5 className="pt-[10px]">ETHEREUM DEPLOYMENT</h5>
           <p className="pt-[23px]">
@@ -162,7 +162,7 @@ const Roadmap = () => {
             multiple blockchains.
           </p>
         </div>
-        <div className="q2 absolute top-[378px] left-[245px]">
+        <div className="q2 q1-p4">
           <h6>Q4 - IDO</h6>
           <h5 className="pt-[10px]">MVP LAUNCH</h5>
           <p className="pt-[23px]">

@@ -1,8 +1,8 @@
 const ConnectorLineSvg = () => {
   return (
     <svg
-      width={1372}
-      height={240}
+      // width={1372}
+      // height={240}
       viewBox="0 0 1372 240"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
