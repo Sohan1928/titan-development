@@ -4880,18 +4880,6 @@ p.center2 {
 
 /* --------------Milestones section css start------------- */
 
-/* .cursor-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9998;
-  opacity: 0;
-} */
-
 .milestones-container {
   background: linear-gradient(180deg, #000 0%, #1c1b2e 100%);
 }
@@ -4934,6 +4922,206 @@ p.center2 {
   font-size: 18px;
   line-height: 150%;
 }
+/*------------ @media query------------- */
+@media (min-width: 320px) {
+  .milestones-container .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+  .milestones-container .container-content .title-section .title {
+    width: 300px;
+    font-size: 28px;
+    padding-top: 20px;
+  }
+  .milestones-container .container-content .title-section h4 {
+    font-size: 20px;
+    width: 300px;
+  }
+  .milestones-container .container-content .title-section p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .milestones-container .container-content .audited-section h4 {
+    font-size: 20px;
+    width: 300px;
+  }
+  .milestones-container .container-content .audited-section p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 45px;
+    position: absolute;
+    left: -160px;
+    top: 1010px;
+  }
+}
+@media (min-width: 640px) {
+  .milestones-container .container-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    gap: 10px;
+  }
+  .milestones-container .container-content .title-section .title {
+    width: 300px;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .milestones-container .container-content .title-section h4 {
+    font-size: 20px;
+    width: 300px;
+  }
+  .milestones-container .container-content .title-section p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .milestones-container .container-content .audited-section h4 {
+    font-size: 20px;
+  }
+  .milestones-container .container-content .audited-section p {
+    width: 300px;
+    font-size: 16px;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 49px;
+    position: absolute;
+    left: -175px;
+    top: 695px;
+  }
+}
+@media (min-width: 768px) {
+  .milestones-container .container-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
+  .milestones-container .container-content .title-section .title {
+    width: 306px;
+    font-size: 35px;
+    padding-top: 20px;
+  }
+  .milestones-container .container-content .title-section h4 {
+    font-size: 22px;
+    width: 306px;
+  }
+  .milestones-container .container-content .title-section p {
+    width: 350px;
+    font-size: 16px;
+  }
+  .milestones-container .container-content .audited-section h4 {
+    font-size: 22px;
+  }
+  .milestones-container .container-content .audited-section p {
+    width: 350px;
+    font-size: 16px;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 59px;
+    position: absolute;
+    left: -200px;
+    top: 590px;
+  }
+}
+@media (min-width: 1024px) {
+  .milestones-container .container-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .milestones-container .container-content .title-section .title {
+    width: 406px;
+    font-size: 45px;
+    padding-top: 20px;
+  }
+  .milestones-container .container-content .title-section h4 {
+    font-size: 25px;
+    width: 100%;
+  }
+  .milestones-container .container-content .title-section p {
+    width: 406px;
+    font-size: 17px;
+  }
+  .milestones-container .container-content .audited-section h4 {
+    font-size: 25px;
+  }
+  .milestones-container .container-content .audited-section p {
+    width: 406px;
+    font-size: 17px;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 69px;
+    position: absolute;
+    left: -240px;
+    top: 590px;
+  }
+}
+@media (min-width: 1280px) {
+  .milestones-container .container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .milestones-container .container-content .title-section .title {
+    width: 506px;
+    font-size: 55px;
+    padding-top: 20px;
+  }
+  .milestones-container .container-content .title-section h4 {
+    color: #d0dce8;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .milestones-container .container-content .title-section p {
+    width: 506px;
+    color: #7a8699;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .milestones-container .container-content .audited-section h4 {
+    color: #d0dce8;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .milestones-container .container-content .audited-section p {
+    width: 506px;
+    color: #7a8699;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 79px;
+    position: absolute;
+    left: -265px;
+    top: 605px;
+  }
+}
+@media (min-width: 1536px) {
+  .milestones-container .container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  .milestones-container .rotate-titano-roadmap {
+    font-size: 89.59px;
+    position: absolute;
+    left: -210px;
+    top: 645px;
+  }
+}
+
 /* ----------Roadmap section css start-------- */
 .roadmap-container .title h5 {
   font-size: 18px;
