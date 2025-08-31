@@ -206,7 +206,7 @@ const Tokenomics = () => {
                 <div className="box-svg">
                   <BoxSvg></BoxSvg>
                 </div>
-                <div className="absolute top-[23px] left-6">
+                <div className="box1-content">
                   <h5>Automatic LP</h5>
                   <p>
                     A porton of the buy and sell fees goes to the RFB to back
@@ -220,7 +220,7 @@ const Tokenomics = () => {
                 <div className="box-svg">
                   <BoxSvg></BoxSvg>
                 </div>
-                <div className="absolute top-[23px] left-6">
+                <div className="box2-content">
                   <h5>Treasury</h5>
                   <p>
                     A porton of the buy and sell fees goes to the RFB to back
@@ -234,7 +234,7 @@ const Tokenomics = () => {
                 <div className="box-svg">
                   <BoxSvg></BoxSvg>
                 </div>
-                <div className="absolute top-[23px] left-6">
+                <div className="box3-content">
                   <h5>Risk Free Value</h5>
                   <p>
                     A porton of the buy and sell fees goes to the RFB to back
