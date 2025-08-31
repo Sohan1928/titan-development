@@ -4937,7 +4937,7 @@ p.center2 {
 /*------------ @media query------------- */
 @media (min-width: 320px) {
   .milestones-container {
-    margin-top: 270vh;
+    margin-top: 220vh;
   }
   .milestones-container .container-content {
     display: flex;

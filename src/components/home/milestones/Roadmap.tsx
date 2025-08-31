@@ -66,44 +66,47 @@ const Roadmap = () => {
       });
     });
 
-    tl.from(".connectorLineSvg", {
-      x: -400,
-      y: 300,
-      opacity: 0,
-      duration: 1.4,
-      scrollTrigger: {
-        trigger: ".portfolio-section",
-        start: "top 70%",
-        end: "top 20%",
-        scrub: 1,
-      },
-    });
-    tl.from(".roadmapPortfolioGreenCircleSvg", {
-      y: -300,
-      opacity: 0,
-      duration: 1.4,
-      stagger: 1.2,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".portfolio-section",
-        start: "top 60%",
-        end: "top 20%",
-        scrub: 1,
-      },
-    });
-    tl.from(".q1", {
-      y: -400,
-      x: -400,
-      opacity: 0,
-      duration: 1.8,
-      stagger: 1.4,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".portfolio-section",
-        start: "top 60%",
-        end: "top 10%",
-        scrub: 1,
-      },
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px", () => {
+      tl.from(".connectorLineSvg", {
+        x: -400,
+        y: 300,
+        opacity: 0,
+        duration: 1.4,
+        scrollTrigger: {
+          trigger: ".portfolio-section",
+          start: "top 70%",
+          end: "top 20%",
+          scrub: 1,
+        },
+      });
+      tl.from(".roadmapPortfolioGreenCircleSvg", {
+        y: -300,
+        opacity: 0,
+        duration: 1.4,
+        stagger: 1.2,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: ".portfolio-section",
+          start: "top 60%",
+          end: "top 20%",
+          scrub: 1,
+        },
+      });
+      tl.from(".q1", {
+        y: -400,
+        x: -400,
+        opacity: 0,
+        duration: 1.8,
+        stagger: 1.4,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: ".portfolio-section",
+          start: "top 60%",
+          end: "top 10%",
+          scrub: 1,
+        },
+      });
     });
   }, []);
 
