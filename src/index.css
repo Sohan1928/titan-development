@@ -268,7 +268,7 @@ h3 {
 
 .stackingText {
   width: 100%;
-  height: 116.857px;
+  /* height: 116.857px; */
   -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: #000;
   font-size: 99.59px;
@@ -282,7 +282,7 @@ h3 {
 }
 @media (min-width: 320px) {
   .banner-container {
-    padding: 50px 14px;
+    padding: 70px 14px 30px 14px;
   }
   .banner-container .banner-main-content {
     display: flex;
@@ -300,42 +300,44 @@ h3 {
   }
   .banner-container h1 {
     font-size: 26px;
-    width: 300px;
+    width: 100%;
   }
   .banner-container .banner-svg {
     width: 298px;
     height: 353px;
-    padding-top: 60px;
+    padding-top: 50px;
+    margin: auto;
   }
   .banner-container .bannerTop {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 120%;
   }
   .banner-container .bannerBottom {
-    font-size: 18px;
-    line-height: 170%;
+    font-size: 16px;
+    width: 330px;
+    margin-top: 30px;
   }
   .stackingText {
     width: 100%;
-    font-size: 20vw !important;
-    margin: 0vw 0 18vw 0;
+    font-size: 8vw;
+    margin: 0vw 0 0vw 0;
     white-space: nowrap;
   }
   .banner-transparent-text-container {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 640px) {
   .banner-container {
-    padding: 60px 0px;
+    padding: 70px 0px 60px 0px;
   }
   .banner-container h1 {
-    font-size: 32px;
+    font-size: 38px;
     width: 644px;
   }
   .banner-container .banner-svg {
-    width: 550px;
-    height: 553px;
+    width: 420px;
+    height: 423px;
   }
   .banner-container .bannerTop {
     font-size: 19px;
@@ -344,13 +346,15 @@ h3 {
   .banner-container .bannerBottom {
     font-size: 19px;
     line-height: 170%;
+    width: 550px;
+    margin-top: 40px;
   }
   .stackingText {
     width: 100%;
-    font-size: 45px;
+    font-size: 7vw;
   }
   .banner-transparent-text-container {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
@@ -363,8 +367,8 @@ h3 {
     width: 654px;
   }
   .banner-container .banner-svg {
-    width: 550px;
-    height: 553px;
+    width: 450px;
+    height: 453px;
   }
   .banner-container .bannerTop {
     font-size: 20px;
@@ -376,10 +380,10 @@ h3 {
   }
   .stackingText {
     width: 100%;
-    font-size: 55px;
+    font-size: 7vw;
   }
   .banner-transparent-text-container {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
@@ -402,13 +406,14 @@ h3 {
     text-align: start;
   }
   .banner-container h1 {
-    font-size: 40px;
+    font-size: 35px;
     width: 400px;
   }
   .banner-container .banner-svg {
     width: 550px;
     height: 453px;
     padding-top: 0px;
+    margin: 0;
   }
   .banner-container .bannerTop {
     font-size: 20px;
@@ -417,10 +422,13 @@ h3 {
   .banner-container .bannerBottom {
     font-size: 19px;
     line-height: 170%;
+    width: 450px;
+    margin-top: 40px;
   }
   .stackingText {
     width: 100%;
-    font-size: 70px;
+    font-size: 20vw;
+    margin: 0vw 0 18vw 0;
   }
   .banner-transparent-text-container {
     margin-top: 83px;
@@ -452,7 +460,6 @@ h3 {
   }
   .stackingText {
     width: 100%;
-    font-size: 90px;
   }
 }
 
@@ -481,7 +488,6 @@ h3 {
   }
   .stackingText {
     width: 100%;
-    font-size: 99.59px;
   }
 }
 
@@ -553,7 +559,7 @@ h3 {
 }
 @media (min-width: 320px) {
   .about-container {
-    padding: 15px 0px 0 0px;
+    padding: 35px 0px 0 0px;
   }
   .about-container .main-content {
     display: flex;
@@ -563,20 +569,21 @@ h3 {
     justify-content: center;
   }
   .about-container .about-left-side-svg {
-    width: 310px;
-    height: 300px;
+    width: 280px;
+    height: 270px;
   }
   .about-container .aboutLeftSvg {
-    width: 357px;
-    height: 379px;
+    width: 277px;
+    height: 299px;
   }
   .about-container .aboutP {
-    width: 320px;
-    font-size: 20px;
-    padding: 0 10px;
+    width: 340px;
+    font-size: 15px;
+    padding: 10px 10px;
   }
   .about-container .aboutStak {
     font-size: 20px;
+    margin-top: 40px;
   }
   .about-container .aboutNumber {
     font-size: 39px;
@@ -584,7 +591,7 @@ h3 {
 }
 @media (min-width: 640px) {
   .about-container {
-    padding: 20px 0px 0 0px;
+    padding: 40px 0px 0 0px;
   }
   .about-container .main-content {
     display: flex;
@@ -597,16 +604,18 @@ h3 {
     height: 400px;
   }
   .about-container .aboutLeftSvg {
-    width: 457px;
-    height: 479px;
+    width: 417px;
+    height: 439px;
   }
   .about-container .aboutP {
-    width: 550px;
-    font-size: 25px;
-    padding: 0 0;
+    width: 600px;
+    font-size: 21px;
+    padding: 20px 0;
   }
   .about-container .aboutStak {
     font-size: 23px;
+    /* mt-[60px] */
+    margin-top: 50px;
   }
   .about-container .aboutNumber {
     font-size: 55px;
@@ -614,7 +623,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .about-container {
-    padding: 20px 0px 0 0px;
+    padding: 40px 0px 0 0px;
   }
   .about-container .main-content {
     display: flex;
@@ -627,12 +636,16 @@ h3 {
     height: 430px;
   }
   .about-container .aboutLeftSvg {
-    width: 517px;
-    height: 539px;
+    width: 477px;
+    height: 499px;
   }
   .about-container .aboutP {
-    width: 650px;
-    font-size: 25px;
+    width: 750px;
+    font-size: 23px;
+  }
+  .about-container .aboutStak {
+    font-size: 23px;
+    margin-top: 50px;
   }
   .about-container .aboutNumber {
     font-size: 55px;
@@ -640,7 +653,7 @@ h3 {
 }
 @media (min-width: 1024px) {
   .about-container {
-    padding: 30px 40px 0 40px;
+    padding: 40px 40px 0 40px;
   }
   .about-container .main-content {
     display: flex;
@@ -650,18 +663,38 @@ h3 {
     gap: 40px;
     justify-content: space-between;
   }
+  .about-container .about-left-side-svg {
+    width: 465px;
+    height: 380px;
+  }
+  .about-container .aboutLeftSvg {
+    width: 447px;
+    height: 489px;
+  }
   .about-container .aboutP {
-    width: 420px;
+    width: 520px;
     font-size: 22px;
+  }
+  .about-container .aboutStak {
+    font-size: 23px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 1280px) {
   .about-container {
-    padding: 70px 40px 0 40px;
+    padding: 50px 40px 0 40px;
   }
   .about-container .aboutP {
     width: 651px;
     font-size: 25px;
+  }
+  .about-container .about-left-side-svg {
+    width: 505px;
+    height: 430px;
+  }
+  .about-container .aboutLeftSvg {
+    width: 517px;
+    height: 539px;
   }
 }
 @media (min-width: 1536px) {
@@ -678,12 +711,13 @@ h3 {
 .howItWorksSvgSectionContainer {
   margin-top: 260px;
 }
-
+#how-it-works-container {
+  padding-top: 190px;
+}
 .howItWorksTitle {
   color: #d0dce8;
   font-size: 55px;
   line-height: 120%;
-  opacity: 0;
 }
 .howItWorksTitleAnimation {
   will-change: transform;
@@ -776,16 +810,22 @@ h3 {
 /* responsive for all device */
 
 @media (min-width: 320px) {
-  #how-it-works-container .how-it-works-top-content .howItWorksTitle {
-    font-size: 35px;
+  #how-it-works-container {
+    padding-top: 80px;
   }
-
+  #how-it-works-container .how-it-works-top-content .howItWorksTitle {
+    font-size: 37px;
+  }
   #how-it-works-container .how-it-works-top-content h4 {
     font-size: 16px;
   }
   #how-it-works-container .how-it-works-top-content p {
     font-size: 10px;
     padding: 0px 8px;
+  }
+  /* ----------------- */
+  .howItWorksSvgSectionContainer {
+    margin-top: 220px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 124px;
@@ -820,7 +860,7 @@ h3 {
     position: absolute;
     /* top: -120px;
     left: 90px; */
-    top: -98px;
+    top: -104px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 8px;
@@ -1036,22 +1076,25 @@ h3 {
   .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-right {
     /* absolute sm:-right-[140px] sm:top-0 lg:-right-[150px] lg:top-6 
   font-size: 12px; */
-    font-size: 8px;
+    font-size: 6px;
     position: absolute;
     right: -84px;
-    top: -0px;
+    top: 4px;
   }
 
   .howItWorksSvgSectionContainer .how-it-svg-section .buy-and-sell-left {
     /* absolute sm:-left-[140px] sm:top-0 lg:-left-[150px] lg:top-6 
   font-size: 12px;  */
-    font-size: 8px;
+    font-size: 6px;
     position: absolute;
     left: -96px;
-    top: 0px;
+    top: 4px;
   }
 }
 @media (min-width: 640px) {
+  #how-it-works-container {
+    padding-top: 100px;
+  }
   #how-it-works-container .how-it-works-top-content .howItWorksTitle {
     font-size: 55px;
   }
@@ -1060,6 +1103,10 @@ h3 {
   }
   #how-it-works-container .how-it-works-top-content p {
     font-size: 12px;
+  }
+  /* ------------------ */
+  .howItWorksSvgSectionContainer {
+    margin-top: 250px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 174px;
@@ -1326,6 +1373,9 @@ h3 {
   }
 }
 @media (min-width: 768px) {
+  #how-it-works-container {
+    padding-top: 120px;
+  }
   #how-it-works-container .how-it-works-top-content h4 {
     font-size: 20px;
   }
@@ -1335,6 +1385,10 @@ h3 {
   .howItWorksBottomBoxContent h4 {
     width: 252px;
     font-size: 14px;
+  }
+  /* ---------------- */
+  .howItWorksSvgSectionContainer {
+    margin-top: 270px;
   }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 204px;
@@ -1581,6 +1635,9 @@ h3 {
   }
 }
 @media (min-width: 1024px) {
+  #how-it-works-container {
+    padding-top: 160px;
+  }
   #how-it-works-container .how-it-works-top-content h4 {
     font-size: 24px;
   }
@@ -1828,8 +1885,10 @@ h3 {
     left: -450px;
   }
 }
-
 @media (min-width: 1280px) {
+  #how-it-works-container {
+    padding-top: 190px;
+  }
   .howItWorksSvgSectionContainer .how-it-svg-section .top-box-svg {
     width: 374px;
     height: 116px;
@@ -2155,7 +2214,7 @@ h3 {
 }
 @media (min-width: 320px) {
   .titano-content-container {
-    padding-top: 90px;
+    padding-top: 30px;
   }
   .titanoLeftContent {
     display: flex;
@@ -2171,12 +2230,13 @@ h3 {
     text-wrap: nowrap;
   }
   .titanoLeftContent h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-wrap: nowrap;
   }
   .titanoLeftContent p {
     width: 90vw;
     font-size: 14px;
+    text-align: center;
   }
   .titano-content-container {
     display: flex;
@@ -2192,6 +2252,11 @@ h3 {
   .titanoLeftContent .btnApps button {
     font-size: 20px;
     text-wrap: nowrap;
+  }
+}
+@media (min-width: 640px) {
+  .titano-content-container {
+    padding-top: 80px;
   }
 }
 @media (min-width: 768px) {
@@ -2261,6 +2326,7 @@ h3 {
   .titanoLeftContent p {
     width: 100%;
     font-size: 18px;
+    text-align: start;
   }
   .titanoLeftContent .contentlist {
     width: 100%;

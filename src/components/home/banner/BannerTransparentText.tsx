@@ -7,15 +7,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const BannerTransparentText = () => {
   useGSAP(() => {
-    gsap.to(".banner-transparent-text-container h4", {
-      x: "-190%",
-      scrollTrigger: {
-        trigger: ".banner-transparent-text-container",
-        start: "top 0%",
-        end: "top -150%",
-        scrub: 2,
-        pin: true,
-      },
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px", () => {
+      gsap.to(".banner-transparent-text-container h4", {
+        x: "-190%",
+        scrollTrigger: {
+          trigger: ".banner-transparent-text-container",
+          start: "top 0%",
+          end: "top -150%",
+          scrub: 2,
+          pin: true,
+        },
+      });
     });
   }, []);
 

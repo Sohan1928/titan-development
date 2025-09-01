@@ -5,61 +5,62 @@ import LogoSvg from "./svg/LogoSvg";
 import OtherSvg from "./svg/OtherSvg";
 import TelegramSvg from "./svg/TelegramSvg";
 import TwitterSvg from "./svg/TwitterSvg";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-  useGSAP(() => {
-    const mm = gsap.matchMedia();
+  // useGSAP(() => {
+  //   const mm = gsap.matchMedia();
 
-    mm.add("(min-width:1024px", () => {
-      const tl = gsap.timeline();
-      gsap.from(".footerSvg", {
-        x: -400,
-        y: -200,
-        scale: 1.6,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".footer-container",
-          start: "top 50%",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      });
-      tl.from(".footer-social", {
-        y: -200,
-        scale: 1.4,
-        opacity: 0,
-        duration: 1.4,
-        stagger: 0.2,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".footer-container",
-          start: "top 60%",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      });
-      gsap.from(".copyright-text", {
-        x: 300,
-        y: -300,
-        opacity: 0,
-        ease: "power1.out",
-        scale: 1.8,
-        duration: 1.2,
-        scrollTrigger: {
-          trigger: ".footer-container",
-          start: "top 40%",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      });
-    });
-  }, []);
+  //   mm.add("(min-width:1024px", () => {
+  //     const tl = gsap.timeline();
+  //     gsap.from(".footerSvg", {
+  //       x: -400,
+  //       y: -200,
+  //       scale: 1.6,
+  //       opacity: 0,
+  //       duration: 1.2,
+  //       ease: "power1.out",
+  //       scrollTrigger: {
+  //         trigger: ".footer-container",
+  //         start: "top 50%",
+  //         end: "bottom bottom",
+  //         scrub: true,
+  //       },
+  //     });
+  //     tl.from(".footer-social", {
+  //       y: -200,
+  //       scale: 1.4,
+  //       opacity: 0,
+  //       duration: 1.4,
+  //       stagger: 0.2,
+  //       ease: "power1.out",
+  //       scrollTrigger: {
+  //         trigger: ".footer-container",
+  //         start: "top 60%",
+  //         end: "bottom bottom",
+  //         scrub: true,
+  //       },
+  //     });
+  //     gsap.from(".copyright-text", {
+  //       x: 300,
+  //       y: -300,
+  //       opacity: 0,
+  //       ease: "power1.out",
+  //       scale: 1.8,
+  //       duration: 1.2,
+  //       scrollTrigger: {
+  //         trigger: ".footer-container",
+  //         start: "top 40%",
+  //         end: "bottom bottom",
+  //         scrub: true,
+  //       },
+  //     });
+  //   });
+  // }, []);
+
   return (
     <section className="footer-container relative pointer-events-none">
       <div className="footerSvg pointer-events-none">

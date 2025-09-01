@@ -1,5 +1,5 @@
-import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/SplitText";
+// import { useGSAP } from "@gsap/react";
+// import { SplitText } from "gsap/SplitText";
 import AboutLeftSideBgSvg from "./svg/AboutLeftSideBgSvg";
 import AboutLeftSideSvg from "./svg/AboutLeftSideSvg";
 import gsap from "gsap";
@@ -8,93 +8,93 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  useGSAP(() => {
-    const mm = gsap.matchMedia();
+  // useGSAP(() => {
+  //   const mm = gsap.matchMedia();
 
-    mm.add("(min-width:1024px", () => {
-      gsap.from(".about-container", {
-        opacity: 0,
-        duration: 1.4,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".about-container",
-          start: "top 60%",
-          end: "top 0%",
-          scrub: true,
-        },
-      });
-      gsap.from(".aboutNumberAnimation", {
-        opacity: 0,
-        duration: 1.4,
-        ease: "power3.inOut",
-        scrollTrigger: {
-          trigger: ".aboutNumberAnimation",
-          start: "top 70%",
-          end: "top 30%",
-          scrub: true,
-        },
-      });
-      document.fonts.ready.then(() => {
-        gsap.set(".aboutPAnimation", { opacity: 1 });
-        // SplitText
-        const split = new SplitText(".aboutPAnimation", {
-          type: "words,lines",
-          linesClass: "lines",
-          autoSplit: true,
-        });
-        // Animation
-        gsap.from(split.words, {
-          duration: 1.8,
-          yPercent: 50,
-          opacity: 0,
-          stagger: 0.8,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".aboutPAnimation",
-            start: "top 90%",
-            end: "top 30%",
-            scrub: true,
-          },
-        });
-      });
-      document.fonts.ready.then(() => {
-        gsap.set(".aboutStakAnimation", { opacity: 1 });
-        // SplitText
-        const split = new SplitText(".aboutStakAnimation", {
-          type: "words,lines",
-          linesClass: "lines",
-          autoSplit: true,
-        });
-        // Animation
-        gsap.from(split.words, {
-          duration: 1.8,
-          yPercent: 50,
-          opacity: 0,
-          stagger: 0.8,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".aboutStakAnimation",
-            start: "top 90%",
-            end: "top 30%",
-            scrub: true,
-          },
-        });
-      });
-    });
-  }, []);
+  //   mm.add("(min-width:1024px", () => {
+  //     gsap.from(".about-container", {
+  //       opacity: 0,
+  //       duration: 1.4,
+  //       ease: "power3.out",
+  //       scrollTrigger: {
+  //         trigger: ".about-container",
+  //         start: "top 60%",
+  //         end: "top 0%",
+  //         scrub: true,
+  //       },
+  //     });
+  //     gsap.from(".aboutNumberAnimation", {
+  //       opacity: 0,
+  //       duration: 1.4,
+  //       ease: "power3.inOut",
+  //       scrollTrigger: {
+  //         trigger: ".aboutNumberAnimation",
+  //         start: "top 70%",
+  //         end: "top 30%",
+  //         scrub: true,
+  //       },
+  //     });
+  //     document.fonts.ready.then(() => {
+  //       gsap.set(".aboutPAnimation", { opacity: 1 });
+  //       // SplitText
+  //       const split = new SplitText(".aboutPAnimation", {
+  //         type: "words,lines",
+  //         linesClass: "lines",
+  //         autoSplit: true,
+  //       });
+  //       // Animation
+  //       gsap.from(split.words, {
+  //         duration: 1.8,
+  //         yPercent: 50,
+  //         opacity: 0,
+  //         stagger: 0.8,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: ".aboutPAnimation",
+  //           start: "top 90%",
+  //           end: "top 30%",
+  //           scrub: true,
+  //         },
+  //       });
+  //     });
+  //     document.fonts.ready.then(() => {
+  //       gsap.set(".aboutStakAnimation", { opacity: 1 });
+  //       // SplitText
+  //       const split = new SplitText(".aboutStakAnimation", {
+  //         type: "words,lines",
+  //         linesClass: "lines",
+  //         autoSplit: true,
+  //       });
+  //       // Animation
+  //       gsap.from(split.words, {
+  //         duration: 1.8,
+  //         yPercent: 50,
+  //         opacity: 0,
+  //         stagger: 0.8,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: ".aboutStakAnimation",
+  //           start: "top 90%",
+  //           end: "top 30%",
+  //           scrub: true,
+  //         },
+  //       });
+  //     });
+  //   });
+  // }, []);
 
   return (
-    <section className="about-container relative">
+    <section className="about-container relative px-[13px]">
       <div className="main-content relative">
         <div
-          className="pointer-events-none relative"
-          data-speed="2"
-          data-lag="0.5"
+          className="about-left-svg-circle pointer-events-none relative"
+          // data-speed="2"
+          // data-lag="0.5"
         >
           <div className="about-left-side-svg">
             <AboutLeftSideSvg></AboutLeftSideSvg>
           </div>
-          <div className="aboutLeftSvg absolute -top-12 -left-4 pointer-events-none">
+          <div className="aboutLeftSvg absolute -top-12 -left-0 pointer-events-none">
             <AboutLeftSideBgSvg></AboutLeftSideBgSvg>
           </div>
           <svg
@@ -133,15 +133,15 @@ const About = () => {
             </defs>
           </svg>
         </div>
-        <div className="pt-20 lg:pt-0" data-speed="1" data-lag="0.3">
+        <div className="pt-10 sm:pt-20 lg:pt-0">
           <h5 className="aboutTop uppercase">About</h5>
-          <p className="aboutPAnimation aboutP mt-[30px]">
+          <p className="aboutPAnimation aboutP">
             Titano Finance is transforming DeFi with the Titano Autostaking
             Protocol (TAP) that delivers the industry’s highest fixed APY,
             rebasing rewards every 30 minutes, and a simple buy-hold-earn system
             that grows your portfolio in your wallet, fast.
           </p>
-          <h4 className="aboutStak aboutStakAnimation mt-[60px]">
+          <h4 className="aboutStak aboutStakAnimation">
             100% Fixed Staking APY
           </h4>
           <div className="">
