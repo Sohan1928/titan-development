@@ -71,14 +71,14 @@ const Milestones = () => {
           <div className="relative">
             <h2 className="title">Titano Highlights and Milestones</h2>
           </div>
-          <h4 className="pt-[65px]">Liquidity Protected</h4>
-          <p className="pt-[23px]">
+          <h4 className="milestone-h4">Liquidity Protected</h4>
+          <p className="milestone-p">
             Titano owns almost all of its liquidity, helping maintain price
             stability and hedging Titano against unpredictable and unfavorable
             market conditions.
           </p>
-          <h4 className="pt-[65px]">Vibrant Social Media Communities</h4>
-          <p className="pt-[23px]">
+          <h4 className="milestone-h4">Vibrant Social Media Communities</h4>
+          <p className="milestone-p">
             Titano has nearly 25,000 members (TITANS) and growing on its social
             media platforms. Come Join Us!
           </p>
@@ -90,13 +90,13 @@ const Milestones = () => {
             major issues discovered. We are currently under audit by CerTik, the
             industry’s top auditor.
           </p>
-          <h4 className="pt-[65px]">Weekly Token Burning</h4>
-          <p className="pt-[23px]">
+          <h4 className="milestone-h4">Weekly Token Burning</h4>
+          <p className="milestone-p">
             Each week Titano burns nearly.5% of its locked tokens creating
             inflation stability.
           </p>
-          <h4 className="pt-[96px]">Liquidity Locked</h4>
-          <p className="pt-[23px]">
+          <h4 className="milestone-h4">Liquidity Locked</h4>
+          <p className="milestone-p">
             90% of Titano’s total token supply is vested into Unicrypt.
           </p>
         </div>

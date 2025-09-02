@@ -111,7 +111,7 @@ const Roadmap = () => {
   // }, []);
 
   return (
-    <section className="roadmap-container pt-[127px] overflow-hidden relative">
+    <section className="roadmap-container overflow-hidden relative">
       <div className="title roadmapTitle items-center text-center mx-auto justify-center flex flex-col">
         <h5 className="roadmapSubtitle">Roadmap</h5>
         <h2 className="roadmapTitleh2">The Titano Roadmap</h2>
@@ -122,7 +122,7 @@ const Roadmap = () => {
         </p>
       </div>
 
-      <div className="portfolio-section pt-[127px] relative pb-[400px]">
+      <div className="portfolio-section relative">
         <div className="connectorLineSvg pointer-events-none">
           <ConnectorLineSvg></ConnectorLineSvg>
         </div>

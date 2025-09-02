@@ -134,7 +134,7 @@ const Tokenomics = () => {
   // }, []);
 
   return (
-    <section className="tokenomics-container mt-[140px] pt-[110px]">
+    <section className="tokenomics-container">
       <div className="top-content">
         <h5 className="tokenomicsSubtitle">Tokenomics</h5>
         <h3 className="tokenomicsTitle">Tokenomics</h3>
@@ -143,9 +143,8 @@ const Tokenomics = () => {
           using a positive rebase formula.
         </p>
       </div>
-
       {/* donut chart */}
-      <div className="donut-chart-container pt-[110px]">
+      <div className="donut-chart-container">
         <div className="donut-chart-block block relative">
           <div className="donut-chart">
             <div id="part1" className="portion-block">

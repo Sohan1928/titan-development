@@ -93,7 +93,7 @@ const TitanoApp = () => {
   // }, []);
 
   return (
-    <section className="2xl:pl-[100px] xl:pl-[90px] lg:pl-[60px] pb-56 relative titano-container">
+    <section className="titano-container-main 2xl:pl-[100px] xl:pl-[90px] lg:pl-[60px] relative titano-container">
       <div className="titano-content-container w-full 2xl:gap-16 lg:gap-4">
         {/* left side content */}
         <div className="titanoLeftContent w-3/12">
@@ -134,7 +134,7 @@ const TitanoApp = () => {
         <div className="titano-right-content w-full flex flex-col items-center gap-8">
           {/* cards section pin property */}
           <div className="card-section">
-            <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
+            <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] lg:rounded-[20px] overflow-x-hidden">
               <div className="3-circle">
                 <span className="w-[9px] h-[9px] bg-[#FF5F56] rounded-full absolute top-6 left-6"></span>
                 <span className="w-[9px] h-[9px] bg-[#FFBE2E] rounded-full absolute top-6 left-10"></span>
@@ -159,7 +159,7 @@ const TitanoApp = () => {
                 </div>
                 <div className="main-content xl:flex items-start 2xl:justify-between pt-7">
                   <div className="menus xl:w-1.5/8">
-                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4">
+                    <ul className="xl:flex xl:flex-col 2xl:items-start 2xl:gap-0 lg:flex lg:items-center lg:gap-4 flex items-center text-center justify-center">
                       <li>
                         <GoHome></GoHome>Home
                       </li>
@@ -180,8 +180,8 @@ const TitanoApp = () => {
                   <div className="main-box-content-titan">
                     {/* top content */}
                     <div className="account-details">
-                      <div className="top-content xl:text-nowrap gap-2 flex items-center justify-center">
-                        <div className="progress-content">
+                      <div className="top-content xl:text-nowrap gap-0 md:gap-2 flex items-center justify-center">
+                        <div className="progress-content flex gap-6 md:flex md:flex-col md:gap-0 justify-center mx-auto md:justify-baseline md:mx-0">
                           <ul>
                             <li className="progress-icon">
                               <GiProgression></GiProgression>
@@ -190,7 +190,7 @@ const TitanoApp = () => {
                           </ul>
                           <button>$ 229,114</button>
                         </div>
-                        <div className="chart-content">
+                        <div className="chart-content flex gap-6 md:flex md:flex-col md:gap-0 justify-center mx-auto md:justify-baseline md:mx-0">
                           <ul>
                             <li className="chart-icon">
                               <IoStatsChart></IoStatsChart>
@@ -202,7 +202,7 @@ const TitanoApp = () => {
                             <span>APY</span>
                           </div>
                         </div>
-                        <div className="rebase-content">
+                        <div className="rebase-content flex gap-6 md:flex md:flex-col md:gap-0 justify-center mx-auto md:justify-baseline md:mx-0">
                           <ul>
                             <li className="rebase-icon">
                               <IoHourglassOutline></IoHourglassOutline>
@@ -292,7 +292,7 @@ const TitanoApp = () => {
               </div>
             </div>
           </div>
-          <div className="card-section">
+          <div className="hidden lg:block card-section">
             <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
               <div className="3-circle">
                 <span className="w-[9px] h-[9px] bg-[#FF5F56] rounded-full absolute top-6 left-6"></span>
@@ -451,7 +451,7 @@ const TitanoApp = () => {
               </div>
             </div>
           </div>
-          <div className="card-section">
+          <div className="hidden lg:block card-section">
             <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
               <div className="3-circle">
                 <span className="w-[9px] h-[9px] bg-[#FF5F56] rounded-full absolute top-6 left-6"></span>
@@ -610,7 +610,7 @@ const TitanoApp = () => {
               </div>
             </div>
           </div>
-          <div className="card-section">
+          <div className="hidden lg:block card-section">
             <div className="titano-finance-cards flex pt-[56px] relative z-99 bg-[#102125] rounded-[20px] overflow-x-hidden">
               <div className="3-circle">
                 <span className="w-[9px] h-[9px] bg-[#FF5F56] rounded-full absolute top-6 left-6"></span>
