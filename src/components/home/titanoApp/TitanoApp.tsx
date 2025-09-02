@@ -13,84 +13,87 @@ import { IoStatsChart } from "react-icons/io5";
 import { IoHourglassOutline } from "react-icons/io5";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-// import { useGSAP } from "@gsap/react";
-// import { SplitText } from "gsap/SplitText";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TitanoApp = () => {
-  // useGSAP(() => {
-  //   document.querySelectorAll(".titano-finance-cards").forEach((card) => {
-  //     gsap.to(card, {
-  //       scale: 0.7,
-  //       opacity: 0,
-  //       scrollTrigger: {
-  //         trigger: card,
-  //         start: "top top",
-  //         end: "bottom top",
-  //         pin: true,
-  //         pinSpacing: false,
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
-  //   document.fonts.ready.then(() => {
-  //     gsap.set(".titano-container .titanoLeftContent .titanoTitle", {
-  //       opacity: 1,
-  //     });
-  //     // SplitText
-  //     const split = new SplitText(
-  //       ".titano-container .titanoLeftContent .titanoTitle",
-  //       {
-  //         type: "words,lines,chars",
-  //         linesClass: "chars",
-  //         autoSplit: true,
-  //       }
-  //     );
-  //     // Animation
-  //     gsap.from(split.chars, {
-  //       duration: 1.8,
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       stagger: 0.6,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: ".titano-container",
-  //         start: "top 80%",
-  //         end: "top 30%",
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
-  //   document.fonts.ready.then(() => {
-  //     gsap.set(".titano-container .titanoLeftContent .titanoP", {
-  //       opacity: 1,
-  //     });
-  //     // SplitText
-  //     const split = new SplitText(
-  //       ".titano-container .titanoLeftContent .titanoP",
-  //       {
-  //         type: "words,lines,chars",
-  //         linesClass: "words",
-  //         autoSplit: true,
-  //       }
-  //     );
-  //     // Animation
-  //     gsap.from(split.words, {
-  //       duration: 1.8,
-  //       yPercent: 50,
-  //       opacity: 0,
-  //       stagger: 0.6,
-  //       ease: "power2.out",
-  //       scrollTrigger: {
-  //         trigger: ".titano-container",
-  //         start: "top 70%",
-  //         end: "top 30%",
-  //         scrub: true,
-  //       },
-  //     });
-  //   });
-  // }, []);
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px", () => {
+      document.querySelectorAll(".titano-finance-cards").forEach((card) => {
+        gsap.to(card, {
+          scale: 0.7,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: card,
+            start: "top top",
+            end: "bottom top",
+            pin: true,
+            pinSpacing: false,
+            scrub: true,
+          },
+        });
+      });
+      document.fonts.ready.then(() => {
+        gsap.set(".titano-container .titanoLeftContent .titanoTitle", {
+          opacity: 1,
+        });
+        // SplitText
+        const split = new SplitText(
+          ".titano-container .titanoLeftContent .titanoTitle",
+          {
+            type: "words,lines,chars",
+            linesClass: "chars",
+            autoSplit: true,
+          }
+        );
+        // Animation
+        gsap.from(split.chars, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.6,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".titano-container",
+            start: "top 80%",
+            end: "top 30%",
+            scrub: true,
+          },
+        });
+      });
+      document.fonts.ready.then(() => {
+        gsap.set(".titano-container .titanoLeftContent .titanoP", {
+          opacity: 1,
+        });
+        // SplitText
+        const split = new SplitText(
+          ".titano-container .titanoLeftContent .titanoP",
+          {
+            type: "words,lines,chars",
+            linesClass: "words",
+            autoSplit: true,
+          }
+        );
+        // Animation
+        gsap.from(split.words, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.6,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".titano-container",
+            start: "top 70%",
+            end: "top 30%",
+            scrub: true,
+          },
+        });
+      });
+    });
+  }, []);
 
   return (
     <section className="titano-container-main 2xl:pl-[100px] xl:pl-[90px] lg:pl-[60px] relative titano-container">

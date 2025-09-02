@@ -2,66 +2,75 @@ import { ScrollTrigger } from "gsap/all";
 import Roadmap from "./Roadmap";
 import MilestonesBottomRightSvg from "./svg/MilestonesBottomRightSvg";
 import MilestonesTopLeftSvg from "./svg/MilestonesTopLeftSvg";
-// import { useGSAP } from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Milestones = () => {
-  // useGSAP(() => {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".container-content",
-  //       start: "top 70%",
-  //       end: "top 10%",
-  //       scrub: true,
-  //     },
-  //   });
-  //   tl.from(".container-content .title-section > *", {
-  //     opacity: 0,
-  //     scale: 0.7,
-  //     y: 50,
-  //     x: -50,
-  //     duration: 1.6,
-  //     ease: "power3.out",
-  //     stagger: 0.3,
-  //   });
-  // }, []);
-  // useGSAP(() => {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".container-content",
-  //       start: "top 60%",
-  //       end: "top 10%",
-  //       scrub: true,
-  //     },
-  //   });
-  //   tl.from(".container-content .audited-section > *", {
-  //     opacity: 0,
-  //     scale: 0.7,
-  //     y: 50,
-  //     x: 50,
-  //     duration: 0.8,
-  //     ease: "power3.out",
-  //     stagger: 0.3,
-  //   });
-  // }, []);
-  // useGSAP(() => {
-  //   gsap.from(".milestones-container .stroke-text", {
-  //     opacity: 0,
-  //     scale: 0.7,
-  //     x: 100,
-  //     duration: 1.4,
-  //     ease: "sine.out",
-  //     stagger: 0.3,
-  //     scrollTrigger: {
-  //       trigger: ".rotate-titano-roadmap",
-  //       start: "top 70%",
-  //       end: "top 10%",
-  //       scrub: true,
-  //     },
-  //   });
-  // }, []);
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".container-content",
+          start: "top 70%",
+          end: "top 10%",
+          scrub: true,
+        },
+      });
+      tl.from(".container-content .title-section > *", {
+        opacity: 0,
+        scale: 0.7,
+        y: 50,
+        x: -50,
+        duration: 1.6,
+        ease: "power3.out",
+        stagger: 0.3,
+      });
+    });
+  }, []);
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".container-content",
+          start: "top 60%",
+          end: "top 10%",
+          scrub: true,
+        },
+      });
+      tl.from(".container-content .audited-section > *", {
+        opacity: 0,
+        scale: 0.7,
+        y: 50,
+        x: 50,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.3,
+      });
+    });
+  }, []);
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("min-widht:1024px", () => {
+      gsap.from(".milestones-container .stroke-text", {
+        opacity: 0,
+        scale: 0.7,
+        x: 100,
+        duration: 1.4,
+        ease: "sine.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".rotate-titano-roadmap",
+          start: "top 70%",
+          end: "top 10%",
+          scrub: true,
+        },
+      });
+    });
+  }, []);
 
   return (
     <section className="milestones-container mt-[100vh] relative">

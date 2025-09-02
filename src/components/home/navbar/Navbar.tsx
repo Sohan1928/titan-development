@@ -3,46 +3,46 @@ import BannerBgCircleSvg from "../banner/svg/BannerBgCircleSvg";
 import LeftSideTextBgSvg from "../banner/svg/LeftSideTextBgSvg";
 import Logo from "./svg/LogoSvg";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
-// import gsap from "gsap";
-// import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // const tl = gsap.timeline();
-  // useGSAP(() => {
-  //   const mm = gsap.matchMedia();
+  const tl = gsap.timeline();
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
 
-  //   mm.add("(min-width:1024px", () => {
-  //     tl.from("#nav-logo", {
-  //       opacity: 0,
-  //       y: -120,
-  //       duration: 1.4,
-  //       delay: 1.8,
-  //     });
-  //     tl.from(".navLinks .nav-links-ul li", {
-  //       opacity: 0,
-  //       ease: "sine.inOut",
-  //       duration: 0.6,
-  //       stagger: 0.2,
-  //     });
-  //     tl.from("#navbar-btn", {
-  //       opacity: 0,
-  //       ease: "sine.inOut",
-  //       duration: 0.6,
-  //     });
-  //     tl.from(".banner-bg-circle-svg", {
-  //       y: 500,
-  //       duration: 1.1,
-  //       opacity: 0,
-  //     });
-  //     tl.from(".banner-left-side-bg-svg", {
-  //       y: -400,
-  //       duration: 1.1,
-  //       opacity: 0,
-  //     });
-  //   });
-  // }, []);
+    mm.add("(min-width:1024px", () => {
+      tl.from("#nav-logo", {
+        opacity: 0,
+        y: -120,
+        duration: 1.4,
+        delay: 1.8,
+      });
+      tl.from(".navLinks .nav-links-ul li", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 0.6,
+        stagger: 0.2,
+      });
+      tl.from("#navbar-btn", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 0.6,
+      });
+      tl.from(".banner-bg-circle-svg", {
+        y: 500,
+        duration: 1.1,
+        opacity: 0,
+      });
+      tl.from(".banner-left-side-bg-svg", {
+        y: -400,
+        duration: 1.1,
+        opacity: 0,
+      });
+    });
+  }, []);
 
   return (
     <section className="z-50 relative navbar-container">

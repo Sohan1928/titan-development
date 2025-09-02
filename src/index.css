@@ -5102,7 +5102,7 @@ p.center2 {
 /*------------ @media query------------- */
 @media (min-width: 320px) {
   .milestones-container {
-    margin-top: 170vh;
+    margin-top: 120vh;
     /* margin-top: 220vh; */
   }
   .milestones-container .container-content {

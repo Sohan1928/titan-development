@@ -2,41 +2,56 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import HowItWorksSvgSection from "./HowItWorksSvgSection";
 import RightSideCircleSvg from "./svg/RightSideCircleSvg";
-// import { useGSAP } from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(SplitText);
 
 const HowItWorks = () => {
-  // useGSAP(() => {
-  //   const mm = gsap.matchMedia();
-
-  //   mm.add("(min-width:320px", () => {
-  //     const tl = gsap.timeline();
-  //     document.fonts.ready.then(() => {
-  //       gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
-  //       // SplitText
-  //       const split = new SplitText(".howItWorksTitleAnimation", {
-  //         type: "words,lines,chars",
-  //         linesClass: "line",
-  //         autoSplit: true,
-  //       });
-  //       // Animation
-  //       tl.from(split.chars, {
-  //         duration: 1.8,
-  //         yPercent: 50,
-  //         opacity: 0,
-  //         stagger: 0.4,
-  //         ease: "power2.out",
-  //         scrollTrigger: {
-  //           trigger: ".howItWorksTitleAnimation",
-  //           start: "top 60%",
-  //           end: "top 20%",
-  //           scrub: true,
-  //         },
-  //       });
-  //     });
-  //   });
-  // }, []);
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 320px) and (max-width: 640px)", () => {
+      gsap.from(".howItWorksTitleAnimation", {
+        y: 100,
+        opacity: 0,
+        duration: 1.8,
+        stagger: 1.2,
+        ease: "sine.out",
+        scrollTrigger: {
+          trigger: ".howItWorksTitleAnimation",
+          start: "top 60%",
+          end: "top 40%",
+          scrub: true,
+        },
+      });
+    });
+    // min-width:768px
+    mm.add("(min-width:768px", () => {
+      const tl = gsap.timeline();
+      document.fonts.ready.then(() => {
+        gsap.set(".howItWorksTitleAnimation", { opacity: 1 });
+        // SplitText
+        const split = new SplitText(".howItWorksTitleAnimation", {
+          type: "words,lines,chars",
+          linesClass: "line",
+          autoSplit: true,
+        });
+        // Animation
+        tl.from(split.chars, {
+          duration: 1.8,
+          yPercent: 50,
+          opacity: 0,
+          stagger: 0.4,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".howItWorksTitleAnimation",
+            start: "top 60%",
+            end: "top 20%",
+            scrub: true,
+          },
+        });
+      });
+    });
+  }, []);
 
   return (
     <section

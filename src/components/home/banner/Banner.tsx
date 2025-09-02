@@ -1,31 +1,39 @@
 import gsap from "gsap";
 import BannerTransparentText from "./BannerTransparentText";
 import BannerSvg from "./svg/BannerSvg";
-// import { useGSAP } from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 
 gsap.registerPlugin(SplitText);
 
 const Banner = () => {
-  // const tl = gsap.timeline();
-  // useGSAP(() => {
-  //   const mm = gsap.matchMedia();
-
-  //   tl.from(".banner-left-content", {
-  //     opacity: 0,
-  //     x: -300,
-  //     ease: "sine.inOut",
-  //     duration: 1.4,
-  //     delay: 2,
-  //   });
-  //   mm.add("(min-width:1024px", () => {
-  //     tl.from(".banner-svg", {
-  //       opacity: 0,
-  //       x: 600,
-  //       duration: 1.2,
-  //     });
-  //   });
-  // }, []);
+  const tl = gsap.timeline();
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:320px) and (max-width:640px)", () => {
+      tl.from(".banner-left-content", {
+        opacity: 0,
+        y: 80,
+        ease: "sine.inOut",
+        duration: 1.4,
+        delay: 2,
+      });
+    });
+    mm.add("(min-width:1024px", () => {
+      tl.from(".banner-left-content", {
+        opacity: 0,
+        x: -300,
+        ease: "sine.inOut",
+        duration: 1.4,
+        delay: 2,
+      });
+      tl.from(".banner-svg", {
+        opacity: 0,
+        x: 600,
+        duration: 1.2,
+      });
+    });
+  }, []);
 
   function updateDataSpeed(): void {
     const el = document.querySelector<HTMLElement>(".banner-svg");
