@@ -16,7 +16,7 @@ const Banner = () => {
         y: 80,
         ease: "sine.inOut",
         duration: 1.4,
-        delay: 2,
+        stagger: 0.4,
       });
     });
     mm.add("(min-width:1024px", () => {

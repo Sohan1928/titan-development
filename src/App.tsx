@@ -8,7 +8,7 @@ import Milestones from "./components/home/milestones/Milestones";
 import Navbar from "./components/home/navbar/Navbar";
 import TitanoApp from "./components/home/titanoApp/TitanoApp";
 import Tokenomics from "./components/home/tokenomics/Tokenomics";
-// import Loader from "./components/loader/Loader";
+import Loader from "./components/loader/Loader";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -32,7 +32,9 @@ function App() {
   return (
     <section>
       {/* loader */}
-      {/* <Loader></Loader> */}
+      <div className="hidden md:block">
+        <Loader></Loader>
+      </div>
       <div className="bg-[#040206] spaceGroteskFont overflow-hidden">
         {/* custom cursor */}
         <CustomCursor></CustomCursor>
